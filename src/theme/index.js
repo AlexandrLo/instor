@@ -65,6 +65,9 @@ const theme = extendTheme({
       900: "#332600",
     },
   },
+  shadows: {
+    outline: "0 0 0 3px rgba(226, 149, 71, 0.25)",
+  },
   radii: {
     none: "0",
     sm: "0.25rem",
