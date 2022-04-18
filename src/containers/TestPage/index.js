@@ -9,6 +9,7 @@ import {
   Heading,
   Input,
   VStack,
+  Checkbox,
 } from "@chakra-ui/react";
 
 import NumberInput from "components/NumberInput";
@@ -95,14 +96,28 @@ function TestPage() {
           <Heading as="h2" size="h2">
             Input
           </Heading>
+          {/* Default input */}
           <HStack>
             <Input placeholder="Search" size="md" variant="brand" />
             <Input placeholder="Search" size="sm" variant="brand" />
           </HStack>
+          {/* Number input with buttons */}
           <HStack>
             <NumberInput maxW="54px" size="md" />
             <NumberInput maxW="38px" size="sm" />
           </HStack>
+        </VStack>
+
+        <VStack align="start" spacing="1rem">
+          <Heading as="h2" size="h2">
+            Checkbox
+          </Heading>
+          <Checkbox defaultChecked>Remember me</Checkbox>
+          <Checkbox>Remember me</Checkbox>
+          <Checkbox disabled defaultChecked>
+            Remember me
+          </Checkbox>
+          <Checkbox disabled>Remember me</Checkbox>
         </VStack>
       </VStack>
     </Container>
