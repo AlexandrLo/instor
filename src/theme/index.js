@@ -3,6 +3,7 @@ import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/poppins/latin.css";
 
 import Button from "theme/components/Button";
+import Heading from "theme/components/Heading";
 import Input from "theme/components/Input";
 
 const theme = extendTheme({
@@ -77,6 +78,7 @@ const theme = extendTheme({
   },
   components: {
     Button,
+    Heading,
     Input,
   },
 });
