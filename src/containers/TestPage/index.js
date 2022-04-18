@@ -1,13 +1,20 @@
 import React from "react";
 
 import { ArrowLeftFilled } from "@fluentui/react-icons";
-import { Button, Container, Heading, HStack, VStack } from "@chakra-ui/react";
+import {
+  Button,
+  Container,
+  HStack,
+  Heading,
+  Input,
+  VStack,
+} from "@chakra-ui/react";
 
 function TestPage() {
   return (
     <Container>
       <VStack align="start">
-        <Heading>Buttons</Heading>
+        <Heading>Button</Heading>
         {/* Blur buttons */}
         <HStack>
           <Button
@@ -75,6 +82,12 @@ function TestPage() {
           >
             Back
           </Button>
+        </HStack>
+
+        <Heading>Input</Heading>
+        <HStack>
+          <Input placeholder="Search" size="md" variant="brand" />
+          <Input placeholder="Search" size="sm" variant="brand" />
         </HStack>
       </VStack>
     </Container>
