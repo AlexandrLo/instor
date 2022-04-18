@@ -40,14 +40,14 @@ function NavBar() {
 
         <Show above="sm">
           <HStack spacing="0.5rem" w="100%" justifyContent="end">
-            <Link as={NavLink} to="/cart">
-              <Button
-                leftIcon={<CartFilled fontSize="1.5rem" />}
-                variant="brand"
-              >
-                Cart
-              </Button>
-            </Link>
+            <Button
+              leftIcon={<CartFilled fontSize="1.5rem" />}
+              variant="brand"
+              as={NavLink}
+              to="/cart"
+            >
+              Cart
+            </Button>
             <Button variant="primary">Log In/Sign Up</Button>
           </HStack>
         </Show>
