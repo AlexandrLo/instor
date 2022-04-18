@@ -61,6 +61,17 @@ const theme = extendTheme({
       900: "#332600",
     },
   },
+  radii: {
+    none: "0",
+    sm: "0.25rem",
+    base: "0.5rem",
+    md: "0.5rem",
+    lg: "0.1rem",
+    xl: "1.5rem",
+    "2xl": "2rem",
+    "3xl": "3rem",
+    full: "9999px",
+  },
 });
 
 export default theme;
