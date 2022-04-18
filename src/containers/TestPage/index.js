@@ -10,6 +10,7 @@ import {
   Input,
   VStack,
   Checkbox,
+  Switch,
 } from "@chakra-ui/react";
 
 import NumberInput from "components/NumberInput";
@@ -118,6 +119,13 @@ function TestPage() {
             Remember me
           </Checkbox>
           <Checkbox disabled>Remember me</Checkbox>
+        </VStack>
+
+        <VStack align="start" spacing="1rem">
+          <Heading as="h2" size="h2">
+            Switch
+          </Heading>
+          <Switch />
         </VStack>
       </VStack>
     </Container>

@@ -6,6 +6,7 @@ import Button from "theme/components/Button";
 import Checkbox from "theme/components/Checkbox";
 import Heading from "theme/components/Heading";
 import Input from "theme/components/Input";
+import Switch from "theme/components/Switch";
 
 const theme = extendTheme({
   config: {
@@ -85,6 +86,7 @@ const theme = extendTheme({
     Heading,
     Input,
     Checkbox,
+    Switch,
   },
 });
 
