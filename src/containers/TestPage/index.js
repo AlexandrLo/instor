@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 
 import NumberInput from "components/NumberInput";
+import ColorModeSwitch from "components/ColorModeSwitch";
 
 function TestPage() {
   return (
@@ -126,6 +127,13 @@ function TestPage() {
             Switch
           </Heading>
           <Switch />
+        </VStack>
+
+        <VStack align="start" spacing="1rem">
+          <Heading as="h2" size="h2">
+            Color mode switch
+          </Heading>
+          <ColorModeSwitch />
         </VStack>
       </VStack>
     </Container>
