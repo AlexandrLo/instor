@@ -2,6 +2,8 @@ import { extendTheme } from "@chakra-ui/react";
 
 import "@fontsource/poppins/latin.css";
 
+import Button from "theme/components/Button";
+
 const theme = extendTheme({
   config: {
     initialColorMode: "system",
@@ -71,6 +73,9 @@ const theme = extendTheme({
     "2xl": "2rem",
     "3xl": "3rem",
     full: "9999px",
+  },
+  components: {
+    Button,
   },
 });
 
