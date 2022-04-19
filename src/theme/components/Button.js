@@ -16,17 +16,17 @@ const Button = {
     },
   },
   variants: {
-    blur: ({ theme }) => ({
+    blur: {
       color: "white",
       backdropFilter: "blur(0.5rem)",
-      bg: transparentize("black", 0.2)(theme),
+      bg: "blackAlpha.400",
       _hover: {
-        bg: transparentize("black", 0.35)(theme),
+        bg: "blackAlpha.500",
       },
       _active: {
-        bg: transparentize("black", 0.5)(theme),
+        bg: "blackAlpha.600",
       },
-    }),
+    },
     primary: (props) => ({
       color: mode("white", "black")(props),
       bg: mode("black", "white")(props),
