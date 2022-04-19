@@ -4,7 +4,7 @@ import { ArrowRightFilled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
 import { HStack, Heading, Text, VStack } from "@chakra-ui/react";
 
-function Overlay({ heading = "", lead = "", ...props }) {
+function BannerOverlay({ heading = "", lead = "", ...props }) {
   return (
     <VStack
       position="absolute"
@@ -32,9 +32,9 @@ function Overlay({ heading = "", lead = "", ...props }) {
   );
 }
 
-Overlay.propTypes = {
+BannerOverlay.propTypes = {
   heading: PropTypes.string,
   lead: PropTypes.string,
 };
 
-export default Overlay;
+export default BannerOverlay;

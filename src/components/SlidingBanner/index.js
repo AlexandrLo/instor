@@ -6,8 +6,8 @@ import { Flex, HStack, Image, Link, Show } from "@chakra-ui/react";
 import { animate, motion, useMotionValue } from "framer-motion";
 
 import Arrow from "./Arrow";
+import BannerOverlay from "components/BannerOverlay";
 import Indicator from "./Indicator";
-import Overlay from "./Overlay";
 
 const transition = {
   type: "spring",
@@ -106,7 +106,7 @@ function SlidingBanner({ items, ...props }) {
                 w="100%"
                 borderRadius="1rem"
               />
-              <Overlay heading={slide.heading} lead={slide.lead} />
+              <BannerOverlay heading={slide.heading} lead={slide.lead} />
             </Link>
           ))}
         </HStack>

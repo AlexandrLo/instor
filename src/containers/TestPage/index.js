@@ -18,6 +18,7 @@ import ColorModeSwitch from "components/ColorModeSwitch";
 import NavBar from "components/NavBar";
 import NumberInput from "components/NumberInput";
 import SlidingBanner from "components/SlidingBanner";
+import Banner from "components/Banner";
 
 const banners = [
   {
@@ -165,6 +166,7 @@ function TestPage() {
               Banner
             </Heading>
             <SlidingBanner items={banners} />
+            <Banner data={banners[1]} />
           </VStack>
         </VStack>
       </Container>
