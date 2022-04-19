@@ -12,15 +12,39 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
+import BannerImage1 from "assets/banner/banner-1.jpg";
+import BannerImage2 from "assets/banner/banner-2.jpg";
 import ColorModeSwitch from "components/ColorModeSwitch";
 import NavBar from "components/NavBar";
 import NumberInput from "components/NumberInput";
+import SlidingBanner from "components/SlidingBanner";
+
+const banners = [
+  {
+    image: BannerImage1,
+    heading: "30% off",
+    lead: "High quality sofa",
+    to: "/",
+  },
+  {
+    image: BannerImage2,
+    heading: "Sale",
+    lead: "All chairs up to 50% off",
+    to: "/",
+  },
+  {
+    image: BannerImage1,
+    heading: "Sale",
+    lead: "All chairs up to 50% off",
+    to: "/",
+  },
+];
 
 function TestPage() {
   return (
     <>
       <NavBar />
-      <Container maxW="container.xl">
+      <Container maxW="container.xl" pb="5rem">
         <VStack align="start" spacing="1.5rem">
           <VStack align="start" spacing="0.5rem">
             <Heading as="h2" size="h2">
@@ -134,6 +158,13 @@ function TestPage() {
               Color mode switch
             </Heading>
             <ColorModeSwitch />
+          </VStack>
+
+          <VStack align="start" spacing="1rem" w="100%">
+            <Heading as="h2" size="h2">
+              Banner
+            </Heading>
+            <SlidingBanner items={banners} />
           </VStack>
         </VStack>
       </Container>
