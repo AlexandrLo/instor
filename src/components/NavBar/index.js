@@ -8,13 +8,9 @@ import {
   Container,
   HStack,
   Hide,
-  Input,
+  Link,
   Show,
   useColorMode,
-  InputGroup,
-  InputLeftElement,
-  InputLeftAddon,
-  Link,
 } from "@chakra-ui/react";
 
 import LogoDark from "assets/logo-dark.svg";

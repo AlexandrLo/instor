@@ -1,14 +1,8 @@
 import React from "react";
 
+import PropTypes from "prop-types";
 import { AddFilled, SubtractFilled } from "@fluentui/react-icons";
-import {
-  Button,
-  Hide,
-  HStack,
-  Input,
-  Show,
-  useNumberInput,
-} from "@chakra-ui/react";
+import { Button, HStack, Input, useNumberInput } from "@chakra-ui/react";
 
 function NumberInput({ size, ...props }) {
   const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
@@ -44,5 +38,13 @@ function NumberInput({ size, ...props }) {
     </HStack>
   );
 }
+
+NumberInput.propTypes = {
+  size: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+    PropTypes.arrayOf(PropTypes.string),
+  ]),
+};
 
 export default NumberInput;
