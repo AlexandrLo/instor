@@ -1,6 +1,6 @@
 {
-  "name": "smart-home-landing",
-  "homepage": "https://alexandrlo.github.io/smart-home-landing/",
+  "name": "instor",
+  "homepage": "https://alexandrlo.github.io/instor/",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack"
