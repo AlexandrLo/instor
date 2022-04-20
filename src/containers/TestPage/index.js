@@ -12,13 +12,24 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-import BannerImage1 from "assets/banner/banner-1.jpg";
-import BannerImage2 from "assets/banner/banner-2.jpg";
+import Banner from "components/Banner";
+import CategoryCard from "components/CategoryCard";
 import ColorModeSwitch from "components/ColorModeSwitch";
 import NavBar from "components/NavBar";
 import NumberInput from "components/NumberInput";
+import RoomCard from "components/RoomCard";
+import ScrollableBlock from "components/ScrollableBlock";
 import SlidingBanner from "components/SlidingBanner";
-import Banner from "components/Banner";
+
+import BannerImage1 from "assets/banner/banner-1.jpg";
+import BannerImage2 from "assets/banner/banner-2.jpg";
+import CategoryImageChairs from "assets/category/category-chairs.jpg";
+import CategoryImageDesks from "assets/category/category-desks.jpg";
+import CategoryImageSofas from "assets/category/category-sofas.jpg";
+import RoomBedRoomImage from "assets/room/room-bedroom.jpg";
+import RoomDiningRoomImage from "assets/room/room-diningroom.jpg";
+import RoomLivingRoomImage from "assets/room/room-livingroom.jpg";
+import RoomOfficeImage from "assets/room/room-office.jpg";
 
 const banners = [
   {
@@ -38,6 +49,47 @@ const banners = [
     heading: "Sale",
     lead: "All chairs up to 50% off",
     to: "/",
+  },
+];
+
+const categories = [
+  {
+    name: "Chairs",
+    image: CategoryImageChairs,
+    to: "/category/chairs",
+  },
+  {
+    name: "Sofas",
+    image: CategoryImageSofas,
+    to: "/category/sofas",
+  },
+  {
+    name: "Desks",
+    image: CategoryImageDesks,
+    to: "/category/desks",
+  },
+];
+
+const rooms = [
+  {
+    name: "Living Room",
+    image: RoomLivingRoomImage,
+    to: "/room/livingroom",
+  },
+  {
+    name: "Bed Room",
+    image: RoomBedRoomImage,
+    to: "/room/bedroom",
+  },
+  {
+    name: "Dining Room",
+    image: RoomDiningRoomImage,
+    to: "/room/diningroom",
+  },
+  {
+    name: "Office",
+    image: RoomOfficeImage,
+    to: "/room/office",
   },
 ];
 
@@ -168,6 +220,28 @@ function TestPage() {
             <SlidingBanner items={banners} />
             <Banner data={banners[1]} />
           </VStack>
+
+          <ScrollableBlock heading="Categories">
+            {categories.map((category) => (
+              <CategoryCard
+                image={category.image}
+                name={category.name}
+                to={category.to}
+                key={`category-card-${category.name.toLowerCase()}`}
+              />
+            ))}
+          </ScrollableBlock>
+
+          <ScrollableBlock heading="Rooms">
+            {rooms.map((room) => (
+              <RoomCard
+                image={room.image}
+                name={room.name}
+                to={room.to}
+                key={`room-card-${room.name.toLowerCase()}`}
+              />
+            ))}
+          </ScrollableBlock>
         </VStack>
       </Container>
     </>
