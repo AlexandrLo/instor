@@ -29,6 +29,7 @@ const theme = extendTheme({
       },
       "*, *::before, &::after": {
         borderColor: mode("gray.200", "whiteAlpha.300")(props),
+        WebkitTapHighlightColor: "transparent",
         wordWrap: "break-word",
       },
     }),
@@ -88,7 +89,7 @@ const theme = extendTheme({
     },
   },
   shadows: {
-    outline: "0 0 0 3px rgba(226, 149, 71, 0.25)",
+    outline: "0 0 0 3px rgba(226, 149, 71, 0.5)",
   },
   sizes: {
     container: {
@@ -99,6 +100,7 @@ const theme = extendTheme({
     },
   },
   breakpoints: {
+    xs: "23em", // 368px
     sm: "30em", // 480px
     md: "48em", // 768px
     lg: "62em", // 992px
