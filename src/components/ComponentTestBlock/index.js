@@ -8,16 +8,18 @@ import {
   HStack,
   Heading,
   Input,
+  SimpleGrid,
   Switch,
   VStack,
 } from "@chakra-ui/react";
 
 import ColorModeSwitch from "components/ColorModeSwitch";
 import NumberInput from "components/NumberInput";
+import ProductCard from "components/ProductCard";
 
 function ComponentTestBlock() {
   return (
-    <Container maxW="container.xl" p="1rem">
+    <Container>
       <VStack align="start" spacing="1.5rem">
         <Heading as="h1" size="h1">
           Components
@@ -140,6 +142,30 @@ function ComponentTestBlock() {
             Color mode switch
           </Heading>
           <ColorModeSwitch />
+        </VStack>
+
+        {/* Product card */}
+        <VStack align="start" spacing="1rem">
+          <Heading as="h2" size="h2">
+            Product card
+          </Heading>
+          <SimpleGrid
+            columns={{
+              base: 1,
+              xs: 2, // 480px
+              sm: 2, // 480px
+              md: 3, // 768px
+              lg: 3, // 992px
+              xl: 4, // 1280px
+            }}
+            spacing="1rem"
+            w="100%"
+          >
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </SimpleGrid>
         </VStack>
       </VStack>
     </Container>
