@@ -21,8 +21,8 @@ function NavBar() {
   const { colorMode } = useColorMode();
 
   return (
-    <Container maxW="container.xl" p={{ base: "1rem", md: "1.5rem" }}>
-      <HStack spacing="1.5rem">
+    <Container>
+      <HStack spacing="1rem">
         <Box w="100%">
           <Link as={NavLink} to="/">
             {colorMode === "light" ? <LogoDark /> : <LogoLight />}
