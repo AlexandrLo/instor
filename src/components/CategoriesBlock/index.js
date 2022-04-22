@@ -1,6 +1,7 @@
 import React from "react";
 
 import CategoryCard from "components/CategoryCard";
+import HeadingBlock from "components/HeadingBlock";
 import ScrollableBlock from "components/ScrollableBlock";
 
 const categories = [
@@ -23,16 +24,21 @@ const categories = [
 
 function CategoriesBlock() {
   return (
-    <ScrollableBlock heading="Categories">
-      {categories.map((category) => (
-        <CategoryCard
-          image={category.image}
-          name={category.name}
-          to={category.to}
-          key={`category-card-${category.name.toLowerCase()}`}
-        />
-      ))}
-    </ScrollableBlock>
+    <HeadingBlock
+      heading={{ text: "Categories" }}
+      contentProps={{ pl: "0", pr: "0" }}
+    >
+      <ScrollableBlock>
+        {categories.map((category) => (
+          <CategoryCard
+            image={category.image}
+            name={category.name}
+            to={category.to}
+            key={`category-card-${category.name.toLowerCase()}`}
+          />
+        ))}
+      </ScrollableBlock>
+    </HeadingBlock>
   );
 }
 
