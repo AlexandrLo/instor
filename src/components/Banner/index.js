@@ -14,7 +14,7 @@ const bannerData = {
 
 function Banner(props) {
   return (
-    <Container maxW="container.xl">
+    <Container>
       <Link
         variant="box"
         as={NavLink}
