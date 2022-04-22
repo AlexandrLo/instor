@@ -8,6 +8,7 @@ function CategoryCard(props) {
       minW="150px"
       h={["75px", "75px", "95px", "115px", "135px", "160px"]}
       textProps={{
+        color: "white",
         left: "0",
         top: "50%",
         transform: "auto",
