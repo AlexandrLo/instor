@@ -8,7 +8,7 @@ import { Provider as ReduxProvider } from "react-redux";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 
 import App from "./App";
-import { customLocalStorageManager } from "customLocalStorageManager";
+import { customLocalStorageManager } from "utils/customLocalStorageManager";
 import theme from "theme";
 import { persistor, store } from "app/store";
 
