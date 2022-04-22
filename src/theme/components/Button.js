@@ -57,6 +57,30 @@ const Button = {
         bg: transparentize("orange.400", 0.55)(theme),
       },
     }),
+    "ghost-instagram": (props) => ({
+      color: "gray.400",
+      _hover: {
+        color: "instagram.500",
+        bg: mode("gray.100", "whiteAlpha.50")(props),
+      },
+      _active: { bg: mode("gray.200", "whiteAlpha.100")(props) },
+    }),
+    "ghost-youtube": (props) => ({
+      color: "gray.400",
+      _hover: {
+        color: "youtube.500",
+        bg: mode("gray.100", "whiteAlpha.50")(props),
+      },
+      _active: { bg: mode("gray.200", "whiteAlpha.100")(props) },
+    }),
+    "ghost-pinterest": (props) => ({
+      color: "gray.400",
+      _hover: {
+        color: "pinterest.600",
+        bg: mode("gray.100", "whiteAlpha.50")(props),
+      },
+      _active: { bg: mode("gray.200", "whiteAlpha.100")(props) },
+    }),
   },
 };
 
