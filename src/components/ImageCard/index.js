@@ -14,6 +14,7 @@ function ImageCard({
 }) {
   return (
     <Link
+      variant="box"
       as={NavLink}
       to={to}
       position="relative"
