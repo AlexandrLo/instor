@@ -1,70 +1,80 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
+import Measure from "react-measure";
 import PropTypes from "prop-types";
-import { motion } from "framer-motion";
-import { Flex, HStack, Heading, VStack } from "@chakra-ui/react";
+import { useDebouncedCallback } from "use-debounce";
+import { Box, Container, HStack, Heading, VStack } from "@chakra-ui/react";
+import { motion, useMotionValue } from "framer-motion";
 
 function ScrollableBlock({ heading, children, ...props }) {
-  const containerRef = useRef(null);
+  // const containerRef = useRef(null);
+  const x = useMotionValue(0);
   const constraintRef = useRef(null);
-  const [constraint, setConstraint] = useState(0);
+  const [constraintStyle, setConstraintStyle] = useState({
+    position: "absolute",
+    height: "100%",
+    width: 0,
+    left: 0,
+  });
   const [isDragging, setIsDragging] = useState(false);
   const [isScrollable, setIsScrollable] = useState(true);
 
-  useEffect(() => {
-    const calcConstraint = () => {
-      const offsetWidth = containerRef?.current?.offsetWidth;
-      const scrollWidth = containerRef?.current?.scrollWidth;
-      setConstraint({
-        width: offsetWidth + (scrollWidth - offsetWidth),
-        left: offsetWidth - scrollWidth,
-      });
-      setIsScrollable(scrollWidth > offsetWidth);
-    };
+  const onResize = useDebouncedCallback((contentRect) => {
+    const containerWidth = contentRect.bounds.width;
+    const sliderWidth = contentRect.scroll.width;
 
-    calcConstraint();
-    window.addEventListener("resize", calcConstraint);
+    setIsScrollable(sliderWidth > containerWidth);
+    setConstraintStyle((prev) => ({
+      ...prev,
+      width: containerWidth + (sliderWidth - containerWidth) * 2,
+      left: containerWidth - sliderWidth,
+    }));
+    x.set(0);
+  }, 500);
 
-    return () => window.removeEventListener("resize", calcConstraint);
-  }, []);
-
+  console.log(`${heading} rendered`);
   return (
-    <VStack w="100%" align="start" spacing="1rem" {...props}>
-      <Heading as="h2" size="h2">
-        {heading}
-      </Heading>
-      <Flex overflowX="clip" w="100%" ref={containerRef} position="relative">
-        <motion.div
-          style={{
-            position: "absolute",
-            height: "100%",
-            ...constraint,
-          }}
-          ref={constraintRef}
-        />
-        <motion.div
-          style={{ width: "100%" }}
-          drag={isScrollable ? "x" : false}
-          dragConstraints={constraintRef}
-          // onDragStart={() => {
-          //   setIsDragging(true);
-          // }}
-          // onDragEnd={() => {
-          //   setTimeout(() => {
-          //     setIsDragging(false);
-          //   }, 100);
-          // }}
-        >
-          <HStack spacing="1rem">
-            {React.Children.map(children, (child) => {
-              if (React.isValidElement(child))
-                return React.cloneElement(child, { isDragging });
-              return child;
-            })}
-          </HStack>
-        </motion.div>
-      </Flex>
-    </VStack>
+    <Container maxW="container.xl" px="0">
+      <VStack w="100%" align="stretch" spacing="1rem" {...props}>
+        <Heading as="h2" size="h2" px="1rem">
+          {heading}
+        </Heading>
+
+        <Measure bounds scroll onResize={onResize}>
+          {({ measureRef }) => (
+            <Box position="relative" overflowX="hidden" ref={measureRef}>
+              {/* Constraining div */}
+              <motion.div ref={constraintRef} style={constraintStyle} />
+              {/* Slider */}
+              <motion.div
+                style={{
+                  width: "fit-content",
+                  x,
+                }}
+                drag={isScrollable ? "x" : false}
+                dragConstraints={constraintRef}
+                onDragStart={() => {
+                  setIsDragging(true);
+                }}
+                onDragEnd={() => {
+                  setTimeout(() => {
+                    setIsDragging(false);
+                  }, 100);
+                }}
+              >
+                <HStack spacing="1rem" px="1rem">
+                  {React.Children.map(children, (child) => {
+                    if (React.isValidElement(child))
+                      return React.cloneElement(child, { isDragging });
+                    return child;
+                  })}
+                </HStack>
+              </motion.div>
+            </Box>
+          )}
+        </Measure>
+      </VStack>
+    </Container>
   );
 }
 
