@@ -6,7 +6,7 @@ function CategoryCard(props) {
   return (
     <ImageCard
       minW="150px"
-      h={["75px", "100px", "125px", "160px"]}
+      h={["75px", "75px", "95px", "115px", "135px", "160px"]}
       textProps={{
         left: "0",
         top: "50%",
