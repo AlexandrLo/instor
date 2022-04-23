@@ -82,7 +82,7 @@ function ProductCard({ productData, ...props }) {
             </Button>
           </Show>
           <Hide above="xs">
-            <Text fontWeight="600">${productData.image}</Text>
+            <Text fontWeight="600">${productData.price}</Text>
           </Hide>
         </Box>
       </HStack>
