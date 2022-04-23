@@ -18,14 +18,10 @@ function MobileNav(props) {
       <Box
         borderTop="1px"
         borderColor={borderColor}
-        w="100%"
-        position="absolute"
-        transform="auto"
-        bottom="0"
         bg={bgColor}
-        transitionProperty="padding"
-        transitionDuration="fast"
-        transitionTimingFunction="ease-out"
+        w="100%"
+        position="fixed"
+        bottom="0"
         {...props}
       >
         <HStack

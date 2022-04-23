@@ -7,8 +7,8 @@ import SocialButtons from "./SocialButtons";
 
 function Footer(props) {
   return (
-    <Container pt="3rem" pb="3rem">
-      <VStack spacing="2rem" {...props}>
+    <Container pt="3rem" pb="3rem" {...props}>
+      <VStack spacing="2rem" pb={{ base: "4rem", sm: 0 }}>
         <Hide above="md">
           <HStack spacing="1.5rem">
             <SocialButtons />
