@@ -57,6 +57,16 @@ const Button = {
         bg: transparentize("orange.400", 0.55)(theme),
       },
     }),
+    "ghost-brand": (props) => ({
+      color: "gray.400",
+      _hover: {
+        bg: mode("blackAlpha.50", "whiteAlpha.50")(props),
+      },
+      _active: {
+        color: "orange.400",
+        bg: mode("blackAlpha.100", "whiteAlpha.100")(props),
+      },
+    }),
     "ghost-instagram": (props) => ({
       color: "gray.400",
       _hover: {
