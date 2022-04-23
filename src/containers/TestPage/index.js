@@ -14,7 +14,6 @@ import SlidingBanner from "components/SlidingBanner";
 function TestPage() {
   return (
     <>
-      <NavBar />
       <ComponentTestBlock />
 
       <Container>

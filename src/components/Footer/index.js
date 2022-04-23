@@ -5,10 +5,10 @@ import { Container, HStack, Hide, Show, Text, VStack } from "@chakra-ui/react";
 import ColorModeSwitch from "components/ColorModeSwitch";
 import SocialButtons from "./SocialButtons";
 
-function Footer() {
+function Footer(props) {
   return (
     <Container pt="3rem" pb="3rem">
-      <VStack spacing="2rem">
+      <VStack spacing="2rem" {...props}>
         <Hide above="md">
           <HStack spacing="1.5rem">
             <SocialButtons />
