@@ -6,7 +6,7 @@ import Banner from "components/Banner";
 import CategoriesBlock from "components/CategoriesBlock";
 import ComponentTestBlock from "components/ComponentTestBlock";
 import HeadingBlock from "components/HeadingBlock";
-import NavBar from "components/NavBar";
+import PageHeader from "components/PageHeader";
 import PopularBlock from "components/PopularBlock";
 import RoomsBlock from "components/RoomsBlock";
 import SlidingBanner from "components/SlidingBanner";
@@ -48,6 +48,13 @@ function TestPage() {
       <RoomsBlock />
 
       <PopularBlock />
+
+      <PageHeader heading="Test heading" description="Test description" />
+
+      <PageHeader
+        heading="Chairs"
+        image="assets/categories/category-chairs.jpg"
+      />
     </>
   );
 }
