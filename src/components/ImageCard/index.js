@@ -20,6 +20,7 @@ function ImageCard({
       position="relative"
       w="100%"
       draggable={false}
+      borderRadius="1rem"
       onClick={(e) => {
         // Disable onClick while dragging
         if (isDragging) {

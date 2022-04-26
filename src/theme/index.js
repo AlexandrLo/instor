@@ -55,6 +55,7 @@ const theme = extendTheme({
   },
   shadows: {
     outline: "0 0 0 3px rgba(226, 149, 71, 0.5)",
+    "outline-inset": "inset 0 0 0 3px rgba(226, 149, 71, 0.5)",
   },
   sizes: {
     container: {

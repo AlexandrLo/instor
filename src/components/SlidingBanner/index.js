@@ -2,7 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
-import { Container, Flex, HStack, Image, Link, Show } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  HStack,
+  Image,
+  Link,
+  Show,
+} from "@chakra-ui/react";
 import { animate, motion, useMotionValue } from "framer-motion";
 
 import Arrow from "./Arrow";
@@ -74,11 +82,10 @@ function SlidingBanner(props) {
 
   return (
     <Container>
-      <Flex
-        w="100%"
+      <Box
         h={{ base: "150px", md: "350px" }}
         position="relative"
-        overflow="clip"
+        overflowX="clip"
         borderRadius="1rem"
         ref={ref}
         {...props}
@@ -86,8 +93,6 @@ function SlidingBanner(props) {
         {/* Carousel */}
         <motion.div
           style={{
-            width: "100%",
-            height: "100%",
             x,
           }}
           drag="x"
@@ -99,13 +104,14 @@ function SlidingBanner(props) {
           <HStack spacing="0" draggable={false}>
             {banners.map((slide, index) => (
               <Link
-                variant="box"
-                draggable={false}
                 as={NavLink}
                 to={slide.to}
+                variant="box-inset"
                 position="relative"
                 w="100%"
-                flex="none"
+                draggable={false}
+                borderRadius="1rem"
+                flex="0 0 auto"
                 key={`slide-${index}`}
                 onClick={(e) => {
                   // Disable onClick while dragging
@@ -125,6 +131,8 @@ function SlidingBanner(props) {
                   src={slide.image}
                   alt="Banner image"
                   fit="cover"
+                  position="relative"
+                  zIndex={-1}
                   h={{ base: "150px", md: "350px" }}
                   w="100%"
                   borderRadius="1rem"
@@ -145,7 +153,7 @@ function SlidingBanner(props) {
           current={currentPage}
           navigate={setCurrentPage}
         />
-      </Flex>
+      </Box>
     </Container>
   );
 }

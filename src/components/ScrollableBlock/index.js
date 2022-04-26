@@ -35,7 +35,7 @@ function ScrollableBlock({ children, ...props }) {
   return (
     <Measure bounds scroll onResize={onResize}>
       {({ measureRef }) => (
-        <Box position="relative" overflowX="hidden" ref={measureRef} {...props}>
+        <Box position="relative" overflowX="clip" ref={measureRef} {...props}>
           {/* Constraining div */}
           <motion.div ref={constraintRef} style={constraintStyle} />
           {/* Slider */}

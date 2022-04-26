@@ -16,12 +16,13 @@ function Banner(props) {
   return (
     <Container>
       <Link
-        variant="box"
+        variant="box-inset"
         as={NavLink}
         to={bannerData.to}
         w="100%"
         display="block"
         position="relative"
+        borderRadius="1rem"
         {...props}
       >
         <Image
@@ -30,6 +31,8 @@ function Banner(props) {
           h={{ base: "120px", md: "250px" }}
           w="100%"
           fit="cover"
+          position="relative"
+          zIndex={-1}
           borderRadius="1rem"
         />
         <BannerOverlay heading={bannerData.heading} lead={bannerData.lead} />
