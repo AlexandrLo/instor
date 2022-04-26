@@ -9,7 +9,7 @@ import NavBar from "components/NavBar";
 
 function PageLayout({ children, ...props }) {
   return (
-    <Box position="relative" h="100vh" w="100vw" {...props}>
+    <Box position="relative" h="100vh" {...props}>
       <NavBar />
       {children}
       <Footer />

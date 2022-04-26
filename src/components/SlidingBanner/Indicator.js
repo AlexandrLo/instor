@@ -9,6 +9,7 @@ function Indicator({ length, current, navigate, ...props }) {
       justifyContent="center"
       pos="absolute"
       bottom={{ base: "0.5rem", md: "1rem" }}
+      spacing={{ base: "0.5rem", md: "1rem" }}
       w="100%"
       {...props}
     >
@@ -17,7 +18,7 @@ function Indicator({ length, current, navigate, ...props }) {
         .map((_, index) => (
           <Button
             key={`dot-${index}`}
-            boxSize="0.5rem"
+            boxSize={{ base: "0.5rem", md: "0.75rem" }}
             px="0"
             minW="0"
             variant="blur"

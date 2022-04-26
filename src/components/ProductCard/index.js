@@ -60,7 +60,12 @@ function ProductCard({ productData, ...props }) {
         p={["1rem", "1rem", "1.5rem"]}
       >
         <VStack alignItems="stretch" spacing="0" flexGrow="1" w="0%">
-          <Text color="gray.400" fontSize="12px" fontWeight="600">
+          <Text
+            color="gray.400"
+            fontSize="12px"
+            fontWeight="600"
+            textTransform="uppercase"
+          >
             {productData.category}
           </Text>
           <Text
