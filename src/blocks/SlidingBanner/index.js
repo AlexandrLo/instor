@@ -2,15 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
-import {
-  Box,
-  Container,
-  Flex,
-  HStack,
-  Image,
-  Link,
-  Show,
-} from "@chakra-ui/react";
+import { Box, Container, HStack, Image, Link, Show } from "@chakra-ui/react";
 import { animate, motion, useMotionValue } from "framer-motion";
 
 import Arrow from "./Arrow";
@@ -43,7 +35,7 @@ const banners = [
   },
 ];
 
-function SlidingBanner(props) {
+function SlidingBanner() {
   const [currentPage, setCurrentPage] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const ref = useRef();
@@ -88,7 +80,6 @@ function SlidingBanner(props) {
         overflowX="clip"
         borderRadius="1rem"
         ref={ref}
-        {...props}
       >
         {/* Carousel */}
         <motion.div

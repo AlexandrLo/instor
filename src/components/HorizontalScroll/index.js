@@ -6,7 +6,7 @@ import { useDebouncedCallback } from "use-debounce";
 import { Box, HStack } from "@chakra-ui/react";
 import { motion, useMotionValue } from "framer-motion";
 
-function ScrollableBlock({ children, ...props }) {
+function HorizontalScroll({ children, ...props }) {
   // const containerRef = useRef(null);
   const x = useMotionValue(0);
   const constraintRef = useRef(null);
@@ -69,8 +69,8 @@ function ScrollableBlock({ children, ...props }) {
   );
 }
 
-ScrollableBlock.propTypes = {
+HorizontalScroll.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default ScrollableBlock;
+export default HorizontalScroll;

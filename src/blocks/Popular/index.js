@@ -2,10 +2,10 @@ import React from "react";
 
 import { SimpleGrid, useBreakpointValue } from "@chakra-ui/react";
 
-import HeadingBlock from "components/HeadingBlock";
 import ProductCard from "components/ProductCard";
+import SectionWrapper from "components/SectionWrapper";
 
-const popularProducts = [
+const popularProductsData = [
   {
     id: 1,
     name: "Landskrona",
@@ -80,7 +80,7 @@ const popularProducts = [
   },
 ];
 
-function PopularBlock() {
+function Popular() {
   const productCount = useBreakpointValue({
     base: 4,
     xs: 4,
@@ -91,7 +91,7 @@ function PopularBlock() {
   });
 
   return (
-    <HeadingBlock
+    <SectionWrapper
       heading={{
         text: "Popular",
         to: "/popular",
@@ -109,15 +109,15 @@ function PopularBlock() {
         spacing="1rem"
         w="100%"
       >
-        {popularProducts.slice(0, productCount).map((product) => (
+        {popularProductsData.slice(0, productCount).map((product) => (
           <ProductCard
             key={`product-card-${product.id}`}
             productData={product}
           />
         ))}
       </SimpleGrid>
-    </HeadingBlock>
+    </SectionWrapper>
   );
 }
 
-export default PopularBlock;
+export default Popular;

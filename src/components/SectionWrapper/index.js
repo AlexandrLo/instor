@@ -13,7 +13,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-function HeadingBlock({
+function SectionWrapper({
   heading,
   contentProps = {},
   headingProps = {},
@@ -57,7 +57,7 @@ function HeadingBlock({
   );
 }
 
-HeadingBlock.propTypes = {
+SectionWrapper.propTypes = {
   heading: PropTypes.shape({
     text: PropTypes.string,
     description: PropTypes.string,
@@ -68,4 +68,4 @@ HeadingBlock.propTypes = {
   children: PropTypes.node,
 };
 
-export default HeadingBlock;
+export default SectionWrapper;

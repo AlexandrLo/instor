@@ -1,21 +1,21 @@
 import React from "react";
 
-import Banner from "components/Banner";
-import CategoriesBlock from "components/CategoriesBlock";
-import Hero from "components/Hero";
-import PopularBlock from "components/PopularBlock";
-import RoomsBlock from "components/RoomsBlock";
-import SlidingBanner from "components/SlidingBanner";
+import Banner from "blocks/Banner";
+import Categories from "blocks/Categories";
+import Hero from "blocks/Hero";
+import Popular from "blocks/Popular";
+import Rooms from "blocks/Rooms";
+import SlidingBanner from "blocks/SlidingBanner";
 
 function HomePage() {
   return (
     <>
       <Hero />
       <SlidingBanner />
-      <CategoriesBlock />
-      <PopularBlock />
+      <Categories />
+      <Popular />
       <Banner />
-      <RoomsBlock />
+      <Rooms />
     </>
   );
 }

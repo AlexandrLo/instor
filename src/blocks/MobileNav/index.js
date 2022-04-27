@@ -9,7 +9,7 @@ import {
 
 import MobileNavLink from "./MobileNavLink";
 
-function MobileNav(props) {
+function MobileNav() {
   const borderColor = useColorModeValue("blackAlpha.50", "whiteAlpha.50");
   const bgColor = useColorModeValue("white", "gray.800");
 
@@ -22,7 +22,6 @@ function MobileNav(props) {
         w="100%"
         position="fixed"
         bottom="0"
-        {...props}
       >
         <HStack
           w="100%"

@@ -12,7 +12,7 @@ const bannerData = {
   to: "/",
 };
 
-function Banner(props) {
+function Banner() {
   return (
     <Container>
       <Link
@@ -23,7 +23,6 @@ function Banner(props) {
         display="block"
         position="relative"
         borderRadius="1rem"
-        {...props}
       >
         <Image
           src={bannerData.image}

@@ -1,10 +1,10 @@
 import React from "react";
 
-import HeadingBlock from "components/HeadingBlock";
+import HorizontalScroll from "components/HorizontalScroll";
 import RoomCard from "components/RoomCard";
-import ScrollableBlock from "components/ScrollableBlock";
+import SectionWrapper from "components/SectionWrapper";
 
-const rooms = [
+const roomsData = [
   {
     name: "Living Room",
     image: "assets/rooms/room-livingroom.jpg",
@@ -27,17 +27,17 @@ const rooms = [
   },
 ];
 
-function RoomsBlock() {
+function Rooms() {
   return (
-    <HeadingBlock
+    <SectionWrapper
       heading={{
         text: "Rooms",
         description: "Furniture for every corners in your home",
       }}
       contentProps={{ pl: "0", pr: "0" }}
     >
-      <ScrollableBlock>
-        {rooms.map((room) => (
+      <HorizontalScroll>
+        {roomsData.map((room) => (
           <RoomCard
             image={room.image}
             name={room.name}
@@ -45,9 +45,9 @@ function RoomsBlock() {
             key={`room-card-${room.name.toLowerCase()}`}
           />
         ))}
-      </ScrollableBlock>
-    </HeadingBlock>
+      </HorizontalScroll>
+    </SectionWrapper>
   );
 }
 
-export default RoomsBlock;
+export default Rooms;

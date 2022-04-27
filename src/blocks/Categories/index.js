@@ -1,10 +1,10 @@
 import React from "react";
 
 import CategoryCard from "components/CategoryCard";
-import HeadingBlock from "components/HeadingBlock";
-import ScrollableBlock from "components/ScrollableBlock";
+import HorizontalScroll from "components/HorizontalScroll";
+import SectionWrapper from "components/SectionWrapper";
 
-const categories = [
+const categoriesData = [
   {
     name: "Chairs",
     image: "assets/categories/category-chairs.jpg",
@@ -22,14 +22,14 @@ const categories = [
   },
 ];
 
-function CategoriesBlock() {
+function Categories() {
   return (
-    <HeadingBlock
+    <SectionWrapper
       heading={{ text: "Categories" }}
       contentProps={{ pl: "0", pr: "0" }}
     >
-      <ScrollableBlock>
-        {categories.map((category) => (
+      <HorizontalScroll>
+        {categoriesData.map((category) => (
           <CategoryCard
             image={category.image}
             name={category.name}
@@ -37,9 +37,9 @@ function CategoriesBlock() {
             key={`category-card-${category.name.toLowerCase()}`}
           />
         ))}
-      </ScrollableBlock>
-    </HeadingBlock>
+      </HorizontalScroll>
+    </SectionWrapper>
   );
 }
 
-export default CategoriesBlock;
+export default Categories;
