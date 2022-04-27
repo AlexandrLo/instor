@@ -5,7 +5,8 @@
     "start": "webpack serve",
     "build": "webpack",
     "storybook": "start-storybook -p 6006 --no-open",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint --ext .jsx,.js src/"
   },
   "dependencies": {
     "@chakra-ui/css-reset": "^1.1.3",
