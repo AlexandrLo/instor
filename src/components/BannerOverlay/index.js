@@ -4,7 +4,7 @@ import { ArrowRightFilled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
 import { HStack, Heading, Text, VStack } from "@chakra-ui/react";
 
-function BannerOverlay({ heading = "", lead = "", ...props }) {
+function BannerOverlay({ heading = "", text = "", showCTA = true, ...props }) {
   return (
     <VStack
       position="absolute"
@@ -22,19 +22,22 @@ function BannerOverlay({ heading = "", lead = "", ...props }) {
         {heading}
       </Heading>
       <Text fontWeight="600" fontSize={{ base: "14px", md: "16px" }}>
-        {lead}
+        {text}
       </Text>
-      <HStack fontSize={{ base: "14px", md: "16px" }}>
-        <Text>Learn more</Text>
-        <ArrowRightFilled />
-      </HStack>
+      {showCTA && (
+        <HStack fontSize={{ base: "14px", md: "16px" }}>
+          <Text>Learn more</Text>
+          <ArrowRightFilled />
+        </HStack>
+      )}
     </VStack>
   );
 }
 
 BannerOverlay.propTypes = {
   heading: PropTypes.string,
-  lead: PropTypes.string,
+  text: PropTypes.string,
+  showCTA: PropTypes.bool,
 };
 
 export default BannerOverlay;
