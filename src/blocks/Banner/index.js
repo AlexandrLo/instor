@@ -8,7 +8,7 @@ import BannerOverlay from "components/BannerOverlay";
 const bannerData = {
   image: "assets/banner/banner-2.jpg",
   heading: "Sale",
-  lead: "All chairs up to 50% off",
+  text: "All chairs up to 50% off",
   to: "/",
 };
 
@@ -34,7 +34,7 @@ function Banner() {
           zIndex={-1}
           borderRadius="1rem"
         />
-        <BannerOverlay heading={bannerData.heading} lead={bannerData.lead} />
+        <BannerOverlay heading={bannerData.heading} text={bannerData.text} />
       </Link>
     </Container>
   );
