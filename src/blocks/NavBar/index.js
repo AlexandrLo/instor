@@ -22,38 +22,41 @@ function NavBar() {
 
   return (
     <Container>
-      <HStack spacing="1rem">
-        <Box w="100%">
+      <HStack spacing="2rem" justifyContent="space-between">
+        <Box>
           <Link as={NavLink} to="/">
             {colorMode === "light" ? <LogoDark /> : <LogoLight />}
           </Link>
         </Box>
-        <Show above="lg">
-          <Box minW="450px">
+        <Hide below="md">
+          <Box w="100%">
             <SearchInput />
           </Box>
-        </Show>
+        </Hide>
 
         <Show above="sm">
-          <HStack spacing="0.5rem" w="100%" justifyContent="end">
+          <HStack spacing="0.5rem" justifyContent="end">
             <Button
               leftIcon={<CartFilled fontSize="1.5rem" />}
-              variant="brand"
+              variant="alpha"
+              colorScheme="orange"
               as={NavLink}
               to="/cart"
             >
               Cart
             </Button>
-            <Button variant="primary">Log In/Sign Up</Button>
+            <Button variant="solid">Log In/Sign Up</Button>
           </HStack>
         </Show>
       </HStack>
 
-      <Hide above="lg">
-        <Box pt="2rem">
-          <SearchInput />
-        </Box>
-      </Hide>
+      <Show below="md">
+        <Show above="sm">
+          <Box pt="2rem">
+            <SearchInput />
+          </Box>
+        </Show>
+      </Show>
     </Container>
   );
 }
