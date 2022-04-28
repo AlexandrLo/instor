@@ -1,25 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { SearchFilled } from "@fluentui/react-icons";
+import { ArrowRightFilled, SearchFilled } from "@fluentui/react-icons";
 import {
+  Button,
   Input,
   InputGroup,
   InputLeftElement,
-  useColorMode,
+  InputRightElement,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 function SearchInput() {
-  const { colorMode } = useColorMode();
+  const iconColor = useColorModeValue("blackAlpha.500", "whiteAlpha.500");
+  const [query, setQuery] = useState("");
 
   return (
     <InputGroup>
-      <InputLeftElement
-        pointerEvents="none"
-        color={colorMode === "light" ? "gray.400" : "whiteAlpha.400"}
-      >
+      <InputLeftElement pointerEvents="none" color={iconColor}>
         <SearchFilled fontSize="1.5rem" />
       </InputLeftElement>
-      <Input variant="brand" placeholder="Search" />
+      <Input
+        placeholder="What are you looking for?"
+        value={query}
+        onChange={(e) => {
+          setQuery(e.target.value);
+        }}
+      />
+      {query && (
+        <InputRightElement color={iconColor}>
+          <Button size="sm">
+            <ArrowRightFilled fontSize="1.5rem" />
+          </Button>
+        </InputRightElement>
+      )}
     </InputGroup>
   );
 }
