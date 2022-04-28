@@ -33,7 +33,7 @@ function PageHeader({ heading = "Heading", description, image, ...props }) {
       >
         <HStack spacing={{ base: "0.75rem", md: "1.5rem" }}>
           <Button
-            variant={image ? "blur" : "secondary"}
+            variant={image ? "blur" : "alpha"}
             onClick={() => navigate(-1)}
           >
             <ArrowLeftFilled fontSize="24px" />
