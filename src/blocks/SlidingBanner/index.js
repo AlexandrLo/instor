@@ -91,7 +91,7 @@ function SlidingBanner() {
           dragTransition={transition}
           onDragEnd={dragEndHandler}
         >
-          <HStack spacing="0" draggable={false}>
+          <HStack spacing="0">
             {banners.map((slide, index) => (
               <Link
                 as={NavLink}
@@ -99,7 +99,6 @@ function SlidingBanner() {
                 variant="box-inset"
                 position="relative"
                 w="100%"
-                draggable={false}
                 borderRadius="1rem"
                 flex="0 0 auto"
                 key={`slide-${index}`}
@@ -117,7 +116,6 @@ function SlidingBanner() {
                 }}
               >
                 <Image
-                  draggable={false}
                   src={slide.image}
                   alt="Banner image"
                   fit="cover"
