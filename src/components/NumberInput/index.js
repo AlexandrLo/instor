@@ -20,19 +20,28 @@ function NumberInput({ size, ...props }) {
 
   return (
     <HStack spacing={{ base: "0.25rem", md: "0.5rem" }}>
-      <Button variant="brand" size={size ? size : "md"} {...dec}>
+      <Button
+        variant="alpha"
+        colorScheme="orange"
+        size={size ? size : "md"}
+        {...dec}
+      >
         <SubtractFilled fontSize="1.5rem" />
       </Button>
       <Input
         type="number"
-        variant="brand"
         px="0"
         textAlign="center"
         size={size ? size : "md"}
         {...props}
         {...input}
       />
-      <Button variant="brand" size={size ? size : "md"} {...inc}>
+      <Button
+        variant="alpha"
+        colorScheme="orange"
+        size={size ? size : "md"}
+        {...inc}
+      >
         <AddFilled fontSize="1.5rem" />
       </Button>
     </HStack>
