@@ -1,23 +1,45 @@
-import defaultTheme from "@chakra-ui/theme";
 import { mode, transparentize } from "@chakra-ui/theme-tools";
 
 const Input = {
   variants: {
-    brand: (props) => ({
-      ...defaultTheme.components.Input.variants.outline(props),
-      field: {
-        ...defaultTheme.components.Input.variants.outline(props).field,
-        border: "2px solid",
-        borderColor: mode("blackAlpha.50", "whiteAlpha.50")(props),
-        _hover: {
-          borderColor: transparentize("orange.400", 0.4)(props.theme),
+    outline: (props) => {
+      const { colorScheme: c, theme } = props;
+      return {
+        field: {
+          border: "2px solid",
+          borderColor: mode("blackAlpha.300", "whiteAlpha.300")(props),
+          bg: "inherit",
+          _placeholder: {
+            color: mode("blackAlpha.500", "whiteAlpha.500")(props),
+          },
+          _hover: {
+            borderColor: transparentize(`${c}.400`, 0.4)(theme),
+          },
+          _readOnly: {
+            boxShadow: "none !important",
+            userSelect: "all",
+          },
+          _disabled: {
+            opacity: 0.4,
+            cursor: "not-allowed",
+          },
+          _invalid: {
+            borderColor: "red.400",
+            boxShadow: "none",
+          },
+          _focus: {
+            zIndex: 1,
+            borderColor: `${c}.400`,
+            boxShadow: "none",
+          },
         },
-        _focus: {
-          zIndex: 1,
-          borderColor: "orange.400",
+        addon: {
+          border: "2px solid",
+          borderColor: mode("blackAlpha.300", "whiteAlpha.300")(props),
+          bg: "inherit",
         },
-      },
-    }),
+      };
+    },
   },
   sizes: {
     sm: {
@@ -36,6 +58,11 @@ const Input = {
         borderRadius: "md",
       },
     },
+  },
+  defaultProps: {
+    size: "md",
+    variant: "outline",
+    colorScheme: "orange",
   },
 };
 
