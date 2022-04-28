@@ -5,11 +5,12 @@ import {
   CartFilled,
   HomeFilled,
   PersonCircleFilled,
+  SearchFilled,
 } from "@fluentui/react-icons";
 
-import MobileNavLink from "./MobileNavLink";
+import TabBarLink from "./TabBarLink";
 
-function MobileNav() {
+function TabBar() {
   const borderColor = useColorModeValue("blackAlpha.50", "whiteAlpha.50");
   const bgColor = useColorModeValue("white", "gray.800");
 
@@ -28,24 +29,27 @@ function MobileNav() {
           h="100%"
           spacing="1rem"
           justifyContent="space-between"
-          maxW="15.5rem"
+          maxW="20rem"
           mx="auto"
           py="1rem"
           px="1rem"
         >
-          <MobileNavLink to="/">
-            <HomeFilled fontSize="24px" />
-          </MobileNavLink>
-          <MobileNavLink to="/cart">
-            <CartFilled fontSize="24px" />
-          </MobileNavLink>
-          <MobileNavLink to="/profile">
-            <PersonCircleFilled fontSize="24px" />
-          </MobileNavLink>
+          <TabBarLink to="/">
+            <HomeFilled fontSize="1.5rem" />
+          </TabBarLink>
+          <TabBarLink to="/search">
+            <SearchFilled fontSize="1.5rem" />
+          </TabBarLink>
+          <TabBarLink to="/cart">
+            <CartFilled fontSize="1.5rem" />
+          </TabBarLink>
+          <TabBarLink to="/profile">
+            <PersonCircleFilled fontSize="1.5rem" />
+          </TabBarLink>
         </HStack>
       </Box>
     </Hide>
   );
 }
 
-export default MobileNav;
+export default TabBar;

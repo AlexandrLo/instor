@@ -6,8 +6,8 @@ import { Route, Routes } from "react-router-dom";
 import CartPage from "containers/CartPage";
 import Footer from "blocks/Footer";
 import HomePage from "containers/HomePage";
-import MobileNav from "blocks/MobileNav";
 import NavBar from "blocks/NavBar";
+import TabBar from "blocks/TabBar";
 
 export default function App() {
   return (
@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/cart" element={<CartPage />} />
       </Routes>
       <Footer />
-      <MobileNav />
+      <TabBar />
     </Box>
   );
 }
