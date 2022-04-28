@@ -9,29 +9,27 @@ function SocialButtons() {
       <Button
         as={Link}
         href="https://instagram.com/"
-        variant="ghost-instagram"
+        variant="ghost"
+        colorScheme="instagram"
         size="sm"
-        borderRadius="full"
       >
         <FaInstagram size={24} />
       </Button>
       <Button
         as={Link}
         href="https://youtube.com/"
-        variant="ghost-youtube"
+        variant="ghost"
+        colorScheme="youtube"
         size="sm"
-        colorScheme="gray"
-        borderRadius="full"
       >
         <FaYoutube size={24} />
       </Button>
       <Button
         as={Link}
         href="https://pinterest.com/"
-        variant="ghost-pinterest"
+        variant="ghost"
+        colorScheme="pinterest"
         size="sm"
-        colorScheme="gray"
-        borderRadius="full"
       >
         <FaPinterest size={24} />
       </Button>
