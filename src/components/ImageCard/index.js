@@ -19,17 +19,16 @@ function ImageCard({
       to={to}
       position="relative"
       w="100%"
-      draggable={false}
       borderRadius="1rem"
       onClick={(e) => {
-        // Disable onClick while dragging
         if (isDragging) {
+          // Disable onClick while dragging
           e.stopPropagation();
           e.preventDefault();
         }
       }}
       onDragStart={(e) => {
-        // Hack for firefox
+        // Prevent user client link dragging
         e.stopPropagation();
         e.preventDefault();
       }}
@@ -41,12 +40,12 @@ function ImageCard({
         alt="Card image"
         fit="cover"
         borderRadius="1rem"
-        draggable={false}
       />
       <Text
         position="absolute"
         fontWeight="600"
-        draggable={false}
+        left={{ base: "1rem", md: "1.5rem" }}
+        top={{ base: "1rem", md: "1.5rem" }}
         {...textProps}
       >
         {name}
