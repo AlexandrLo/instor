@@ -9,6 +9,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@chakra-ui/storybook-addon",
+    "storybook-dark-mode",
   ],
   framework: "@storybook/react",
   core: {

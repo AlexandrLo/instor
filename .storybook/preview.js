@@ -13,6 +13,7 @@ export const parameters = {
   chakra: {
     theme,
   },
+  layout: "fullscreen",
   viewport: {
     viewports: INITIAL_VIEWPORTS,
   },
