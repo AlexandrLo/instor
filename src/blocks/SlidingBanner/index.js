@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { NavLink } from "react-router-dom";
-import PropTypes from "prop-types";
 import { Box, Container, HStack, Image, Link, Show } from "@chakra-ui/react";
 import { animate, motion, useMotionValue } from "framer-motion";
 
@@ -18,19 +17,19 @@ const banners = [
   {
     image: "assets/banner/banner-1.jpg",
     heading: "30% off",
-    lead: "High quality sofa",
+    text: "High quality sofa",
     to: "/",
   },
   {
     image: "assets/banner/banner-2.jpg",
     heading: "Sale",
-    lead: "All chairs up to 50% off",
+    text: "All chairs up to 50% off",
     to: "/",
   },
   {
     image: "assets/banner/banner-1.jpg",
     heading: "Sale",
-    lead: "All chairs up to 50% off",
+    text: "All chairs up to 50% off",
     to: "/",
   },
 ];
@@ -128,7 +127,7 @@ function SlidingBanner() {
                   w="100%"
                   borderRadius="1rem"
                 />
-                <BannerOverlay heading={slide.heading} lead={slide.lead} />
+                <BannerOverlay heading={slide.heading} text={slide.text} />
               </Link>
             ))}
           </HStack>
@@ -148,16 +147,5 @@ function SlidingBanner() {
     </Container>
   );
 }
-
-SlidingBanner.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.string,
-      heading: PropTypes.string,
-      lead: PropTypes.string,
-      to: PropTypes.string,
-    }),
-  ),
-};
 
 export default SlidingBanner;

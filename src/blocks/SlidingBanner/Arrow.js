@@ -3,8 +3,8 @@ import React from "react";
 import { Button } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
-import ArrowLeft from "assets/arrow-left.svg";
-import ArrowRight from "assets/arrow-right.svg";
+import { ChevronLeftIcon } from "@chakra-ui/icons";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 function Arrow({ direction = "left", ...props }) {
   return (
@@ -13,16 +13,19 @@ function Arrow({ direction = "left", ...props }) {
       transform="auto"
       translateY="-50%"
       mx={{ base: "0.5rem", md: "1rem" }}
-      size="sm"
+      px="0"
+      minW="0"
+      h="auto"
       position="absolute"
-      variant="ghost"
-      colorScheme="blackAlpha"
+      variant="blur"
+      color="black"
+      fontSize="2rem"
       {...(direction === "left" && { left: "0" })}
       {...(direction === "right" && { right: "0" })}
       {...props}
     >
-      {direction === "left" && <ArrowLeft />}
-      {direction === "right" && <ArrowRight />}
+      {direction === "left" && <ChevronLeftIcon />}
+      {direction === "right" && <ChevronRightIcon />}
     </Button>
   );
 }
