@@ -10,6 +10,7 @@ import Heading from "theme/components/Heading";
 import Input from "theme/components/Input";
 import Link from "theme/components/Link";
 import Switch from "theme/components/Switch";
+import Tabs from "theme/components/Tabs";
 import Text from "theme/components/Text";
 import colors from "theme/colors";
 
@@ -23,6 +24,7 @@ const theme = extendTheme({
     Input,
     Link,
     Switch,
+    Tabs,
     Text,
   },
   config: {
