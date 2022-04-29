@@ -25,7 +25,7 @@ const Link = {
       outline: "none",
       color: "inherit",
       _hover: {
-        boxShadow: "outline",
+        transform: "translateY(-0.25rem)",
         textDecoration: "none",
       },
       _active: {
@@ -44,7 +44,7 @@ const Link = {
       outline: "none",
       color: "inherit",
       _hover: {
-        boxShadow: "outline-inset",
+        transform: "translateY(-0.25rem)",
         textDecoration: "none",
       },
       _active: {
