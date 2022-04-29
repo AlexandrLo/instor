@@ -1,5 +1,21 @@
 const Link = {
   variants: {
+    muted: {
+      fontSize: "14px",
+      color: "gray.400",
+      cursor: "pointer",
+      textDecoration: "none",
+      outline: "none",
+      _hover: {
+        textDecoration: "underline",
+      },
+      _active: {
+        opacity: 0.85,
+      },
+      _focus: {
+        boxShadow: "outline",
+      },
+    },
     box: {
       transitionProperty: "common",
       transitionDuration: "fast",
