@@ -4,81 +4,7 @@ import { SimpleGrid, useBreakpointValue } from "@chakra-ui/react";
 
 import ProductCard from "components/ProductCard";
 import SectionWrapper from "components/SectionWrapper";
-
-const popularProductsData = [
-  {
-    id: 1,
-    name: "Landskrona",
-    category: "Sofa",
-    description: "Test",
-    price: 549,
-    discount: 499,
-    image: "assets/products/product-image-1.jpg",
-  },
-  {
-    id: 2,
-    name: "Landskrona",
-    category: "Sofa",
-    description: "Test",
-    price: 549,
-    discount: 499,
-    image: "assets/products/product-image-1.jpg",
-  },
-  {
-    id: 3,
-    name: "Landskrona",
-    category: "Sofa",
-    description: "Test",
-    price: 549,
-    discount: 499,
-    image: "assets/products/product-image-1.jpg",
-  },
-  {
-    id: 4,
-    name: "Landskrona",
-    category: "Sofa",
-    description: "Test",
-    price: 549,
-    discount: 499,
-    image: "assets/products/product-image-1.jpg",
-  },
-  {
-    id: 5,
-    name: "Landskrona",
-    category: "Sofa",
-    description: "Test",
-    price: 549,
-    discount: 499,
-    image: "assets/products/product-image-1.jpg",
-  },
-  {
-    id: 6,
-    name: "Landskrona",
-    category: "Sofa",
-    description: "Test",
-    price: 549,
-    discount: 499,
-    image: "assets/products/product-image-1.jpg",
-  },
-  {
-    id: 7,
-    name: "Landskrona",
-    category: "Sofa",
-    description: "Test",
-    price: 549,
-    discount: 499,
-    image: "assets/products/product-image-1.jpg",
-  },
-  {
-    id: 8,
-    name: "Landskrona",
-    category: "Sofa",
-    description: "Test",
-    price: 549,
-    discount: 499,
-    image: "assets/products/product-image-1.jpg",
-  },
-];
+import productsData from "assets/json/products.json";
 
 function Popular() {
   const productCount = useBreakpointValue({
@@ -89,6 +15,12 @@ function Popular() {
     lg: 6,
     xl: 8,
   });
+
+  const popularProductsData = productsData
+    .sort(function (a, b) {
+      return b.popularity - a.popularity;
+    })
+    .slice(0, productCount);
 
   return (
     <SectionWrapper
@@ -109,7 +41,7 @@ function Popular() {
         spacing="1rem"
         w="100%"
       >
-        {popularProductsData.slice(0, productCount).map((product) => (
+        {popularProductsData.map((product) => (
           <ProductCard
             key={`product-card-${product.id}`}
             productData={product}

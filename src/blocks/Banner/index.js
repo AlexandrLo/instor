@@ -4,15 +4,10 @@ import { NavLink } from "react-router-dom";
 import { Container, Image, Link } from "@chakra-ui/react";
 
 import BannerOverlay from "components/BannerOverlay";
-
-const bannerData = {
-  image: "assets/banner/banner-2.jpg",
-  heading: "Sale",
-  text: "All chairs up to 50% off",
-  to: "/",
-};
+import bannersData from "assets/json/banners.json";
 
 function Banner() {
+  const bannerData = bannersData[1];
   return (
     <Container>
       <Link

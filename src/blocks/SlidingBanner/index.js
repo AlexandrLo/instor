@@ -7,32 +7,12 @@ import { animate, motion, useMotionValue } from "framer-motion";
 import Arrow from "./Arrow";
 import BannerOverlay from "components/BannerOverlay";
 import Indicator from "./Indicator";
+import bannersData from "assets/json/banners.json";
 
 const transition = {
   type: "spring",
   bounce: 0,
 };
-
-const banners = [
-  {
-    image: "assets/banner/banner-1.jpg",
-    heading: "30% off",
-    text: "High quality sofa",
-    to: "/",
-  },
-  {
-    image: "assets/banner/banner-2.jpg",
-    heading: "Sale",
-    text: "All chairs up to 50% off",
-    to: "/",
-  },
-  {
-    image: "assets/banner/banner-1.jpg",
-    heading: "Sale",
-    text: "All chairs up to 50% off",
-    to: "/",
-  },
-];
 
 function SlidingBanner() {
   const [currentPage, setCurrentPage] = useState(0);
@@ -41,10 +21,10 @@ function SlidingBanner() {
   const x = useMotionValue(0);
 
   const prevSlide = () =>
-    setCurrentPage((s) => (s === 0 ? banners.length - 1 : s - 1));
+    setCurrentPage((s) => (s === 0 ? bannersData.length - 1 : s - 1));
 
   const nextSlide = () =>
-    setCurrentPage((s) => (s === banners.length - 1 ? 0 : s + 1));
+    setCurrentPage((s) => (s === bannersData.length - 1 ? 0 : s + 1));
 
   const animateX = () =>
     animate(x, -currentPage * (ref.current?.clientWidth || 0), transition);
@@ -55,7 +35,10 @@ function SlidingBanner() {
 
     if (offset.x > width / 3 && currentPage !== 0) {
       prevSlide();
-    } else if (offset.x < -width / 3 && currentPage !== banners.length - 1) {
+    } else if (
+      offset.x < -width / 3 &&
+      currentPage !== bannersData.length - 1
+    ) {
       nextSlide();
     } else {
       animateX();
@@ -92,7 +75,7 @@ function SlidingBanner() {
           onDragEnd={dragEndHandler}
         >
           <HStack spacing="0">
-            {banners.map((slide, index) => (
+            {bannersData.map((slide, index) => (
               <Link
                 as={NavLink}
                 to={slide.to}
@@ -137,7 +120,7 @@ function SlidingBanner() {
         </Show>
 
         <Indicator
-          length={banners.length}
+          length={bannersData.length}
           current={currentPage}
           navigate={setCurrentPage}
         />

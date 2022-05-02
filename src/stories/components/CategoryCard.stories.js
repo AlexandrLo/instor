@@ -19,7 +19,7 @@ export default {
   ],
   args: {
     name: "Chairs",
-    image: "assets/categories/category-chairs.jpg",
+    image: "assets/images/categories/category-chairs.jpg",
     to: "/",
   },
 };

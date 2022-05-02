@@ -19,7 +19,7 @@ export default {
   ],
   args: {
     name: "Name",
-    image: "assets/rooms/room-bedroom.jpg",
+    image: "assets/images/rooms/room-bedroom.jpg",
     to: "/",
   },
 };

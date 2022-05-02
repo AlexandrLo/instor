@@ -3,24 +3,7 @@ import React from "react";
 import CategoryCard from "components/CategoryCard";
 import HorizontalScroll from "components/HorizontalScroll";
 import SectionWrapper from "components/SectionWrapper";
-
-const categoriesData = [
-  {
-    name: "Chairs",
-    image: "assets/categories/category-chairs.jpg",
-    to: "/category/chairs",
-  },
-  {
-    name: "Sofas",
-    image: "assets/categories/category-sofas.jpg",
-    to: "/category/sofas",
-  },
-  {
-    name: "Desks",
-    image: "assets/categories/category-desks.jpg",
-    to: "/category/desks",
-  },
-];
+import categoriesData from "assets/json/categories.json";
 
 function Categories() {
   return (
@@ -33,8 +16,8 @@ function Categories() {
           <CategoryCard
             image={category.image}
             name={category.name}
-            to={category.to}
-            key={`category-card-${category.name.toLowerCase()}`}
+            to={`category?id=${category.id}`}
+            key={category.id}
           />
         ))}
       </HorizontalScroll>

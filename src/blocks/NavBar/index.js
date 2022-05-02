@@ -13,8 +13,8 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 
-import LogoDark from "assets/logo-dark.svg";
-import LogoLight from "assets/logo-light.svg";
+import LogoDark from "assets/images/logo-dark.svg";
+import LogoLight from "assets/images/logo-light.svg";
 import SearchInput from "components/SearchInput";
 
 function NavBar() {

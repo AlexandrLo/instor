@@ -25,7 +25,7 @@ export default {
       description: "Test",
       price: 549,
       discount: 499,
-      image: "assets/products/product-image-1.jpg",
+      image: "assets/images/products/product-image-1.jpg",
     },
   },
 };

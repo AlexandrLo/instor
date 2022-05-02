@@ -31,5 +31,5 @@ WithDescription.args = {
 
 export const WithImage = (args) => <PageHeaderComponent {...args} />;
 WithImage.args = {
-  image: "assets/categories/category-chairs.jpg",
+  image: "assets/images/categories/category-chairs.jpg",
 };
