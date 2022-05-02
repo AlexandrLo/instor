@@ -11,7 +11,7 @@ import TabBar from "blocks/TabBar";
 
 export default function App() {
   return (
-    <Box position="relative" h="100vh">
+    <Box position="relative" minH="100vh">
       <NavBar />
       <Routes>
         <Route path="" element={<HomePage />} />
