@@ -1,0 +1,446 @@
+[
+  {
+    "id": 220101,
+    "name": "karljan",
+    "popularity": 1,
+    "category": { "id": 2, "name": "chair" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 3, "name": "dining room" },
+      { "id": 4, "name": "office" }
+    ],
+    "info": [
+      [
+        "Description",
+        "The seat's bowl-shaped bottom is adapted for your sit bones and those of most of the world's population. And with an innovative technique, the seat's padding is shaped to maximise your comfort. The upholstery of the chair consists of straight polyester fibres with small gaps between them – providing comfy elasticity and better ventilation so you enjoy a pleasant temperature when sitting. The backrest has a built-in lumbar support and the angle between the seat and the backrest is optimally adapted to make it comfortable for you to sit a little longer at the dining table. The hardwearing cover of cotton and polyester is yarn dyed to create an attractive two-tone effect. The chair cover comes in one piece and fixes in place with hook-and-loop fasteners so you can easily pull it off and put it back on again. After lively meals, it's nice to know that you can easily pull the chair cover off and machine wash it. The chair legs are made of solid wood, which is a durable natural material. Thanks to new research and a new technique, this upholstered chair gives you optimal seating comfort. Change the style anytime by replacing the chair cover with one in a different colour or model."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Back fabric: 100 % polyester (100% recycled). Fabric: 35% cotton, 65% polyester (min. 90% recycled). Leg: Solid birch, Acrylic paint. Seat frame: Steel, Epoxy/polyester powder coating. Backrest frame: Steel. Support panel: Polyethylene plastic. Backrest cushion/ Seat cushion: 100% polyester. Lining: Polyester wadding."
+      ]
+    ],
+    "price": 39,
+    "images": ["assets/images/products/product-220101.jpg"]
+  },
+  {
+    "id": 220102,
+    "name": "leifarne",
+    "popularity": 1,
+    "category": { "id": 2, "name": "chair" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 3, "name": "dining room" },
+      { "id": 4, "name": "office" }
+    ],
+    "info": [
+      [
+        "Description",
+        "The seat's bowl-shaped bottom is adapted for your sit bones and those of most of the world's population. And with an innovative technique, the seat's padding is shaped to maximise your comfort. The upholstery of the chair consists of straight polyester fibres with small gaps between them – providing comfy elasticity and better ventilation so you enjoy a pleasant temperature when sitting. The backrest has a built-in lumbar support and the angle between the seat and the backrest is optimally adapted to make it comfortable for you to sit a little longer at the dining table. The hardwearing cover of cotton and polyester is yarn dyed to create an attractive two-tone effect. The chair cover comes in one piece and fixes in place with hook-and-loop fasteners so you can easily pull it off and put it back on again. After lively meals, it's nice to know that you can easily pull the chair cover off and machine wash it. The chair legs are made of solid wood, which is a durable natural material. Thanks to new research and a new technique, this upholstered chair gives you optimal seating comfort. Change the style anytime by replacing the chair cover with one in a different colour or model."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Back fabric: 100 % polyester (100% recycled). Fabric: 35% cotton, 65% polyester (min. 90% recycled). Leg: Solid birch, Acrylic paint. Seat frame: Steel, Epoxy/polyester powder coating. Backrest frame: Steel. Support panel: Polyethylene plastic. Backrest cushion/ Seat cushion: 100% polyester. Lining: Polyester wadding."
+      ]
+    ],
+    "price": 59,
+    "images": ["assets/images/products/product-220102.jpg"]
+  },
+  {
+    "id": 220103,
+    "name": "bergmund",
+    "popularity": 1,
+    "category": { "id": 2, "name": "chair" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 3, "name": "dining room" }
+    ],
+    "info": [
+      [
+        "Description",
+        "The seat's bowl-shaped bottom is adapted for your sit bones and those of most of the world's population. And with an innovative technique, the seat's padding is shaped to maximise your comfort. The upholstery of the chair consists of straight polyester fibres with small gaps between them – providing comfy elasticity and better ventilation so you enjoy a pleasant temperature when sitting. The backrest has a built-in lumbar support and the angle between the seat and the backrest is optimally adapted to make it comfortable for you to sit a little longer at the dining table. The hardwearing cover of cotton and polyester is yarn dyed to create an attractive two-tone effect. The chair cover comes in one piece and fixes in place with hook-and-loop fasteners so you can easily pull it off and put it back on again. After lively meals, it's nice to know that you can easily pull the chair cover off and machine wash it. The chair legs are made of solid wood, which is a durable natural material. Thanks to new research and a new technique, this upholstered chair gives you optimal seating comfort. Change the style anytime by replacing the chair cover with one in a different colour or model."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Back fabric: 100 % polyester (100% recycled). Fabric: 35% cotton, 65% polyester (min. 90% recycled). Leg: Solid birch, Acrylic paint. Seat frame: Steel, Epoxy/polyester powder coating. Backrest frame: Steel. Support panel: Polyethylene plastic. Backrest cushion/ Seat cushion: 100% polyester. Lining: Polyester wadding."
+      ]
+    ],
+    "price": 79,
+    "images": ["assets/images/products/product-220103.jpg"]
+  },
+  {
+    "id": 220104,
+    "name": "odger",
+    "popularity": 1,
+    "category": { "id": 2, "name": "chair" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 3, "name": "dining room" },
+      { "id": 4, "name": "office" }
+    ],
+    "info": [
+      [
+        "Description",
+        "The seat's bowl-shaped bottom is adapted for your sit bones and those of most of the world's population. And with an innovative technique, the seat's padding is shaped to maximise your comfort. The upholstery of the chair consists of straight polyester fibres with small gaps between them – providing comfy elasticity and better ventilation so you enjoy a pleasant temperature when sitting. The backrest has a built-in lumbar support and the angle between the seat and the backrest is optimally adapted to make it comfortable for you to sit a little longer at the dining table. The hardwearing cover of cotton and polyester is yarn dyed to create an attractive two-tone effect. The chair cover comes in one piece and fixes in place with hook-and-loop fasteners so you can easily pull it off and put it back on again. After lively meals, it's nice to know that you can easily pull the chair cover off and machine wash it. The chair legs are made of solid wood, which is a durable natural material. Thanks to new research and a new technique, this upholstered chair gives you optimal seating comfort. Change the style anytime by replacing the chair cover with one in a different colour or model."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Back fabric: 100 % polyester (100% recycled). Fabric: 35% cotton, 65% polyester (min. 90% recycled). Leg: Solid birch, Acrylic paint. Seat frame: Steel, Epoxy/polyester powder coating. Backrest frame: Steel. Support panel: Polyethylene plastic. Backrest cushion/ Seat cushion: 100% polyester. Lining: Polyester wadding."
+      ]
+    ],
+    "price": 69,
+    "images": ["assets/images/products/product-220104.jpg"]
+  },
+  {
+    "id": 220105,
+    "name": "lisabo",
+    "popularity": 1,
+    "category": { "id": 2, "name": "chair" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 3, "name": "dining room" }
+    ],
+    "info": [
+      [
+        "Description",
+        "The seat's bowl-shaped bottom is adapted for your sit bones and those of most of the world's population. And with an innovative technique, the seat's padding is shaped to maximise your comfort. The upholstery of the chair consists of straight polyester fibres with small gaps between them – providing comfy elasticity and better ventilation so you enjoy a pleasant temperature when sitting. The backrest has a built-in lumbar support and the angle between the seat and the backrest is optimally adapted to make it comfortable for you to sit a little longer at the dining table. The hardwearing cover of cotton and polyester is yarn dyed to create an attractive two-tone effect. The chair cover comes in one piece and fixes in place with hook-and-loop fasteners so you can easily pull it off and put it back on again. After lively meals, it's nice to know that you can easily pull the chair cover off and machine wash it. The chair legs are made of solid wood, which is a durable natural material. Thanks to new research and a new technique, this upholstered chair gives you optimal seating comfort. Change the style anytime by replacing the chair cover with one in a different colour or model."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Back fabric: 100 % polyester (100% recycled). Fabric: 35% cotton, 65% polyester (min. 90% recycled). Leg: Solid birch, Acrylic paint. Seat frame: Steel, Epoxy/polyester powder coating. Backrest frame: Steel. Support panel: Polyethylene plastic. Backrest cushion/ Seat cushion: 100% polyester. Lining: Polyester wadding."
+      ]
+    ],
+    "price": 79,
+    "images": ["assets/images/products/product-220105.jpg"]
+  },
+  {
+    "id": 220106,
+    "name": "tossberg",
+    "popularity": 3,
+    "category": { "id": 2, "name": "chair" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 3, "name": "dining room" },
+      { "id": 4, "name": "office" }
+    ],
+    "info": [
+      [
+        "Description",
+        "The seat's bowl-shaped bottom is adapted for your sit bones and those of most of the world's population. And with an innovative technique, the seat's padding is shaped to maximise your comfort. The upholstery of the chair consists of straight polyester fibres with small gaps between them – providing comfy elasticity and better ventilation so you enjoy a pleasant temperature when sitting. The backrest has a built-in lumbar support and the angle between the seat and the backrest is optimally adapted to make it comfortable for you to sit a little longer at the dining table. The hardwearing cover of cotton and polyester is yarn dyed to create an attractive two-tone effect. The chair cover comes in one piece and fixes in place with hook-and-loop fasteners so you can easily pull it off and put it back on again. After lively meals, it's nice to know that you can easily pull the chair cover off and machine wash it. The chair legs are made of solid wood, which is a durable natural material. Thanks to new research and a new technique, this upholstered chair gives you optimal seating comfort. Change the style anytime by replacing the chair cover with one in a different colour or model."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Back fabric: 100 % polyester (100% recycled). Fabric: 35% cotton, 65% polyester (min. 90% recycled). Leg: Solid birch, Acrylic paint. Seat frame: Steel, Epoxy/polyester powder coating. Backrest frame: Steel. Support panel: Polyethylene plastic. Backrest cushion/ Seat cushion: 100% polyester. Lining: Polyester wadding."
+      ]
+    ],
+    "price": 139,
+    "images": ["assets/images/products/product-220106.jpg"]
+  },
+  {
+    "id": 220107,
+    "name": "strandmon",
+    "popularity": 7,
+    "category": { "id": 2, "name": "chair" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 3, "name": "dining room" }
+    ],
+    "info": [
+      [
+        "Description",
+        "The seat's bowl-shaped bottom is adapted for your sit bones and those of most of the world's population. And with an innovative technique, the seat's padding is shaped to maximise your comfort. The upholstery of the chair consists of straight polyester fibres with small gaps between them – providing comfy elasticity and better ventilation so you enjoy a pleasant temperature when sitting. The backrest has a built-in lumbar support and the angle between the seat and the backrest is optimally adapted to make it comfortable for you to sit a little longer at the dining table. The hardwearing cover of cotton and polyester is yarn dyed to create an attractive two-tone effect. The chair cover comes in one piece and fixes in place with hook-and-loop fasteners so you can easily pull it off and put it back on again. After lively meals, it's nice to know that you can easily pull the chair cover off and machine wash it. The chair legs are made of solid wood, which is a durable natural material. Thanks to new research and a new technique, this upholstered chair gives you optimal seating comfort. Change the style anytime by replacing the chair cover with one in a different colour or model."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Back fabric: 100 % polyester (100% recycled). Fabric: 35% cotton, 65% polyester (min. 90% recycled). Leg: Solid birch, Acrylic paint. Seat frame: Steel, Epoxy/polyester powder coating. Backrest frame: Steel. Support panel: Polyethylene plastic. Backrest cushion/ Seat cushion: 100% polyester. Lining: Polyester wadding."
+      ]
+    ],
+    "price": 199,
+    "discount": 179,
+    "images": ["assets/images/products/product-220107.jpg"]
+  },
+
+  {
+    "id": 220201,
+    "name": "landskrona",
+    "popularity": 8,
+    "category": { "id": 2, "name": "sofa" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 2, "name": "bed room" }
+    ],
+    "info": [
+      [
+        "Description",
+        "10 year guarantee. Read about the terms in the guarantee brochure. Allows you to sit deeply, low and softly with the loose back cushions for extra support. You can place the chaise longue section to the left or right of the sofa, and switch whenever you like. The cover is easy to keep clean since it is removable and can be machine washed. The various sections of the seating series can be connected together in different combinations or used separately. You sit in comfort with a slight, pleasant resilience thanks to the elastic weave in the bottom and high resilience foam in the seat cushions. If you like the way it looks you have to try it! The deep seats, moveable back cushions and suspension fabric make this seating very comfortable. Create your own combination, sit back and relax."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Do not bleach. Machine wash, max 40°C, normal process. To be washed separately. Do not tumble dry. Iron, max 150°C. Professional dry cleaning in tetrachloroethene and hydrocarbons, normal process."
+      ]
+    ],
+    "price": 549,
+    "discount": 499,
+    "images": ["assets/images/products/product-220201.jpg"]
+  },
+  {
+    "id": 220202,
+    "name": "soderhamn",
+    "popularity": 5,
+    "category": { "id": 2, "name": "sofa" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 2, "name": "bed room" }
+    ],
+    "info": [
+      [
+        "Description",
+        "10 year guarantee. Read about the terms in the guarantee brochure. Allows you to sit deeply, low and softly with the loose back cushions for extra support. You can place the chaise longue section to the left or right of the sofa, and switch whenever you like. The cover is easy to keep clean since it is removable and can be machine washed. The various sections of the seating series can be connected together in different combinations or used separately. You sit in comfort with a slight, pleasant resilience thanks to the elastic weave in the bottom and high resilience foam in the seat cushions. If you like the way it looks you have to try it! The deep seats, moveable back cushions and suspension fabric make this seating very comfortable. Create your own combination, sit back and relax."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Do not bleach. Machine wash, max 40°C, normal process. To be washed separately. Do not tumble dry. Iron, max 150°C. Professional dry cleaning in tetrachloroethene and hydrocarbons, normal process."
+      ]
+    ],
+    "price": 599,
+    "images": ["assets/images/products/product-220202.jpg"]
+  },
+  {
+    "id": 220203,
+    "name": "smedstorp",
+    "popularity": 1,
+    "category": { "id": 2, "name": "sofa" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 2, "name": "bed room" }
+    ],
+    "info": [
+      [
+        "Description",
+        "10 year guarantee. Read about the terms in the guarantee brochure. Allows you to sit deeply, low and softly with the loose back cushions for extra support. You can place the chaise longue section to the left or right of the sofa, and switch whenever you like. The cover is easy to keep clean since it is removable and can be machine washed. The various sections of the seating series can be connected together in different combinations or used separately. You sit in comfort with a slight, pleasant resilience thanks to the elastic weave in the bottom and high resilience foam in the seat cushions. If you like the way it looks you have to try it! The deep seats, moveable back cushions and suspension fabric make this seating very comfortable. Create your own combination, sit back and relax."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Do not bleach. Machine wash, max 40°C, normal process. To be washed separately. Do not tumble dry. Iron, max 150°C. Professional dry cleaning in tetrachloroethene and hydrocarbons, normal process."
+      ]
+    ],
+    "price": 599,
+    "images": ["assets/images/products/product-220203.jpg"]
+  },
+  {
+    "id": 220204,
+    "name": "klubbfors",
+    "popularity": 4,
+    "category": { "id": 2, "name": "sofa" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 2, "name": "bed room" }
+    ],
+    "info": [
+      [
+        "Description",
+        "10 year guarantee. Read about the terms in the guarantee brochure. Allows you to sit deeply, low and softly with the loose back cushions for extra support. You can place the chaise longue section to the left or right of the sofa, and switch whenever you like. The cover is easy to keep clean since it is removable and can be machine washed. The various sections of the seating series can be connected together in different combinations or used separately. You sit in comfort with a slight, pleasant resilience thanks to the elastic weave in the bottom and high resilience foam in the seat cushions. If you like the way it looks you have to try it! The deep seats, moveable back cushions and suspension fabric make this seating very comfortable. Create your own combination, sit back and relax."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Do not bleach. Machine wash, max 40°C, normal process. To be washed separately. Do not tumble dry. Iron, max 150°C. Professional dry cleaning in tetrachloroethene and hydrocarbons, normal process."
+      ]
+    ],
+    "price": 589,
+    "images": ["assets/images/products/product-220204.jpg"]
+  },
+  {
+    "id": 220205,
+    "name": "linanas",
+    "popularity": 1,
+    "category": { "id": 2, "name": "sofa" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 2, "name": "bed room" }
+    ],
+    "info": [
+      [
+        "Description",
+        "10 year guarantee. Read about the terms in the guarantee brochure. Allows you to sit deeply, low and softly with the loose back cushions for extra support. You can place the chaise longue section to the left or right of the sofa, and switch whenever you like. The cover is easy to keep clean since it is removable and can be machine washed. The various sections of the seating series can be connected together in different combinations or used separately. You sit in comfort with a slight, pleasant resilience thanks to the elastic weave in the bottom and high resilience foam in the seat cushions. If you like the way it looks you have to try it! The deep seats, moveable back cushions and suspension fabric make this seating very comfortable. Create your own combination, sit back and relax."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Do not bleach. Machine wash, max 40°C, normal process. To be washed separately. Do not tumble dry. Iron, max 150°C. Professional dry cleaning in tetrachloroethene and hydrocarbons, normal process."
+      ]
+    ],
+    "price": 329,
+    "images": ["assets/images/products/product-220205.jpg"]
+  },
+  {
+    "id": 220206,
+    "name": "slatorp",
+    "popularity": 1,
+    "category": { "id": 2, "name": "sofa" },
+    "rooms": [
+      { "id": 1, "name": "living room" },
+      { "id": 2, "name": "bed room" }
+    ],
+    "info": [
+      [
+        "Description",
+        "10 year guarantee. Read about the terms in the guarantee brochure. Allows you to sit deeply, low and softly with the loose back cushions for extra support. You can place the chaise longue section to the left or right of the sofa, and switch whenever you like. The cover is easy to keep clean since it is removable and can be machine washed. The various sections of the seating series can be connected together in different combinations or used separately. You sit in comfort with a slight, pleasant resilience thanks to the elastic weave in the bottom and high resilience foam in the seat cushions. If you like the way it looks you have to try it! The deep seats, moveable back cushions and suspension fabric make this seating very comfortable. Create your own combination, sit back and relax."
+      ],
+      [
+        "Materials",
+        "71% cotton, 8% viscose/rayon, 21 % polyester. Frame: Plywood, Fibreboard, Non-woven polypropylene, Steel, Solid wood. Back cushion: Polyester hollow fibres, Non-woven polypropylene. Upholstery material: Highly resilient polyurethane foam (cold foam) 35 kg/cu.m., Polyurethane foam 20 kg/cu.m., Polyester hollow fibre wadding, Non-woven polypropylene. Smoulder resistant lining/ Smoulder resistant lining: Polyester wadding."
+      ],
+      [
+        "Care instructions",
+        "Do not bleach. Machine wash, max 40°C, normal process. To be washed separately. Do not tumble dry. Iron, max 150°C. Professional dry cleaning in tetrachloroethene and hydrocarbons, normal process."
+      ]
+    ],
+    "price": 329,
+    "images": ["assets/images/products/product-220206.jpg"]
+  },
+
+  {
+    "id": 220301,
+    "name": "tommaryd",
+    "popularity": 1,
+    "category": { "id": 3, "name": "desk" },
+    "rooms": [
+      { "id": 3, "name": "dining room" },
+      { "id": 4, "name": "office" }
+    ],
+    "info": [
+      [
+        "Description",
+        "The clean, simple design is easy to place in restaurants, cafés or meeting rooms and quick-meeting areas in offices. 10 year guarantee. Read about the terms in the guarantee brochure. The laminate surface is very durable, easy to clean and can withstand heavy use. The feet can be adjusted so the table stands steadily on uneven floors. They’re attached to the table’s legs so they will not fall off or get lost. The durable edge band protects against bumps, scratches and cracks caused by chairs being moved around or hung on the table. Combine any number of tables as you like and create a solution that suits you and your team – for meetings, creative workshops, collaborations and individual tasks. You can quickly and easily rearrange your tables and adjust the solution when the needs in the office change. This table suits both homes and businesses demanding everyday strength and durability. Easy to place in a kitchen, dining room, café or meeting room. The clean design combines well with many styles."
+      ],
+      [
+        "Materials",
+        "Particleboard, Oak veneer, Tinted clear acrylic lacquer, Paper foil, ABS plastic. Basematerial/ Leg: Steel, Epoxy/polyester powder coating. Inside leg/ Inside frame: Steel."
+      ],
+      [
+        "Care instructions",
+        "For maximum quality, re-tighten the screws when necessary. Wipe clean with a cloth dampened in a mild cleaner. Wipe dry with a clean cloth."
+      ]
+    ],
+    "price": 139,
+    "images": ["assets/images/products/product-220301.jpg"]
+  },
+  {
+    "id": 220302,
+    "name": "morbylanga",
+    "popularity": 6,
+    "category": { "id": 3, "name": "desk" },
+    "rooms": [{ "id": 3, "name": "dining room" }],
+    "info": [
+      [
+        "Description",
+        "The clean, simple design is easy to place in restaurants, cafés or meeting rooms and quick-meeting areas in offices. 10 year guarantee. Read about the terms in the guarantee brochure. The laminate surface is very durable, easy to clean and can withstand heavy use. The feet can be adjusted so the table stands steadily on uneven floors. They’re attached to the table’s legs so they will not fall off or get lost. The durable edge band protects against bumps, scratches and cracks caused by chairs being moved around or hung on the table. Combine any number of tables as you like and create a solution that suits you and your team – for meetings, creative workshops, collaborations and individual tasks. You can quickly and easily rearrange your tables and adjust the solution when the needs in the office change. This table suits both homes and businesses demanding everyday strength and durability. Easy to place in a kitchen, dining room, café or meeting room. The clean design combines well with many styles."
+      ],
+      [
+        "Materials",
+        "Particleboard, Oak veneer, Tinted clear acrylic lacquer, Paper foil, ABS plastic. Basematerial/ Leg: Steel, Epoxy/polyester powder coating. Inside leg/ Inside frame: Steel."
+      ],
+      [
+        "Care instructions",
+        "For maximum quality, re-tighten the screws when necessary. Wipe clean with a cloth dampened in a mild cleaner. Wipe dry with a clean cloth."
+      ]
+    ],
+    "price": 749,
+    "images": ["assets/images/products/product-220302.jpg"]
+  },
+  {
+    "id": 220303,
+    "name": "strandtorp",
+    "popularity": 1,
+    "category": { "id": 3, "name": "desk" },
+    "rooms": [
+      { "id": 3, "name": "dining room" },
+      { "id": 4, "name": "office" }
+    ],
+    "info": [
+      [
+        "Description",
+        "The clean, simple design is easy to place in restaurants, cafés or meeting rooms and quick-meeting areas in offices. 10 year guarantee. Read about the terms in the guarantee brochure. The laminate surface is very durable, easy to clean and can withstand heavy use. The feet can be adjusted so the table stands steadily on uneven floors. They’re attached to the table’s legs so they will not fall off or get lost. The durable edge band protects against bumps, scratches and cracks caused by chairs being moved around or hung on the table. Combine any number of tables as you like and create a solution that suits you and your team – for meetings, creative workshops, collaborations and individual tasks. You can quickly and easily rearrange your tables and adjust the solution when the needs in the office change. This table suits both homes and businesses demanding everyday strength and durability. Easy to place in a kitchen, dining room, café or meeting room. The clean design combines well with many styles."
+      ],
+      [
+        "Materials",
+        "Particleboard, Oak veneer, Tinted clear acrylic lacquer, Paper foil, ABS plastic. Basematerial/ Leg: Steel, Epoxy/polyester powder coating. Inside leg/ Inside frame: Steel."
+      ],
+      [
+        "Care instructions",
+        "For maximum quality, re-tighten the screws when necessary. Wipe clean with a cloth dampened in a mild cleaner. Wipe dry with a clean cloth."
+      ]
+    ],
+    "price": 429,
+    "images": ["assets/images/products/product-220303.jpg"]
+  },
+  {
+    "id": 220304,
+    "name": "docksta",
+    "popularity": 1,
+    "category": { "id": 3, "name": "desk" },
+    "rooms": [{ "id": 3, "name": "dining room" }],
+    "info": [
+      [
+        "Description",
+        "The clean, simple design is easy to place in restaurants, cafés or meeting rooms and quick-meeting areas in offices. 10 year guarantee. Read about the terms in the guarantee brochure. The laminate surface is very durable, easy to clean and can withstand heavy use. The feet can be adjusted so the table stands steadily on uneven floors. They’re attached to the table’s legs so they will not fall off or get lost. The durable edge band protects against bumps, scratches and cracks caused by chairs being moved around or hung on the table. Combine any number of tables as you like and create a solution that suits you and your team – for meetings, creative workshops, collaborations and individual tasks. You can quickly and easily rearrange your tables and adjust the solution when the needs in the office change. This table suits both homes and businesses demanding everyday strength and durability. Easy to place in a kitchen, dining room, café or meeting room. The clean design combines well with many styles."
+      ],
+      [
+        "Materials",
+        "Particleboard, Oak veneer, Tinted clear acrylic lacquer, Paper foil, ABS plastic. Basematerial/ Leg: Steel, Epoxy/polyester powder coating. Inside leg/ Inside frame: Steel."
+      ],
+      [
+        "Care instructions",
+        "For maximum quality, re-tighten the screws when necessary. Wipe clean with a cloth dampened in a mild cleaner. Wipe dry with a clean cloth."
+      ]
+    ],
+    "price": 429,
+    "images": ["assets/images/products/product-220304.jpg"]
+  }
+]

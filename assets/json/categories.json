@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "chairs",
+    "singular": "chair",
+    "image": "assets/images/categories/category-chairs.jpg"
+  },
+  {
+    "id": 2,
+    "name": "sofas",
+    "singular": "sofa",
+    "image": "assets/images/categories/category-sofas.jpg"
+  },
+  {
+    "id": 3,
+    "name": "desks",
+    "singular": "desk",
+    "image": "assets/images/categories/category-desks.jpg"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "living room",
+    "image": "assets/images/rooms/room-livingroom.jpg"
+  },
+  {
+    "id": 2,
+    "name": "bed room",
+    "image": "assets/images/rooms/room-bedroom.jpg"
+  },
+  {
+    "id": 3,
+    "name": "dining room",
+    "image": "assets/images/rooms/room-diningroom.jpg"
+  },
+  {
+    "id": 4,
+    "name": "office",
+    "image": "assets/images/rooms/room-office.jpg"
+  }
+]
