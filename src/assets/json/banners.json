@@ -1,0 +1,20 @@
+[
+  {
+    "image": "assets/images/banner/banner-1.jpg",
+    "heading": "30% off",
+    "text": "High quality sofa",
+    "to": "/"
+  },
+  {
+    "image": "assets/images/banner/banner-2.jpg",
+    "heading": "Sale",
+    "text": "All chairs up to 50% off",
+    "to": "/"
+  },
+  {
+    "image": "assets/images/banner/banner-1.jpg",
+    "heading": "Sale",
+    "text": "All chairs up to 50% off",
+    "to": "/"
+  }
+]
