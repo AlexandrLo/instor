@@ -12,6 +12,7 @@ function HorizontalScroll({ children, ...props }) {
   const constraintRef = useRef(null);
   const [constraintStyle, setConstraintStyle] = useState({
     position: "absolute",
+    zIndex: -1,
     height: "100%",
     width: 0,
     left: 0,

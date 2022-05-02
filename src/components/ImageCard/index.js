@@ -44,6 +44,7 @@ function ImageCard({
       <Text
         position="absolute"
         fontWeight="600"
+        textTransform="capitalize"
         left={{ base: "1rem", md: "1.5rem" }}
         top={{ base: "1rem", md: "1.5rem" }}
         {...textProps}
