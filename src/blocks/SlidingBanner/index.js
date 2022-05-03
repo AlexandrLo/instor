@@ -55,77 +55,79 @@ function SlidingBanner() {
   }, [currentPage]);
 
   return (
-    <Container>
-      <Box
-        h={{ base: "150px", md: "350px" }}
-        position="relative"
-        overflowX="clip"
-        borderRadius="1rem"
-        ref={ref}
-      >
-        {/* Carousel */}
-        <motion.div
-          style={{
-            x,
-          }}
-          drag="x"
-          onDragStart={() => setIsDragging(true)}
-          dragMomentum={false}
-          dragTransition={transition}
-          onDragEnd={dragEndHandler}
+    <Box>
+      <Container>
+        <Box
+          h={{ base: "150px", md: "350px" }}
+          position="relative"
+          overflowX="clip"
+          borderRadius="1rem"
+          ref={ref}
         >
-          <HStack spacing="0">
-            {bannersData.map((slide, index) => (
-              <Link
-                as={NavLink}
-                to={slide.to}
-                variant="box-inset"
-                position="relative"
-                w="100%"
-                borderRadius="1rem"
-                flex="0 0 auto"
-                key={`slide-${index}`}
-                onClick={(e) => {
-                  // Disable onClick while dragging
-                  if (isDragging) {
-                    e.stopPropagation();
-                    e.preventDefault();
-                  }
-                }}
-                onDragStart={(e) => {
-                  // Hack for firefox
-                  e.stopPropagation();
-                  e.preventDefault();
-                }}
-              >
-                <Image
-                  src={slide.image}
-                  alt="Banner image"
-                  fit="cover"
+          {/* Carousel */}
+          <motion.div
+            style={{
+              x,
+            }}
+            drag="x"
+            onDragStart={() => setIsDragging(true)}
+            dragMomentum={false}
+            dragTransition={transition}
+            onDragEnd={dragEndHandler}
+          >
+            <HStack spacing="0">
+              {bannersData.map((slide, index) => (
+                <Link
+                  as={NavLink}
+                  to={slide.to}
+                  variant="box-inset"
                   position="relative"
-                  zIndex={-1}
-                  h={{ base: "150px", md: "350px" }}
                   w="100%"
                   borderRadius="1rem"
-                />
-                <BannerOverlay heading={slide.heading} text={slide.text} />
-              </Link>
-            ))}
-          </HStack>
-        </motion.div>
+                  flex="0 0 auto"
+                  key={`slide-${index}`}
+                  onClick={(e) => {
+                    // Disable onClick while dragging
+                    if (isDragging) {
+                      e.stopPropagation();
+                      e.preventDefault();
+                    }
+                  }}
+                  onDragStart={(e) => {
+                    // Hack for firefox
+                    e.stopPropagation();
+                    e.preventDefault();
+                  }}
+                >
+                  <Image
+                    src={slide.image}
+                    alt="Banner image"
+                    fit="cover"
+                    position="relative"
+                    zIndex={-1}
+                    h={{ base: "150px", md: "350px" }}
+                    w="100%"
+                    borderRadius="1rem"
+                  />
+                  <BannerOverlay heading={slide.heading} text={slide.text} />
+                </Link>
+              ))}
+            </HStack>
+          </motion.div>
 
-        <Show above="md">
-          <Arrow direction="left" onClick={prevSlide} />
-          <Arrow direction="right" onClick={nextSlide} />
-        </Show>
+          <Show above="md">
+            <Arrow direction="left" onClick={prevSlide} />
+            <Arrow direction="right" onClick={nextSlide} />
+          </Show>
 
-        <Indicator
-          length={bannersData.length}
-          current={currentPage}
-          navigate={setCurrentPage}
-        />
-      </Box>
-    </Container>
+          <Indicator
+            length={bannersData.length}
+            current={currentPage}
+            navigate={setCurrentPage}
+          />
+        </Box>
+      </Container>
+    </Box>
   );
 }
 
