@@ -1,13 +1,28 @@
-import React, { useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 
 import { Box } from "@chakra-ui/react";
-import Measure from "react-measure";
 import PropTypes from "prop-types";
-import { useDebouncedCallback } from "use-debounce";
 import { useDrag } from "@use-gesture/react";
+import { useResizeDetector } from "react-resize-detector";
 import { animated, useSpring } from "@react-spring/web";
 
-import { clamp } from "utils/clamp";
+import { clamp, isInRange } from "utils/springHelpers";
+
+const springDragConfig = {
+  mass: 0,
+  tension: 400,
+  friction: 0,
+};
+const springFreeConfig = {
+  mass: 5,
+  tension: 400,
+  friction: 100,
+};
+const springRubberBandConfig = {
+  mass: 5,
+  tension: 400,
+  friction: 60,
+};
 
 function DragScroll({ children, axis = "x" }) {
   const [bounds, setBounds] = useState({
@@ -15,30 +30,56 @@ function DragScroll({ children, axis = "x" }) {
     end: 0,
   });
 
-  const wrapperRef = useRef(null);
+  const sliderRef = useRef(null);
+
+  const onResize = useCallback(() => {
+    // reset scroll position
+    coord.set(0);
+    // Get element sizes
+    const containerSize =
+      axis === "x"
+        ? sliderRef.current.clientWidth
+        : sliderRef.current.clientHeight;
+    const sliderSize =
+      axis === "x"
+        ? sliderRef.current.scrollWidth
+        : sliderRef.current.scrollHeight;
+    // Set scroll bounds for new size
+    setBounds({
+      start: containerSize - sliderSize,
+      end: 0,
+    });
+  }, []);
+
+  useResizeDetector({
+    onResize,
+    targetRef: sliderRef,
+    refreshMode: "debounce",
+  });
 
   const bind = useDrag(
     ({ down, direction: [dx, dy], offset: [ox, oy], velocity: [vx, vy] }) => {
       const d = axis === "x" ? dx : dy;
       const o = axis === "x" ? ox : oy;
       const v = axis === "x" ? vx : vy;
-      console.log(bounds);
+      const releaseOffset = o + v * d * 300;
+      let config = springDragConfig;
+      if (!isInRange(releaseOffset, bounds.start, bounds.end) && !down) {
+        config = springRubberBandConfig;
+      }
+      if (isInRange(releaseOffset, bounds.start, bounds.end) && !down) {
+        config = springFreeConfig;
+      }
       api.start({
         to: {
-          [axis]: down ? o : clamp(o + v * d * 400, bounds.start, bounds.end),
+          [axis]: down ? o : clamp(releaseOffset, bounds.start, bounds.end),
         },
-        config: {
-          tension: down ? 2000 : 300,
-          friction: down ? 50 : 100,
-        },
+        config,
       });
     },
     {
-      bounds: {
-        ...(axis === "x" ? { left: bounds.start, right: bounds.end } : {}),
-        ...(axis === "y" ? { top: bounds.start, bottom: bounds.end } : {}),
-      },
-      rubberband: true,
+      preventDefault: true,
+      filterTaps: true,
       from: () => [
         axis === "x" ? coord.get() : 0,
         axis === "y" ? coord.get() : 0,
@@ -49,41 +90,22 @@ function DragScroll({ children, axis = "x" }) {
   const [{ x, y }, api] = useSpring(() => ({ to: { x: 0, y: 0 } }));
   const coord = axis === "x" ? x : y;
 
-  const onResize = useDebouncedCallback((contentRect) => {
-    console.log(wrapperRef.current.clientWidth);
-    // reset scroll position
-    coord.set(0);
-    // Get element sizes
-    const containerSize =
-      axis === "x"
-        ? wrapperRef.current.clientWidth
-        : wrapperRef.current.clientHeight;
-    const sliderSize =
-      axis === "x" ? contentRect.scroll.width : contentRect.scroll.height;
-    // Set scroll bounds for new size
-    setBounds({
-      start: containerSize - sliderSize,
-      end: 0,
-    });
-  }, 500);
-
   return (
-    <Measure client bounds scroll onResize={onResize}>
-      {({ measureRef }) => (
-        <Box overflow="clip" boxSize="100%" ref={wrapperRef}>
-          <animated.div
-            ref={measureRef}
-            style={{
-              [axis]: coord,
-              touchAction: axis === "x" ? "pan-y" : "pan-x",
-            }}
-            {...bind()}
-          >
-            {children}
-          </animated.div>
-        </Box>
-      )}
-    </Measure>
+    <Box
+      {...(axis === "x" && { overflowX: "clip" })}
+      {...(axis === "y" && { overflowY: "clip" })}
+    >
+      <animated.div
+        ref={sliderRef}
+        style={{
+          [axis]: coord,
+          touchAction: axis === "x" ? "pan-y" : "pan-x",
+        }}
+        {...bind()}
+      >
+        {children}
+      </animated.div>
+    </Box>
   );
 }
 
