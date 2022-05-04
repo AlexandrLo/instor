@@ -4,14 +4,7 @@ import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Image, Link, Text } from "@chakra-ui/react";
 
-function ImageCard({
-  name,
-  image,
-  to,
-  isDragging = false,
-  textProps = {},
-  ...props
-}) {
+function ImageCard({ name, image, to, textProps = {}, ...props }) {
   return (
     <Link
       variant="box"
@@ -20,16 +13,8 @@ function ImageCard({
       position="relative"
       w="100%"
       borderRadius="1rem"
-      onClick={(e) => {
-        if (isDragging) {
-          // Disable onClick while dragging
-          e.stopPropagation();
-          e.preventDefault();
-        }
-      }}
       onDragStart={(e) => {
         // Prevent user client link dragging
-        e.stopPropagation();
         e.preventDefault();
       }}
       {...props}
