@@ -1,8 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
-import "@fontsource/poppins/latin.css";
-
 import Button from "theme/components/Button";
 import Checkbox from "theme/components/Checkbox";
 import Container from "theme/components/Container";
