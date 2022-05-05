@@ -19,13 +19,11 @@ export default {
   ],
   args: {
     productData: {
-      id: 1,
-      name: "Landskrona",
-      category: "Sofa",
-      description: "Test",
-      price: 549,
-      discount: 499,
-      image: "assets/images/products/product-image-1.jpg",
+      id: 220101,
+      name: "karljan",
+      category: { id: 2, name: "chair" },
+      price: 39,
+      images: ["assets/images/products/product-220101.jpg"],
     },
   },
 };
