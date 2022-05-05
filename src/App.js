@@ -8,6 +8,7 @@ import Footer from "blocks/Footer";
 import HomePage from "containers/HomePage";
 import NavBar from "blocks/NavBar";
 import NoMatchPage from "containers/NoMatchPage";
+import ProductPage from "containers/ProductPage";
 import ScrollToTop from "components/ScrollToTop";
 import TabBar from "blocks/TabBar";
 
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/404" element={<NoMatchPage />} />
         <Route path="" element={<HomePage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/product/:id" element={<ProductPage />} />
       </Routes>
       <Footer />
       <TabBar />
