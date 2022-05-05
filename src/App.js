@@ -8,11 +8,13 @@ import Footer from "blocks/Footer";
 import HomePage from "containers/HomePage";
 import NavBar from "blocks/NavBar";
 import NoMatchPage from "containers/NoMatchPage";
+import ScrollToTop from "components/ScrollToTop";
 import TabBar from "blocks/TabBar";
 
 export default function App() {
   return (
     <VStack align="stretch" position="relative" minH="100vh">
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="*" element={<NoMatchPage />} />
