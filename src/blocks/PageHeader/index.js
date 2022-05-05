@@ -1,11 +1,8 @@
 import React from "react";
 
-import { ArrowLeftFilled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
 import {
   Box,
-  Button,
   Container,
   HStack,
   Heading,
@@ -15,7 +12,8 @@ import {
 } from "@chakra-ui/react";
 
 function PageHeader({ heading = "Heading", description, image, ...props }) {
-  let navigate = useNavigate();
+import BackButton from "components/BackButton";
+
   const headerBg = useColorModeValue("gray.50", "gray.700");
 
   return (
@@ -32,13 +30,8 @@ function PageHeader({ heading = "Heading", description, image, ...props }) {
         {...props}
       >
         <HStack spacing={{ base: "0.75rem", md: "1.5rem" }}>
-          <Button
-            variant={image ? "blur" : "alpha"}
-            onClick={() => navigate(-1)}
-          >
-            <ArrowLeftFilled fontSize="24px" />
-          </Button>
           <VStack alignItems="start">
+          <BackButton variant={image ? "blur" : "alpha"} />
             <Heading as="h1" size="h1" color={image && "white"}>
               {heading}
             </Heading>
