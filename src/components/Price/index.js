@@ -47,7 +47,7 @@ function Price({ price, discount, size = "md" }) {
 }
 
 Price.propTypes = {
-  price: PropTypes.number.isRequired,
+  price: PropTypes.number,
   discount: PropTypes.number,
   size: PropTypes.oneOf(["md", "lg"]),
 };

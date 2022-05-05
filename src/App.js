@@ -1,6 +1,6 @@
 import React from "react";
 
-import { VStack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 
 import CartPage from "containers/CartPage";
@@ -14,7 +14,7 @@ import TabBar from "blocks/TabBar";
 
 export default function App() {
   return (
-    <VStack align="stretch" position="relative" minH="100vh">
+    <Flex direction="column" position="relative" minH="100vh" spacing="0">
       <ScrollToTop />
       <NavBar />
       <Routes>
@@ -26,6 +26,6 @@ export default function App() {
       </Routes>
       <Footer />
       <TabBar />
-    </VStack>
+    </Flex>
   );
 }

@@ -3,15 +3,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Button, HStack } from "@chakra-ui/react";
 
-function Indicator({ length, current, navigate, ...props }) {
+function Indicator({ length, current, navigate }) {
   return (
     <HStack
-      justifyContent="center"
+      justify="center"
       pos="absolute"
       bottom={{ base: "0.5rem", md: "1rem" }}
       spacing={{ base: "0.5rem", md: "1rem" }}
       w="100%"
-      {...props}
     >
       {Array(length)
         .fill()

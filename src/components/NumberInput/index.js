@@ -1,10 +1,10 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-import { AddFilled, SubtractFilled } from "@fluentui/react-icons";
+import { Add24Filled, Subtract24Filled } from "@fluentui/react-icons";
 import { Button, HStack, Input, useNumberInput } from "@chakra-ui/react";
 
-function NumberInput({ size, ...props }) {
+function NumberInput({ size }) {
   const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
     useNumberInput({
       step: 1,
@@ -22,27 +22,26 @@ function NumberInput({ size, ...props }) {
     <HStack spacing={{ base: "0.25rem", md: "0.5rem" }}>
       <Button
         variant="alpha"
-        colorScheme="orange"
+        colorScheme="gray"
         size={size ? size : "md"}
         {...dec}
       >
-        <SubtractFilled fontSize="1.5rem" />
+        <Subtract24Filled />
       </Button>
       <Input
         type="number"
-        px="0"
-        textAlign="center"
         size={size ? size : "md"}
-        {...props}
+        textAlign="center"
+        px="0"
         {...input}
       />
       <Button
         variant="alpha"
-        colorScheme="orange"
+        colorScheme="gray"
         size={size ? size : "md"}
         {...inc}
       >
-        <AddFilled fontSize="1.5rem" />
+        <Add24Filled />
       </Button>
     </HStack>
   );

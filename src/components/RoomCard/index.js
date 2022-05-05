@@ -4,20 +4,20 @@ import PropTypes from "prop-types";
 
 import ImageCard from "components/ImageCard";
 
-function RoomCard({ name, image, to, isDragging, ...props }) {
+function RoomCard({ name, image, to }) {
   return (
     <ImageCard
-      minW="180px"
-      h={["245px", "260px", "275px", "290px", "300px"]}
+      name={name}
+      image={image}
+      to={to}
+      imageProps={{
+        minW: "180px",
+        minH: "245px",
+      }}
       textProps={{
         color: "black",
         maxW: "3.75rem",
       }}
-      name={name}
-      image={image}
-      to={to}
-      isDragging={isDragging}
-      {...props}
     />
   );
 }
@@ -26,7 +26,6 @@ RoomCard.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
-  isDragging: PropTypes.bool,
 };
 
 export default RoomCard;

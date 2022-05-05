@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { ArrowRightFilled, SearchFilled } from "@fluentui/react-icons";
+import { ArrowRight24Filled, Search24Filled } from "@fluentui/react-icons";
 import {
   Button,
   Input,
@@ -17,7 +17,7 @@ function SearchInput() {
   return (
     <InputGroup>
       <InputLeftElement pointerEvents="none" color={iconColor}>
-        <SearchFilled fontSize="1.5rem" />
+        <Search24Filled />
       </InputLeftElement>
       <Input
         placeholder="What are you looking for?"
@@ -29,7 +29,7 @@ function SearchInput() {
       {query && (
         <InputRightElement color={iconColor}>
           <Button size="sm">
-            <ArrowRightFilled fontSize="1.5rem" />
+            <ArrowRight24Filled />
           </Button>
         </InputRightElement>
       )}

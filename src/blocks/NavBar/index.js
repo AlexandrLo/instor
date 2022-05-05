@@ -1,7 +1,7 @@
 import React from "react";
 
-import { CartFilled } from "@fluentui/react-icons";
-import { NavLink } from "react-router-dom";
+import { Cart24Filled } from "@fluentui/react-icons";
+import { Link as RouterLink } from "react-router-dom";
 import {
   Box,
   Button,
@@ -25,17 +25,18 @@ function NavBar() {
 
   return (
     <Box
-      position="sticky"
+      position={{ base: "inherit", sm: "sticky" }}
       top="0"
       bg={bgColor}
       zIndex="2"
       borderBottom="1px"
-      borderColor={borderColor}
+      borderColor={{ base: "transparent", sm: borderColor }}
     >
-      <Container>
-        <HStack spacing="2rem" justifyContent="space-between">
+      <Container p={{ base: "1rem", md: "1.5rem" }}>
+        {/* Main Row */}
+        <HStack spacing="2rem" justify="space-between">
           <Box>
-            <Link as={NavLink} to="/">
+            <Link as={RouterLink} to="/">
               {colorMode === "light" ? <LogoDark /> : <LogoLight />}
             </Link>
           </Box>
@@ -44,14 +45,13 @@ function NavBar() {
               <SearchInput />
             </Box>
           </Hide>
-
           <Show above="sm">
-            <HStack spacing="0.5rem" justifyContent="end">
+            <HStack spacing="0.5rem" justify="end">
               <Button
-                leftIcon={<CartFilled fontSize="1.5rem" />}
+                leftIcon={<Cart24Filled />}
                 variant="alpha"
                 colorScheme="orange"
-                as={NavLink}
+                as={RouterLink}
                 to="/cart"
               >
                 Cart
@@ -60,10 +60,10 @@ function NavBar() {
             </HStack>
           </Show>
         </HStack>
-
+        {/* Search row */}
         <Show below="md">
           <Show above="sm">
-            <Box pt="2rem">
+            <Box pt="1rem">
               <SearchInput />
             </Box>
           </Show>

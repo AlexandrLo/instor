@@ -28,7 +28,7 @@ export default {
 
 export const SectionWrapper = (args) => (
   <SectionWrapperComponent {...args}>
-    <HStack w="100%" h="10rem" bg="gray.400" justifyContent="center">
+    <HStack w="100%" h="10rem" bg="gray.400" justify="center">
       <Box>Example children element</Box>
     </HStack>
   </SectionWrapperComponent>

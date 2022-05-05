@@ -30,6 +30,8 @@ function Popular() {
       }}
     >
       <SimpleGrid
+        px={{ base: "1rem", md: "1.5rem" }}
+        pb={{ base: "1rem", md: "1.5rem" }}
         columns={{
           base: 1,
           xs: 2,

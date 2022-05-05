@@ -11,13 +11,13 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-function PageHeader({ heading = "Heading", description, image, ...props }) {
 import BackButton from "components/BackButton";
 
+function PageHeader({ heading = "Heading", description, image }) {
   const headerBg = useColorModeValue("gray.50", "gray.700");
 
   return (
-    <Container>
+    <Container p={{ base: "1rem", md: "1.5rem" }}>
       <Box
         bg={headerBg}
         p="3rem"
@@ -27,11 +27,10 @@ import BackButton from "components/BackButton";
           backgroundSize: "cover",
           backgroundPosition: "center",
         })}
-        {...props}
       >
         <HStack spacing={{ base: "0.75rem", md: "1.5rem" }}>
-          <VStack alignItems="start">
           <BackButton variant={image ? "blur" : "alpha"} />
+          <VStack align="start">
             <Heading as="h1" size="h1" color={image && "white"}>
               {heading}
             </Heading>

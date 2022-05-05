@@ -59,13 +59,13 @@ function ReviewsCard() {
 
   return (
     <HStack
+      justify="space-between"
       p="1rem"
-      bg={bgColor}
+      spacing="1rem"
       borderRadius="1rem"
-      spacing="4rem"
-      justifyContent="space-between"
+      bg={bgColor}
     >
-      <VStack spacing="0" alignItems="start">
+      <VStack spacing="0" align="start">
         <HStack>
           <RatingStars rating={reviewsData.averageRating} />
           <Text>{reviewsData.averageRating}</Text>
@@ -81,12 +81,13 @@ function ReviewsCard() {
         {reviewsData.reviews.slice(0, 4).map((review) => (
           <Box key={review.id} w="1rem">
             <Image
+              src={review.avatar}
+              alt="Reviewer profile image"
               maxW="none"
               boxSize="2rem"
               borderRadius="full"
               border="2px"
               borderColor={bgColor}
-              src={review.avatar}
             />
           </Box>
         ))}

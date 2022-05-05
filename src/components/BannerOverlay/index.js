@@ -4,19 +4,18 @@ import { ArrowRightFilled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
 import { HStack, Heading, Text, VStack } from "@chakra-ui/react";
 
-function BannerOverlay({ heading = "", text = "", showCTA = true, ...props }) {
+function BannerOverlay({ heading = "", text = "", showCTA = true }) {
   return (
     <VStack
+      align="start"
       position="absolute"
-      top="50%"
+      w="50%"
       left={{ base: "1rem", md: "4rem" }}
+      top="50%"
       transform="auto"
       translateY="-50%"
-      alignItems="start"
       spacing="0"
-      w="50%"
       color="black"
-      {...props}
     >
       <Heading as="h1" size="h1">
         {heading}
