@@ -24,6 +24,7 @@ import {
 
 import BackButton from "components/BackButton";
 import ReviewsCard from "components/ReviewsCard";
+import TitleUpdater from "components/TitleUpdater";
 import productsData from "assets/json/products.json";
 
 function ProductInfo() {
@@ -44,6 +45,7 @@ function ProductInfo() {
 
   return (
     <Box>
+      <TitleUpdater title={productData.name} />
       <Container py={{ base: "1rem", md: "1.5rem" }}>
         <Stack direction={{ base: "column", md: "row" }} spacing="0">
           {/* Image column */}
