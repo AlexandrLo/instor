@@ -4,6 +4,7 @@ import { Flex } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 
 import CartPage from "containers/CartPage";
+import CategoryPage from "containers/CategoryPage";
 import Footer from "blocks/Footer";
 import HomePage from "containers/HomePage";
 import NavBar from "blocks/NavBar";
@@ -39,6 +40,11 @@ const routes = [
     path: "/product/:id",
     page: <ProductPage />,
     name: "Product",
+  },
+  {
+    path: "/category/:id",
+    page: <CategoryPage />,
+    name: "Category",
   },
 ];
 

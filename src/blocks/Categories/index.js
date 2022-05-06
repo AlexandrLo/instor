@@ -21,7 +21,7 @@ function Categories() {
             <CategoryCard
               image={category.image}
               name={category.name}
-              to={`category?id=${category.id}`}
+              to={`/category/${category.id}`}
               key={category.id}
             />
           ))}
