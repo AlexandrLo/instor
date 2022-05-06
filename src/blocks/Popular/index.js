@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { SimpleGrid, useBreakpointValue } from "@chakra-ui/react";
 
@@ -7,6 +7,8 @@ import SectionWrapper from "components/SectionWrapper";
 import productsData from "assets/json/products.json";
 
 function Popular() {
+  const [popularProductsData, setPopularProductsData] = useState([]);
+
   const productCount = useBreakpointValue({
     base: 4,
     xs: 4,
@@ -16,17 +18,18 @@ function Popular() {
     xl: 8,
   });
 
-  const popularProductsData = productsData
-    .sort(function (a, b) {
-      return b.popularity - a.popularity;
-    })
-    .slice(0, productCount);
+  useEffect(() => {
+    setPopularProductsData(
+      productsData
+        .sort((a, b) => b.popularity - a.popularity)
+        .slice(0, productCount),
+    );
+  }, [productCount]);
 
   return (
     <SectionWrapper
       heading={{
         text: "Popular",
-        to: "/popular",
       }}
     >
       <SimpleGrid
