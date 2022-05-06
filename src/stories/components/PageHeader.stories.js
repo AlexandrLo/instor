@@ -3,10 +3,10 @@ import React from "react";
 import { Box } from "@chakra-ui/react";
 import { MemoryRouter } from "react-router";
 
-import PageHeaderComponent from "blocks/PageHeader";
+import PageHeaderComponent from "components/PageHeader";
 
 export default {
-  title: "Instor/Blocks/Page Header",
+  title: "Instor/Components/Page Header",
   component: PageHeaderComponent,
   decorators: [
     (Story) => (
