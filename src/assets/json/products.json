@@ -3,7 +3,7 @@
     "id": 220101,
     "name": "karljan",
     "popularity": 1,
-    "category": { "id": 2, "name": "chair" },
+    "category": { "id": 1, "name": "chair" },
     "rooms": [
       { "id": 1, "name": "living room" },
       { "id": 3, "name": "dining room" },
@@ -30,7 +30,7 @@
     "id": 220102,
     "name": "leifarne",
     "popularity": 1,
-    "category": { "id": 2, "name": "chair" },
+    "category": { "id": 1, "name": "chair" },
     "rooms": [
       { "id": 1, "name": "living room" },
       { "id": 3, "name": "dining room" },
@@ -57,7 +57,7 @@
     "id": 220103,
     "name": "bergmund",
     "popularity": 1,
-    "category": { "id": 2, "name": "chair" },
+    "category": { "id": 1, "name": "chair" },
     "rooms": [
       { "id": 1, "name": "living room" },
       { "id": 3, "name": "dining room" }
@@ -83,7 +83,7 @@
     "id": 220104,
     "name": "odger",
     "popularity": 1,
-    "category": { "id": 2, "name": "chair" },
+    "category": { "id": 1, "name": "chair" },
     "rooms": [
       { "id": 1, "name": "living room" },
       { "id": 3, "name": "dining room" },
@@ -110,7 +110,7 @@
     "id": 220105,
     "name": "lisabo",
     "popularity": 1,
-    "category": { "id": 2, "name": "chair" },
+    "category": { "id": 1, "name": "chair" },
     "rooms": [
       { "id": 1, "name": "living room" },
       { "id": 3, "name": "dining room" }
@@ -136,7 +136,7 @@
     "id": 220106,
     "name": "tossberg",
     "popularity": 3,
-    "category": { "id": 2, "name": "chair" },
+    "category": { "id": 1, "name": "chair" },
     "rooms": [
       { "id": 1, "name": "living room" },
       { "id": 3, "name": "dining room" },
@@ -163,7 +163,7 @@
     "id": 220107,
     "name": "strandmon",
     "popularity": 7,
-    "category": { "id": 2, "name": "chair" },
+    "category": { "id": 1, "name": "chair" },
     "rooms": [
       { "id": 1, "name": "living room" },
       { "id": 3, "name": "dining room" }
