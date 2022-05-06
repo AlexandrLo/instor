@@ -9,9 +9,9 @@ import { animated, useSpring } from "@react-spring/web";
 import { clamp, isInRange } from "utils/springHelpers";
 
 const springDragConfig = {
-  mass: 0,
-  tension: 400,
-  friction: 0,
+  mass: 1,
+  tension: 4000,
+  friction: 100,
 };
 const springFreeConfig = {
   mass: 5,
@@ -34,7 +34,10 @@ function DragScroll({ children, axis = "x" }) {
 
   const onResize = useCallback(() => {
     // reset scroll position
-    coord.set(0);
+    api.start({
+      to: { [axis]: 0 },
+      config: springRubberBandConfig,
+    });
     // Get element sizes
     const containerSize =
       axis === "x"
@@ -55,6 +58,7 @@ function DragScroll({ children, axis = "x" }) {
     onResize,
     targetRef: sliderRef,
     refreshMode: "debounce",
+    refreshRate: 100,
   });
 
   const bind = useDrag(
