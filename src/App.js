@@ -11,11 +11,13 @@ import NoMatchPage from "containers/NoMatchPage";
 import ProductPage from "containers/ProductPage";
 import ScrollToTop from "components/ScrollToTop";
 import TabBar from "blocks/TabBar";
+import ThemeColorUpdater from "components/ThemeColorUpdater";
 
 export default function App() {
   return (
     <Flex direction="column" position="relative" minH="100vh" spacing="0">
       <ScrollToTop />
+      <ThemeColorUpdater />
       <NavBar />
       <Routes>
         <Route path="*" element={<NoMatchPage />} />
