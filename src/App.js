@@ -10,6 +10,7 @@ import HomePage from "containers/HomePage";
 import NavBar from "blocks/NavBar";
 import NoMatchPage from "containers/NoMatchPage";
 import ProductPage from "containers/ProductPage";
+import RoomPage from "containers/RoomPage";
 import ScrollToTop from "components/ScrollToTop";
 import TabBar from "blocks/TabBar";
 import ThemeColorUpdater from "components/ThemeColorUpdater";
@@ -45,6 +46,11 @@ const routes = [
     path: "/category/:id",
     page: <CategoryPage />,
     name: "Category",
+  },
+  {
+    path: "/room/:id",
+    page: <RoomPage />,
+    name: "Room",
   },
 ];
 

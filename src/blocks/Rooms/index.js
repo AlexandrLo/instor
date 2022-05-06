@@ -26,7 +26,7 @@ function Rooms() {
             <RoomCard
               image={room.image}
               name={room.name}
-              to={`room?id=${room.id}`}
+              to={`/room/${room.id}`}
               key={room.id}
             />
           ))}
