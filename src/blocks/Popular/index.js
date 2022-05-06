@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { useBreakpointValue } from "@chakra-ui/react";
+import { Box, useBreakpointValue } from "@chakra-ui/react";
 
 import ProductsGrid from "components/ProductsGrid";
 import SectionWrapper from "components/SectionWrapper";
@@ -32,7 +32,12 @@ function Popular() {
         text: "Popular",
       }}
     >
-      <ProductsGrid data={popularProductsData} />
+      <Box
+        px={{ base: "1rem", md: "1.5rem" }}
+        pb={{ base: "1rem", md: "1.5rem" }}
+      >
+        <ProductsGrid data={popularProductsData} />
+      </Box>
     </SectionWrapper>
   );
 }
