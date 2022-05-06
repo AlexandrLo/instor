@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import { SimpleGrid, useBreakpointValue } from "@chakra-ui/react";
+import { useBreakpointValue } from "@chakra-ui/react";
 
-import ProductCard from "components/ProductCard";
+import ProductsGrid from "components/ProductsGrid";
 import SectionWrapper from "components/SectionWrapper";
 import productsData from "assets/json/products.json";
 
@@ -32,27 +32,7 @@ function Popular() {
         text: "Popular",
       }}
     >
-      <SimpleGrid
-        px={{ base: "1rem", md: "1.5rem" }}
-        pb={{ base: "1rem", md: "1.5rem" }}
-        columns={{
-          base: 1,
-          xs: 2,
-          sm: 2,
-          md: 3,
-          lg: 3,
-          xl: 4,
-        }}
-        spacing="1rem"
-        w="100%"
-      >
-        {popularProductsData.map((product) => (
-          <ProductCard
-            key={`product-card-${product.id}`}
-            productData={product}
-          />
-        ))}
-      </SimpleGrid>
+      <ProductsGrid data={popularProductsData} />
     </SectionWrapper>
   );
 }
