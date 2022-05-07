@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Cart24Filled } from "@fluentui/react-icons";
+import PropTypes from "prop-types";
 import { Link as RouterLink } from "react-router-dom";
 import {
   Box,
@@ -18,7 +19,7 @@ import LogoDark from "assets/images/logo-dark.svg";
 import LogoLight from "assets/images/logo-light.svg";
 import SearchInput from "components/SearchInput";
 
-function NavBar() {
+function NavBar({ onLoginModalOpen }) {
   const { colorMode } = useColorMode();
   const bgColor = useColorModeValue("white", "gray.800");
   const borderColor = useColorModeValue("blackAlpha.50", "whiteAlpha.50");
@@ -56,7 +57,9 @@ function NavBar() {
               >
                 Cart
               </Button>
-              <Button variant="solid">Log In/Sign Up</Button>
+              <Button variant="solid" onClick={onLoginModalOpen}>
+                Log In/Sign Up
+              </Button>
             </HStack>
           </Show>
         </HStack>
@@ -72,5 +75,9 @@ function NavBar() {
     </Box>
   );
 }
+
+NavBar.propTypes = {
+  onLoginModalOpen: PropTypes.func.isRequired,
+};
 
 export default NavBar;

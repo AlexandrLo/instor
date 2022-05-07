@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Box, HStack, Hide, useColorModeValue } from "@chakra-ui/react";
+import PropTypes from "prop-types";
+import { Box, Button, HStack, Hide, useColorModeValue } from "@chakra-ui/react";
 import {
   Cart24Filled,
   Home24Filled,
@@ -23,13 +24,9 @@ const tabBarLinks = [
     to: "/cart",
     icon: <Cart24Filled />,
   },
-  {
-    to: "/profile",
-    icon: <PersonCircle24Filled />,
-  },
 ];
 
-function TabBar() {
+function TabBar({ onLoginModalOpen }) {
   const borderColor = useColorModeValue("blackAlpha.50", "whiteAlpha.50");
   const bgColor = useColorModeValue("white", "gray.800");
 
@@ -58,10 +55,22 @@ function TabBar() {
               {link.icon}
             </TabBarLink>
           ))}
+          <Button
+            size="sm"
+            variant="ghost"
+            colorScheme="orange"
+            onClick={onLoginModalOpen}
+          >
+            <PersonCircle24Filled />
+          </Button>
         </HStack>
       </Box>
     </Hide>
   );
 }
+
+TabBar.propTypes = {
+  onLoginModalOpen: PropTypes.func.isRequired,
+};
 
 export default TabBar;
