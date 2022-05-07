@@ -1,9 +1,9 @@
 import React from "react";
 
-import { BorderNoneFilled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
-import { Box, Heading, SimpleGrid, VStack } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 
+import Placeholder from "./Placeholder";
 import ProductCard from "components/ProductCard";
 
 function ProductsGrid({ data = [] }) {
@@ -27,16 +27,7 @@ function ProductsGrid({ data = [] }) {
       </SimpleGrid>
     );
   } else {
-    return (
-      <VStack w="100%" justify="center" minH="25rem">
-        <Box textAlign="center" color="gray.400">
-          <BorderNoneFilled fontSize="5rem" />
-        </Box>
-        <Heading as="h2" size="h2" textAlign="center" color="gray.400">
-          Nothing found...
-        </Heading>
-      </VStack>
-    );
+    return <Placeholder />;
   }
 }
 
