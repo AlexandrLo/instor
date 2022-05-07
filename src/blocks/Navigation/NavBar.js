@@ -2,7 +2,6 @@ import React from "react";
 
 import { Cart24Filled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
-import { Link as RouterLink } from "react-router-dom";
 import {
   Box,
   Button,
@@ -14,6 +13,7 @@ import {
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 
 import LogoDark from "assets/images/logo-dark.svg";
 import LogoLight from "assets/images/logo-light.svg";
@@ -23,6 +23,7 @@ function NavBar({ onLoginModalOpen }) {
   const { colorMode } = useColorMode();
   const bgColor = useColorModeValue("white", "gray.800");
   const borderColor = useColorModeValue("blackAlpha.50", "whiteAlpha.50");
+  let location = useLocation();
 
   return (
     <Box
@@ -64,13 +65,21 @@ function NavBar({ onLoginModalOpen }) {
           </Show>
         </HStack>
         {/* Search row */}
-        <Show below="md">
-          <Show above="sm">
+        {location.pathname === "/search" ? (
+          <Show below="md">
             <Box pt="1rem">
               <SearchInput />
             </Box>
           </Show>
-        </Show>
+        ) : (
+          <Show below="md">
+            <Show above="sm">
+              <Box pt="1rem">
+                <SearchInput />
+              </Box>
+            </Show>
+          </Show>
+        )}
       </Container>
     </Box>
   );
