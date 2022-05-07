@@ -22,7 +22,7 @@ function ModalHeader({ heading = "heading", onBack }) {
 
 ModalHeader.propTypes = {
   heading: PropTypes.string,
-  onBack: PropTypes.bool.isRequired,
+  onBack: PropTypes.func,
 };
 
 export default ModalHeader;
