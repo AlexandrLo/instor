@@ -1,6 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-import { useNavigate } from "react-router-dom";
 import {
   ArrowRight24Filled,
   Dismiss16Filled,
@@ -15,18 +14,23 @@ import {
   InputRightElement,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 function SearchInput() {
   const iconColor = useColorModeValue("blackAlpha.500", "whiteAlpha.500");
   const [query, setQuery] = useState("");
-
+  let [searchParams] = useSearchParams();
   const ref = useRef(null);
-
   let navigate = useNavigate();
+
+  useEffect(() => {
+    setQuery(searchParams.get("query") ?? "");
+  }, [searchParams]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate(`/search?query=${query}`);
+    ref.current.blur();
   };
 
   const clearInput = () => {
