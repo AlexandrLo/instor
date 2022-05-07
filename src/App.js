@@ -7,12 +7,11 @@ import CartPage from "containers/CartPage";
 import CategoryPage from "containers/CategoryPage";
 import Footer from "blocks/Footer";
 import HomePage from "containers/HomePage";
-import NavBar from "blocks/NavBar";
+import Navigation from "blocks/Navigation";
 import NoMatchPage from "containers/NoMatchPage";
 import ProductPage from "containers/ProductPage";
 import RoomPage from "containers/RoomPage";
 import ScrollToTop from "components/ScrollToTop";
-import TabBar from "blocks/TabBar";
 import ThemeColorUpdater from "components/ThemeColorUpdater";
 import TitleUpdater from "components/TitleUpdater";
 
@@ -59,7 +58,7 @@ export default function App() {
     <Flex direction="column" position="relative" minH="100vh" spacing="0">
       <ScrollToTop />
       <ThemeColorUpdater />
-      <NavBar />
+      <Navigation />
       <Routes>
         {routes.map((route) => (
           <Route
@@ -75,7 +74,6 @@ export default function App() {
         ))}
       </Routes>
       <Footer />
-      <TabBar />
     </Flex>
   );
 }

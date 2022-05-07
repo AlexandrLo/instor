@@ -37,6 +37,7 @@ function TabBar() {
     <Hide above="sm">
       <Box
         position="fixed"
+        zIndex="2"
         w="100%"
         bottom="0"
         borderTop="1px"

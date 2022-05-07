@@ -3,11 +3,11 @@ import React from "react";
 import { Box } from "@chakra-ui/react";
 import { MemoryRouter } from "react-router";
 
-import NavBarComponent from "blocks/NavBar";
+import NavigationComponent from "blocks/Navigation";
 
 export default {
-  title: "Instor/Blocks/Nav Bar",
-  component: NavBarComponent,
+  title: "Instor/Blocks/Navigation",
+  component: NavigationComponent,
   decorators: [
     (Story) => (
       <MemoryRouter initialEntries={["/"]}>
@@ -19,4 +19,4 @@ export default {
   ],
 };
 
-export const NavBar = (args) => <NavBarComponent {...args} />;
+export const Navigation = (args) => <NavigationComponent {...args} />;
