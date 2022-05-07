@@ -12,6 +12,7 @@ import NoMatchPage from "containers/NoMatchPage";
 import ProductPage from "containers/ProductPage";
 import RoomPage from "containers/RoomPage";
 import ScrollToTop from "components/ScrollToTop";
+import SearchPage from "containers/SearchPage";
 import ThemeColorUpdater from "components/ThemeColorUpdater";
 import TitleUpdater from "components/TitleUpdater";
 
@@ -50,6 +51,11 @@ const routes = [
     path: "/room/:id",
     page: <RoomPage />,
     name: "Room",
+  },
+  {
+    path: "/search",
+    page: <SearchPage />,
+    name: "Search",
   },
 ];
 
