@@ -57,6 +57,10 @@ const Input = {
         h: "3rem",
         borderRadius: "md",
       },
+      addon: {
+        h: "3rem",
+        px: "0.5rem",
+      },
     },
   },
   defaultProps: {

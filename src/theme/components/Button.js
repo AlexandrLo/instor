@@ -7,12 +7,14 @@ const Button = {
       minW: "2rem",
       fontSize: "md",
       px: "0.25rem",
+      borderRadius: "0.25rem",
     },
     md: {
       h: "3rem",
       minW: "3rem",
       fontSize: "md",
       px: "0.75rem",
+      borderRadius: "0.5rem",
     },
   },
   variants: {
