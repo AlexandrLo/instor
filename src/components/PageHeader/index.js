@@ -12,7 +12,7 @@ import {
 
 import BackButton from "components/BackButton";
 
-function PageHeader({ heading = "Heading", description, image }) {
+function PageHeader({ heading = "Heading", description, image, onBack }) {
   const headerBg = useColorModeValue("gray.50", "gray.700");
 
   return (
@@ -28,7 +28,7 @@ function PageHeader({ heading = "Heading", description, image }) {
       })}
     >
       <HStack spacing={{ base: "0.75rem", md: "1.5rem" }}>
-        <BackButton variant={image ? "blur" : "alpha"} />
+        <BackButton variant={image ? "blur" : "alpha"} onBack={onBack} />
         <VStack align="start">
           <Heading
             as="h1"
@@ -53,6 +53,7 @@ PageHeader.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
+  onBack: PropTypes.func,
 };
 
 export default PageHeader;
