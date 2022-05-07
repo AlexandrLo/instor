@@ -116,6 +116,23 @@ const Button = {
         },
       };
     },
+    "ghost-link": (props) => {
+      const { colorScheme: c } = props;
+      return {
+        textDecoration: "underline",
+        fontWeight: 400,
+        color: mode("gray.500", "gray.200")(props),
+        _hover: {
+          color: `${c}.400`,
+        },
+        _active: {
+          color: `${c}.300`,
+        },
+        _disabled: {
+          textDecoration: "none",
+        },
+      };
+    },
   },
   defaultProps: {
     size: "md",

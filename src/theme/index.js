@@ -7,6 +7,7 @@ import Container from "theme/components/Container";
 import Heading from "theme/components/Heading";
 import Input from "theme/components/Input";
 import Link from "theme/components/Link";
+import Modal from "theme/components/Modal";
 import Switch from "theme/components/Switch";
 import Tabs from "theme/components/Tabs";
 import Text from "theme/components/Text";
@@ -21,6 +22,7 @@ const theme = extendTheme({
     Heading,
     Input,
     Link,
+    Modal,
     Switch,
     Tabs,
     Text,
