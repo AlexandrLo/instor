@@ -1,7 +1,15 @@
 import React from "react";
 
+import Cart from "blocks/Cart";
+import Popular from "blocks/Popular";
+
 function CartPage() {
-  return <div>Cart</div>;
+  return (
+    <>
+      <Cart />
+      <Popular />
+    </>
+  );
 }
 
 export default CartPage;
