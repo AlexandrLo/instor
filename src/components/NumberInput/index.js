@@ -33,6 +33,7 @@ function NumberInput({ size }) {
         size={size ? size : "md"}
         textAlign="center"
         px="0"
+        maxW={size === "sm" ? "2.5rem" : "4rem"}
         {...input}
       />
       <Button
