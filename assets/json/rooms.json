@@ -2,25 +2,25 @@
   {
     "id": 1,
     "name": "living room",
-    "description": "Stop dreaming about the perfect living room – create one with our furniture.",
+    "description": "Stop dreaming about the perfect living room – create one with our furniture",
     "image": "assets/images/rooms/room-livingroom.jpg"
   },
   {
     "id": 2,
     "name": "bed room",
-    "description": "Stop dreaming about the perfect living room – create one with our furniture.",
+    "description": "Use our furniture to create a perfect bedroom that will suit your sleeping habits",
     "image": "assets/images/rooms/room-bedroom.jpg"
   },
   {
     "id": 3,
     "name": "dining room",
-    "description": "Stop dreaming about the perfect living room – create one with our furniture.",
+    "description": "Create an appetizing dining room for your next family dinner from scratch",
     "image": "assets/images/rooms/room-diningroom.jpg"
   },
   {
     "id": 4,
     "name": "office",
-    "description": "Stop dreaming about the perfect living room – create one with our furniture.",
+    "description": "Best solutions for your home office",
     "image": "assets/images/rooms/room-office.jpg"
   }
 ]

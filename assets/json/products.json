@@ -1,14 +1,10 @@
 [
   {
     "id": 220101,
-    "name": "karljan",
+    "name": "langfjall",
     "popularity": 1,
     "category": { "id": 1, "name": "chair" },
-    "rooms": [
-      { "id": 1, "name": "living room" },
-      { "id": 3, "name": "dining room" },
-      { "id": 4, "name": "office" }
-    ],
+    "rooms": [{ "id": 4, "name": "office" }],
     "info": [
       [
         "Description",
@@ -23,19 +19,15 @@
         "Back fabric: 100 % polyester (100% recycled). Fabric: 35% cotton, 65% polyester (min. 90% recycled). Leg: Solid birch, Acrylic paint. Seat frame: Steel, Epoxy/polyester powder coating. Backrest frame: Steel. Support panel: Polyethylene plastic. Backrest cushion/ Seat cushion: 100% polyester. Lining: Polyester wadding."
       ]
     ],
-    "price": 39,
+    "price": 199,
     "images": ["assets/images/products/product-220101.jpg"]
   },
   {
     "id": 220102,
-    "name": "leifarne",
+    "name": "fjallberget",
     "popularity": 1,
     "category": { "id": 1, "name": "chair" },
-    "rooms": [
-      { "id": 1, "name": "living room" },
-      { "id": 3, "name": "dining room" },
-      { "id": 4, "name": "office" }
-    ],
+    "rooms": [{ "id": 4, "name": "office" }],
     "info": [
       [
         "Description",
@@ -50,7 +42,7 @@
         "Back fabric: 100 % polyester (100% recycled). Fabric: 35% cotton, 65% polyester (min. 90% recycled). Leg: Solid birch, Acrylic paint. Seat frame: Steel, Epoxy/polyester powder coating. Backrest frame: Steel. Support panel: Polyethylene plastic. Backrest cushion/ Seat cushion: 100% polyester. Lining: Polyester wadding."
       ]
     ],
-    "price": 59,
+    "price": 269,
     "images": ["assets/images/products/product-220102.jpg"]
   },
   {
@@ -58,10 +50,7 @@
     "name": "bergmund",
     "popularity": 1,
     "category": { "id": 1, "name": "chair" },
-    "rooms": [
-      { "id": 1, "name": "living room" },
-      { "id": 3, "name": "dining room" }
-    ],
+    "rooms": [{ "id": 3, "name": "dining room" }],
     "info": [
       [
         "Description",
@@ -85,7 +74,6 @@
     "popularity": 1,
     "category": { "id": 1, "name": "chair" },
     "rooms": [
-      { "id": 1, "name": "living room" },
       { "id": 3, "name": "dining room" },
       { "id": 4, "name": "office" }
     ],
@@ -111,10 +99,7 @@
     "name": "lisabo",
     "popularity": 1,
     "category": { "id": 1, "name": "chair" },
-    "rooms": [
-      { "id": 1, "name": "living room" },
-      { "id": 3, "name": "dining room" }
-    ],
+    "rooms": [{ "id": 3, "name": "dining room" }],
     "info": [
       [
         "Description",
@@ -164,10 +149,7 @@
     "name": "strandmon",
     "popularity": 7,
     "category": { "id": 1, "name": "chair" },
-    "rooms": [
-      { "id": 1, "name": "living room" },
-      { "id": 3, "name": "dining room" }
-    ],
+    "rooms": [{ "id": 1, "name": "living room" }],
     "info": [
       [
         "Description",
@@ -373,74 +355,71 @@
   },
   {
     "id": 220302,
-    "name": "morbylanga",
+    "name": "lagkapten",
     "popularity": 6,
     "category": { "id": 3, "name": "desk" },
-    "rooms": [{ "id": 3, "name": "dining room" }],
+    "rooms": [{ "id": 4, "name": "office" }],
     "info": [
       [
         "Description",
-        "The clean, simple design is easy to place in restaurants, cafés or meeting rooms and quick-meeting areas in offices. 10 year guarantee. Read about the terms in the guarantee brochure. The laminate surface is very durable, easy to clean and can withstand heavy use. The feet can be adjusted so the table stands steadily on uneven floors. They’re attached to the table’s legs so they will not fall off or get lost. The durable edge band protects against bumps, scratches and cracks caused by chairs being moved around or hung on the table. Combine any number of tables as you like and create a solution that suits you and your team – for meetings, creative workshops, collaborations and individual tasks. You can quickly and easily rearrange your tables and adjust the solution when the needs in the office change. This table suits both homes and businesses demanding everyday strength and durability. Easy to place in a kitchen, dining room, café or meeting room. The clean design combines well with many styles."
+        "This sturdy desk is built to outlast years of coffee and hard work. You get a generous work surface and a clever solution to keep cords in place underneath. The melamine surface is durable, stain resistant and easy to keep clean. Deep table top gives a generous work surface and lets you sit at a comfortable distance from the computer monitor. You can mount the table top at a height that suits you, since the legs are adjustable."
       ],
       [
         "Materials",
-        "Particleboard, Oak veneer, Tinted clear acrylic lacquer, Paper foil, ABS plastic. Basematerial/ Leg: Steel, Epoxy/polyester powder coating. Inside leg/ Inside frame: Steel."
+        "Tabletop: Particleboard, Melamine foil, Plastic edging. Underframe for table top Leg/ Underframe/ Mounting plate: Steel, Epoxy/polyester powder coating. Feet: Aluminum, Epoxy/polyester powder coating. Cable management: Stainless steel, 70 % rubber, 30 % polyester."
       ],
       [
         "Care instructions",
-        "For maximum quality, re-tighten the screws when necessary. Wipe clean with a cloth dampened in a mild cleaner. Wipe dry with a clean cloth."
+        "Check regularly that all assembly fastenings are properly tightened and retighten when necessary. Wipe clean with a mild soapy solution. Wipe dry with a clean cloth."
       ]
     ],
-    "price": 749,
+    "price": 119,
     "images": ["assets/images/products/product-220302.jpg"]
   },
   {
     "id": 220303,
-    "name": "strandtorp",
+    "name": "bekant",
     "popularity": 1,
     "category": { "id": 3, "name": "desk" },
-    "rooms": [
-      { "id": 3, "name": "dining room" },
-      { "id": 4, "name": "office" }
-    ],
+    "rooms": [{ "id": 4, "name": "office" }],
     "info": [
       [
         "Description",
-        "The clean, simple design is easy to place in restaurants, cafés or meeting rooms and quick-meeting areas in offices. 10 year guarantee. Read about the terms in the guarantee brochure. The laminate surface is very durable, easy to clean and can withstand heavy use. The feet can be adjusted so the table stands steadily on uneven floors. They’re attached to the table’s legs so they will not fall off or get lost. The durable edge band protects against bumps, scratches and cracks caused by chairs being moved around or hung on the table. Combine any number of tables as you like and create a solution that suits you and your team – for meetings, creative workshops, collaborations and individual tasks. You can quickly and easily rearrange your tables and adjust the solution when the needs in the office change. This table suits both homes and businesses demanding everyday strength and durability. Easy to place in a kitchen, dining room, café or meeting room. The clean design combines well with many styles."
+        "This sturdy desk is built to outlast years of coffee and hard work. You get a generous work surface and a clever solution to keep cords in place underneath. The melamine surface is durable, stain resistant and easy to keep clean. Deep table top gives a generous work surface and lets you sit at a comfortable distance from the computer monitor. You can mount the table top at a height that suits you, since the legs are adjustable."
       ],
       [
         "Materials",
-        "Particleboard, Oak veneer, Tinted clear acrylic lacquer, Paper foil, ABS plastic. Basematerial/ Leg: Steel, Epoxy/polyester powder coating. Inside leg/ Inside frame: Steel."
+        "Tabletop: Particleboard, Melamine foil, Plastic edging. Underframe for table top Leg/ Underframe/ Mounting plate: Steel, Epoxy/polyester powder coating. Feet: Aluminum, Epoxy/polyester powder coating. Cable management: Stainless steel, 70 % rubber, 30 % polyester."
       ],
       [
         "Care instructions",
-        "For maximum quality, re-tighten the screws when necessary. Wipe clean with a cloth dampened in a mild cleaner. Wipe dry with a clean cloth."
+        "Check regularly that all assembly fastenings are properly tightened and retighten when necessary. Wipe clean with a mild soapy solution. Wipe dry with a clean cloth."
       ]
     ],
-    "price": 429,
+    "price": 279,
     "images": ["assets/images/products/product-220303.jpg"]
   },
   {
     "id": 220304,
-    "name": "docksta",
+    "name": "idasen",
     "popularity": 1,
     "category": { "id": 3, "name": "desk" },
-    "rooms": [{ "id": 3, "name": "dining room" }],
+    "rooms": [{ "id": 4, "name": "office" }],
     "info": [
       [
         "Description",
-        "The clean, simple design is easy to place in restaurants, cafés or meeting rooms and quick-meeting areas in offices. 10 year guarantee. Read about the terms in the guarantee brochure. The laminate surface is very durable, easy to clean and can withstand heavy use. The feet can be adjusted so the table stands steadily on uneven floors. They’re attached to the table’s legs so they will not fall off or get lost. The durable edge band protects against bumps, scratches and cracks caused by chairs being moved around or hung on the table. Combine any number of tables as you like and create a solution that suits you and your team – for meetings, creative workshops, collaborations and individual tasks. You can quickly and easily rearrange your tables and adjust the solution when the needs in the office change. This table suits both homes and businesses demanding everyday strength and durability. Easy to place in a kitchen, dining room, café or meeting room. The clean design combines well with many styles."
+        "This sturdy desk is built to outlast years of coffee and hard work. You get a generous work surface and a clever solution to keep cords in place underneath. The melamine surface is durable, stain resistant and easy to keep clean. Deep table top gives a generous work surface and lets you sit at a comfortable distance from the computer monitor. You can mount the table top at a height that suits you, since the legs are adjustable."
       ],
       [
         "Materials",
-        "Particleboard, Oak veneer, Tinted clear acrylic lacquer, Paper foil, ABS plastic. Basematerial/ Leg: Steel, Epoxy/polyester powder coating. Inside leg/ Inside frame: Steel."
+        "Tabletop: Particleboard, Melamine foil, Plastic edging. Underframe for table top Leg/ Underframe/ Mounting plate: Steel, Epoxy/polyester powder coating. Feet: Aluminum, Epoxy/polyester powder coating. Cable management: Stainless steel, 70 % rubber, 30 % polyester."
       ],
       [
         "Care instructions",
-        "For maximum quality, re-tighten the screws when necessary. Wipe clean with a cloth dampened in a mild cleaner. Wipe dry with a clean cloth."
+        "Check regularly that all assembly fastenings are properly tightened and retighten when necessary. Wipe clean with a mild soapy solution. Wipe dry with a clean cloth."
       ]
     ],
-    "price": 429,
+    "price": 709,
     "images": ["assets/images/products/product-220304.jpg"]
   }
 ]
