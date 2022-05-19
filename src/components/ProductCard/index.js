@@ -1,11 +1,9 @@
 import React from "react";
 
-import { Add24Filled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
 import {
   AspectRatio,
   Box,
-  Button,
   HStack,
   Hide,
   Image,
@@ -21,6 +19,7 @@ import {
   useSearchParams,
 } from "react-router-dom";
 
+import AddToCartButton from "components/AddToCartButton";
 import ImageFallback from "components/ImageFallback";
 import Price from "components/Price";
 
@@ -64,9 +63,7 @@ function ProductCard({ productData }) {
             margin="0.5rem"
             borderRadius="0.5rem"
           >
-            <Button variant="alpha" colorScheme="orange">
-              <Add24Filled />
-            </Button>
+            <AddToCartButton size="sm" />
           </Box>
         </Hide>
       </Box>
@@ -100,9 +97,7 @@ function ProductCard({ productData }) {
         </VStack>
         <Box flexGrow="0">
           <Show above="sm">
-            <Button variant="alpha" colorScheme="orange">
-              <Add24Filled />
-            </Button>
+            <AddToCartButton size="sm" />
           </Show>
           <Hide above="xs">
             <Price price={productData.price} discount={productData.discount} />

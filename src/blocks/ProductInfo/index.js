@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import DragScroll from "components/DragScroll";
 import Price from "components/Price";
-import { Add24Filled, ShareAndroid24Filled } from "@fluentui/react-icons";
+import { ShareAndroid24Filled } from "@fluentui/react-icons";
 import {
   AspectRatio,
   Box,
@@ -23,6 +23,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
+import AddToCartButton from "components/AddToCartButton";
 import BackButton from "components/BackButton";
 import ImageFallback from "components/ImageFallback";
 import ReviewsCard from "components/ReviewsCard";
@@ -119,9 +120,7 @@ function ProductInfo() {
               spacing={{ base: "1rem", md: "1.5rem" }}
             >
               <ReviewsCard />
-              <Button leftIcon={<Add24Filled />} colorScheme="orange">
-                Add to cart
-              </Button>
+              <AddToCartButton />
             </Stack>
             {/* Row 3 */}
             <Tabs w="100%">
