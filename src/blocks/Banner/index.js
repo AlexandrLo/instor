@@ -4,6 +4,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { Container, Image, Link } from "@chakra-ui/react";
 
 import BannerOverlay from "components/BannerOverlay";
+import ImageFallback from "components/ImageFallback";
 import bannersData from "assets/json/banners.json";
 
 function Banner() {
@@ -20,19 +21,18 @@ function Banner() {
         to={bannerData?.to ?? ""}
         display="block"
         position="relative"
+        h={{ base: "150px", md: "250px" }}
         w="100%"
         borderRadius="1rem"
         variant="box-inset"
       >
         <Image
           src={bannerData?.image}
-          alt="Banner image"
-          h={{ base: "120px", md: "250px" }}
-          w="100%"
+          alt="Banner photo"
+          boxSize="100%"
           fit="cover"
-          position="relative"
-          zIndex={-1}
           borderRadius="1rem"
+          fallback={<ImageFallback />}
         />
         <BannerOverlay heading={bannerData?.heading} text={bannerData?.text} />
       </Link>

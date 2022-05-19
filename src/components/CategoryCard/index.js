@@ -10,10 +10,9 @@ function CategoryCard({ name, image, to }) {
       name={name}
       image={image}
       to={to}
-      imageProps={{
-        minW: "150px",
-        minH: "75px",
-      }}
+      ratio={2 / 1}
+      minW="150px"
+      alt={`${name} category photo`}
       textProps={{
         top: "50%",
         transform: "auto",

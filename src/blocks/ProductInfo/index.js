@@ -20,9 +20,11 @@ import {
   Tabs,
   Text,
   VStack,
+  AspectRatio,
 } from "@chakra-ui/react";
 
 import BackButton from "components/BackButton";
+import ImageFallback from "components/ImageFallback";
 import ReviewsCard from "components/ReviewsCard";
 import TitleUpdater from "components/TitleUpdater";
 import productsData from "assets/json/products.json";
@@ -51,17 +53,22 @@ function ProductInfo() {
           {/* Image column */}
           <Box
             pos="relative"
-            flex="1 1 50%"
             ml={{ base: "1rem", md: "1.5rem" }}
             mr={{ base: "1rem", md: "0" }}
           >
-            <Image
-              maxH={{ base: "28rem", md: "100%" }}
-              w="100%"
-              src={productData.images?.[0]}
-              fit="cover"
-              borderRadius="1rem"
-            />
+            <AspectRatio
+              minW={{ base: "100%", md: "18rem", lg: "23rem", xl: "28rem" }}
+              maxH={{ base: "none", sm: "28rem", md: "none" }}
+              ratio={1}
+            >
+              <Image
+                src={productData.images?.[0]}
+                alt={`Photo of ${productData.name}`}
+                fit="cover"
+                borderRadius="1rem"
+                fallback={<ImageFallback />}
+              />
+            </AspectRatio>
             <HStack
               pos="absolute"
               top="0"
@@ -105,8 +112,8 @@ function ProductInfo() {
             </HStack>
             {/* Row 2 */}
             <Stack
-              direction={{ base: "column-reverse", xl: "row" }}
-              align={{ base: "stretch", xl: "center" }}
+              direction={{ base: "column-reverse", lg: "row" }}
+              align={{ base: "stretch", lg: "center" }}
               justify="space-between"
               px={{ base: "1rem", md: "1.5rem" }}
               spacing={{ base: "1rem", md: "1.5rem" }}

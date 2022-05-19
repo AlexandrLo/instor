@@ -1,6 +1,6 @@
 import React from "react";
 
-import { HStack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
 import CategoryCard from "components/CategoryCard";
 import DragScroll from "components/DragScroll";
@@ -11,10 +11,9 @@ function Categories() {
   return (
     <SectionWrapper heading={{ text: "Categories" }}>
       <DragScroll>
-        <HStack
-          w="fit-content"
-          spacing="1rem"
-          px={{ base: "1rem", md: "1.5rem" }}
+        <Flex
+          w="100%"
+          pl={{ base: "1rem", md: "1.5rem" }}
           pb={{ base: "1rem", md: "1.5rem" }}
         >
           {categoriesData.map((category) => (
@@ -25,7 +24,7 @@ function Categories() {
               key={category.id}
             />
           ))}
-        </HStack>
+        </Flex>
       </DragScroll>
     </SectionWrapper>
   );

@@ -3,6 +3,7 @@ import React from "react";
 import { Add24Filled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
 import {
+  AspectRatio,
   Box,
   Button,
   HStack,
@@ -20,6 +21,7 @@ import {
   useSearchParams,
 } from "react-router-dom";
 
+import ImageFallback from "components/ImageFallback";
 import Price from "components/Price";
 
 function ProductCard({ productData }) {
@@ -43,14 +45,15 @@ function ProductCard({ productData }) {
       }}
     >
       <Box position="relative">
-        <Image
-          src={productData.images[0]}
-          alt={`${productData.name} image`}
-          fit="cover"
-          maxH="270px"
-          w="100%"
-          borderRadius="1rem"
-        />
+        <AspectRatio maxW="100%" maxH="17rem" ratio={1}>
+          <Image
+            src={productData.images[0]}
+            alt={`Photo of ${productData.name}`}
+            fit="cover"
+            borderRadius="1rem"
+            fallback={<ImageFallback />}
+          />
+        </AspectRatio>
 
         <Hide above="sm">
           <Box

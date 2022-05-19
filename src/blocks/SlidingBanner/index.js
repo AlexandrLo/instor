@@ -6,6 +6,7 @@ import { animate, motion, useMotionValue } from "framer-motion";
 
 import Arrow from "./Arrow";
 import BannerOverlay from "components/BannerOverlay";
+import ImageFallback from "components/ImageFallback";
 import Indicator from "./Indicator";
 import bannersData from "assets/json/banners.json";
 
@@ -67,6 +68,7 @@ function SlidingBanner() {
         <motion.div
           style={{
             x,
+            height: "100%",
           }}
           drag="x"
           onDragStart={() => setIsDragging(true)}
@@ -74,14 +76,14 @@ function SlidingBanner() {
           dragTransition={transition}
           onDragEnd={dragEndHandler}
         >
-          <HStack spacing="0">
+          <HStack spacing="0" h="100%">
             {bannersData.map((slide, index) => (
               <Link
                 as={RouterLink}
                 to={slide.to}
                 variant="box-inset"
                 position="relative"
-                w="100%"
+                boxSize="100%"
                 borderRadius="1rem"
                 flex="0 0 auto"
                 key={`slide-${index}`}
@@ -100,13 +102,12 @@ function SlidingBanner() {
               >
                 <Image
                   src={slide.image}
-                  alt="Banner image"
+                  alt="Banner photo"
                   fit="cover"
                   position="relative"
-                  zIndex={-1}
-                  h={{ base: "150px", md: "350px" }}
-                  w="100%"
+                  boxSize="100%"
                   borderRadius="1rem"
+                  fallback={<ImageFallback />}
                 />
                 <BannerOverlay heading={slide.heading} text={slide.text} />
               </Link>

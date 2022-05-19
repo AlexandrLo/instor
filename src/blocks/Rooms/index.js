@@ -1,6 +1,6 @@
 import React from "react";
 
-import { HStack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
 import DragScroll from "components/DragScroll";
 import RoomCard from "components/RoomCard";
@@ -16,9 +16,8 @@ function Rooms() {
       }}
     >
       <DragScroll>
-        <HStack
-          w="fit-content"
-          spacing="1rem"
+        <Flex
+          w="100%"
           px={{ base: "1rem", md: "1.5rem" }}
           pb={{ base: "1rem", md: "1.5rem" }}
         >
@@ -30,7 +29,7 @@ function Rooms() {
               key={room.id}
             />
           ))}
-        </HStack>
+        </Flex>
       </DragScroll>
     </SectionWrapper>
   );
