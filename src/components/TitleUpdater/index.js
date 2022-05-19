@@ -6,9 +6,13 @@ import PropTypes from "prop-types";
 function TitleUpdater({ title }) {
   return (
     <Helmet>
-      <title>
-        {`Instor | ${title?.replace(/^\w/, (c) => c.toUpperCase())}`}
-      </title>
+      {title ? (
+        <title>
+          {`Instor | ${title?.replace(/^\w/, (c) => c.toUpperCase())}`}
+        </title>
+      ) : (
+        <title>{"Instor"}</title>
+      )}
     </Helmet>
   );
 }
