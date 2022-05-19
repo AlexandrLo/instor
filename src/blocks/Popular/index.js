@@ -20,7 +20,7 @@ function Popular() {
 
   useEffect(() => {
     setPopularProductsData(
-      productsData
+      [...productsData]
         .sort((a, b) => b.popularity - a.popularity)
         .slice(0, productCount),
     );
