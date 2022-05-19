@@ -10,12 +10,11 @@ function RoomCard({ name, image, to }) {
       name={name}
       image={image}
       to={to}
-      ratio={1 / 2}
+      ratio={2 / 3}
       minW="180px"
       alt={`${name} category photo`}
       textProps={{
         color: "black",
-        maxW: "3.75rem",
       }}
     />
   );

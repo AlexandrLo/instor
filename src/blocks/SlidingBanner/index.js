@@ -58,7 +58,7 @@ function SlidingBanner() {
   return (
     <Container p={{ base: "1rem", md: "1.5rem" }}>
       <Box
-        h={{ base: "150px", md: "350px" }}
+        h={["9rem", "12rem", "15rem", "18rem", "21rem"]}
         position="relative"
         overflowX="clip"
         borderRadius="1rem"

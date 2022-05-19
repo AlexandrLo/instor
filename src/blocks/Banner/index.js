@@ -21,7 +21,7 @@ function Banner() {
         to={bannerData?.to ?? ""}
         display="block"
         position="relative"
-        h={{ base: "150px", md: "250px" }}
+        h={["8rem", "10rem", "12rem", "14rem", "16rem"]}
         w="100%"
         borderRadius="1rem"
         variant="box-inset"

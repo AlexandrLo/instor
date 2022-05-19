@@ -20,9 +20,9 @@ function BannerOverlay({ heading = "", text = "", showCTA = true }) {
       <Heading as="h1" size="h1">
         {heading}
       </Heading>
-      <Text fontWeight="600" fontSize={{ base: "14px", md: "16px" }}>
+      <Heading as="h3" size="h3">
         {text}
-      </Text>
+      </Heading>
       {showCTA && (
         <HStack fontSize={{ base: "14px", md: "16px" }}>
           <Text>Learn more</Text>

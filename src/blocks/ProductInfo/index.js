@@ -6,6 +6,7 @@ import DragScroll from "components/DragScroll";
 import Price from "components/Price";
 import { Add24Filled, ShareAndroid24Filled } from "@fluentui/react-icons";
 import {
+  AspectRatio,
   Box,
   Button,
   Container,
@@ -20,7 +21,6 @@ import {
   Tabs,
   Text,
   VStack,
-  AspectRatio,
 } from "@chakra-ui/react";
 
 import BackButton from "components/BackButton";
