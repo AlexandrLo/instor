@@ -10,6 +10,7 @@ function Placeholder({
   heading,
   description,
   showButton = true,
+  maxW,
   children,
 }) {
   let headingSize = "h2";
@@ -28,7 +29,7 @@ function Placeholder({
   }
 
   return (
-    <VStack spacing="1rem">
+    <VStack spacing="1rem" maxW={maxW}>
       {icon && (
         <Box fontSize={iconSize} lineHeight="0">
           {icon}
@@ -65,6 +66,7 @@ Placeholder.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   showButton: PropTypes.bool,
+  maxW: PropTypes.any,
   children: PropTypes.node,
 };
 
