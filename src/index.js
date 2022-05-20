@@ -11,7 +11,7 @@ import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import App from "./App";
 import { customLocalStorageManager } from "utils/customLocalStorageManager";
 import theme from "theme";
-import { persistor, store } from "app/store";
+import { persistor, store } from "store";
 
 ReactDOM.render(
   <React.StrictMode>
