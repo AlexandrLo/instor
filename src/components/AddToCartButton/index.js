@@ -1,14 +1,19 @@
-import React, { useCallback } from "react";
+import React from "react";
 
 import { Add24Filled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
 import { Button, Tooltip } from "@chakra-ui/react";
 
-function AddToCartButton({ size = "md" }) {
-  const onAdd = useCallback((e) => {
+import { cartAddItem } from "store/slices/cartSlice";
+
+function AddToCartButton({ size = "md", id }) {
+  const dispatch = useDispatch();
+  const onAdd = (e) => {
     e.stopPropagation();
     e.preventDefault();
-  }, []);
+    if (id) dispatch(cartAddItem(id));
+  };
 
   return (
     <>
@@ -29,5 +34,6 @@ function AddToCartButton({ size = "md" }) {
 }
 AddToCartButton.propTypes = {
   size: PropTypes.oneOf(["md", "sm"]),
+  id: PropTypes.number,
 };
 export default AddToCartButton;

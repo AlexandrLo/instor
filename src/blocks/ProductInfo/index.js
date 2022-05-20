@@ -120,7 +120,7 @@ function ProductInfo() {
               spacing={{ base: "1rem", md: "1.5rem" }}
             >
               <ReviewsCard />
-              <AddToCartButton />
+              <AddToCartButton id={productData.id} />
             </Stack>
             {/* Row 3 */}
             <Tabs w="100%">

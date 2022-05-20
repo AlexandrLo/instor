@@ -63,7 +63,7 @@ function ProductCard({ productData }) {
             margin="0.5rem"
             borderRadius="0.5rem"
           >
-            <AddToCartButton size="sm" />
+            <AddToCartButton size="sm" id={productData.id} />
           </Box>
         </Hide>
       </Box>
@@ -83,9 +83,9 @@ function ProductCard({ productData }) {
             {productData.category.name}
           </Text>
           <Text
-            textOverflow={"ellipsis"}
-            overflow="hidden"
             textTransform="capitalize"
+            textOverflow="ellipsis"
+            overflow="hidden"
             style={{ wordWrap: "normal" }}
           >
             {productData.name}
@@ -97,7 +97,7 @@ function ProductCard({ productData }) {
         </VStack>
         <Box flexGrow="0">
           <Show above="sm">
-            <AddToCartButton size="sm" />
+            <AddToCartButton size="sm" id={productData.id} />
           </Show>
           <Hide above="xs">
             <Price price={productData.price} discount={productData.discount} />
