@@ -8,7 +8,7 @@ import CategoryPage from "containers/CategoryPage";
 import Footer from "blocks/Footer";
 import HomePage from "containers/HomePage";
 import Navigation from "blocks/Navigation";
-import NoMatchPage from "containers/NoMatchPage";
+import NotFoundPage from "containers/NotFoundPage";
 import ProductPage from "containers/ProductPage";
 import RoomPage from "containers/RoomPage";
 import ScrollToTop from "components/ScrollToTop";
@@ -19,12 +19,12 @@ import TitleUpdater from "components/TitleUpdater";
 const routes = [
   {
     path: "*",
-    page: <NoMatchPage />,
+    page: <NotFoundPage />,
     name: "Page not found",
   },
   {
     path: "/404",
-    page: <NoMatchPage />,
+    page: <NotFoundPage />,
     name: "Page not found",
   },
   {
