@@ -3,16 +3,31 @@ import React from "react";
 import { Add24Filled } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
-import { Button, Tooltip } from "@chakra-ui/react";
+import { Button, Tooltip, useToast } from "@chakra-ui/react";
 
 import { cartAddItem } from "store/slices/cartSlice";
 
-function AddToCartButton({ size = "md", id }) {
+function AddToCartButton({ size = "md", id, name }) {
   const dispatch = useDispatch();
+
+  const toast = useToast();
+
   const onAdd = (e) => {
     e.stopPropagation();
     e.preventDefault();
-    if (id) dispatch(cartAddItem(id));
+    if (id) {
+      dispatch(cartAddItem(id));
+      toast({
+        position: "top",
+        title: "Added to cart",
+        description: `${
+          name[0].toUpperCase() + name.slice(1)
+        } was added to your cart`,
+        status: "success",
+        duration: 5000,
+        isClosable: true,
+      });
+    }
   };
 
   return (
@@ -35,5 +50,6 @@ function AddToCartButton({ size = "md", id }) {
 AddToCartButton.propTypes = {
   size: PropTypes.oneOf(["md", "sm"]),
   id: PropTypes.number,
+  name: PropTypes.string,
 };
 export default AddToCartButton;

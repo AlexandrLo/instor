@@ -63,7 +63,11 @@ function ProductCard({ productData }) {
             margin="0.5rem"
             borderRadius="0.5rem"
           >
-            <AddToCartButton size="sm" id={productData.id} />
+            <AddToCartButton
+              size="sm"
+              id={productData.id}
+              name={productData.name}
+            />
           </Box>
         </Hide>
       </Box>
@@ -97,7 +101,11 @@ function ProductCard({ productData }) {
         </VStack>
         <Box flexGrow="0">
           <Show above="sm">
-            <AddToCartButton size="sm" id={productData.id} />
+            <AddToCartButton
+              size="sm"
+              id={productData.id}
+              name={productData.name}
+            />
           </Show>
           <Hide above="xs">
             <Price price={productData.price} discount={productData.discount} />
