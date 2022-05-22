@@ -13,6 +13,14 @@ export default {
         maxH: scrollBehavior === "inside" ? "calc(100% - 7.5rem)" : undefined,
         boxShadow: mode("lg", "dark-lg")(props),
       },
+      body: {
+        p: "1rem",
+        flex: 1,
+        overflow: scrollBehavior === "inside" ? "auto" : undefined,
+      },
+      footer: {
+        p: "1rem",
+      },
     };
   },
 };
