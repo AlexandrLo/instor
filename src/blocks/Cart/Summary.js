@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Button, HStack, Heading, Input, Text, VStack } from "@chakra-ui/react";
 
+import CheckoutButton from "./CheckoutButton";
+
 function Summary({ items }) {
   const [productsTotal, setProductsTotal] = useState(0);
   const [deliveryTotal, setDeliveryTotal] = useState(0);
@@ -55,9 +57,7 @@ function Summary({ items }) {
         <Button variant="solid">Apply</Button>
       </HStack>
 
-      <Button colorScheme="orange" disabled={items.length === 0}>
-        Checkout
-      </Button>
+      <CheckoutButton disabled={items.length === 0} />
     </VStack>
   );
 }
