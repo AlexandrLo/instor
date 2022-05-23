@@ -63,7 +63,15 @@ function Summary({ items }) {
 }
 
 Summary.propTypes = {
-  items: PropTypes.array,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      amount: PropTypes.number.isRequired,
+      product: PropTypes.shape({
+        price: PropTypes.number.isRequired,
+        discount: PropTypes.number,
+      }).isRequired,
+    }),
+  ),
 };
 
 export default Summary;

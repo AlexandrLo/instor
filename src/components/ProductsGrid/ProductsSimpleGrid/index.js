@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { SimpleGrid } from "@chakra-ui/react";
 
-import ProductCard from "components/ProductCard";
+import ProductCard from "./ProductCard";
 
 function ProductsSimpleGrid({ products }) {
   return (

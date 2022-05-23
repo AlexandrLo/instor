@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import { Spinner, VStack } from "@chakra-ui/react";
 
 import Placeholder from "components/Placeholder";
-import ProductCard from "components/ProductCard";
 import ProductsSimpleGrid from "./ProductsSimpleGrid";
 
 function ProductsGrid({ products = [], isLoading = false }) {
@@ -34,7 +33,7 @@ function ProductsGrid({ products = [], isLoading = false }) {
 }
 
 ProductsGrid.propTypes = {
-  products: PropTypes.arrayOf(ProductCard.propTypes.product),
+  products: ProductsSimpleGrid.propTypes.products,
   isLoading: PropTypes.bool,
 };
 
