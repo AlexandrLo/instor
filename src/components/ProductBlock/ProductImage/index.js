@@ -1,11 +1,11 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-import { ShareAndroid24Filled } from "@fluentui/react-icons";
-import { AspectRatio, Box, Button, HStack, Image } from "@chakra-ui/react";
+import { AspectRatio, Box, HStack, Image } from "@chakra-ui/react";
 
 import BackButton from "components/BackButton";
 import ImageFallback from "components/ImageFallback";
+import ShareButton from "./ShareButton";
 
 function ProductImage({ images, name }) {
   return (
@@ -35,9 +35,7 @@ function ProductImage({ images, name }) {
         justify="space-between"
       >
         <BackButton variant="blur" />
-        <Button variant="blur">
-          <ShareAndroid24Filled />
-        </Button>
+        <ShareButton />
       </HStack>
     </Box>
   );
