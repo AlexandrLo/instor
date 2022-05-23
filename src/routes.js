@@ -1,12 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 
-import Cart from "pages/Cart";
-import Category from "pages/Category";
-import Home from "pages/Home";
-import NotFound from "pages/NotFound";
-import Product from "pages/Product";
-import Room from "pages/Room";
-import Search from "pages/Search";
+const Cart = lazy(() => import("pages/Cart"));
+const Category = lazy(() => import("pages/Category"));
+const Home = lazy(() => import("pages/Home"));
+const NotFound = lazy(() => import("pages/NotFound"));
+const Product = lazy(() => import("pages/Product"));
+const Room = lazy(() => import("pages/Room"));
+const Search = lazy(() => import("pages/Search"));
 
 const routes = [
   {
