@@ -12,7 +12,7 @@ import {
 
 import BackButton from "components/BackButton";
 
-function PageHeader({ heading = "Heading", description, image, onBack }) {
+function PageHeader({ heading = "", description, image, onBack }) {
   const headerBg = useColorModeValue("gray.50", "gray.700");
 
   return (
