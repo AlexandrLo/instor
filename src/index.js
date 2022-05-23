@@ -22,10 +22,8 @@ ReactDOM.render(
             theme={theme}
             colorModeManager={customLocalStorageManager}
           >
+            <ColorModeScript initialColorMode={theme.config.initialColorMode} />
             <HashRouter>
-              <ColorModeScript
-                initialColorMode={theme.config.initialColorMode}
-              />
               <App />
             </HashRouter>
           </ChakraProvider>

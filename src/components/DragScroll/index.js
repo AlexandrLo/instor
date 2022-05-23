@@ -6,7 +6,7 @@ import { useDrag } from "@use-gesture/react";
 import { useResizeDetector } from "react-resize-detector";
 import { animated, useSpring } from "@react-spring/web";
 
-import { clamp, isInRange } from "utils/springHelpers";
+import { clamp, isInRange } from "./utils";
 
 const springDragConfig = {
   mass: 1,
