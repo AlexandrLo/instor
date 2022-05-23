@@ -9,22 +9,8 @@ import {
   Search24Filled,
 } from "@fluentui/react-icons";
 
+import CartBadge from "components/CartBadge";
 import TabBarLink from "./TabBarLink";
-
-const tabBarLinks = [
-  {
-    to: "/",
-    icon: <Home24Filled />,
-  },
-  {
-    to: "/search",
-    icon: <Search24Filled />,
-  },
-  {
-    to: "/cart",
-    icon: <Cart24Filled />,
-  },
-];
 
 function TabBar({ onLoginModalOpen }) {
   const borderColor = useColorModeValue("blackAlpha.50", "whiteAlpha.50");
@@ -50,11 +36,16 @@ function TabBar({ onLoginModalOpen }) {
           py="1rem"
           px="1rem"
         >
-          {tabBarLinks.map((link, i) => (
-            <TabBarLink key={i} to={link.to}>
-              {link.icon}
-            </TabBarLink>
-          ))}
+          <TabBarLink to="/">
+            <Home24Filled />
+          </TabBarLink>
+          <TabBarLink to="/search">
+            <Search24Filled />
+          </TabBarLink>
+          <TabBarLink to="/cart">
+            <Cart24Filled />
+            <CartBadge side="right" />
+          </TabBarLink>
           <Button
             size="sm"
             variant="ghost"

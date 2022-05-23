@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 
+import CartBadge from "components/CartBadge";
 import LogoDark from "assets/images/logo-dark.svg";
 import LogoLight from "assets/images/logo-light.svg";
 import SearchInput from "./SearchInput";
@@ -57,6 +58,7 @@ function TopBar({ onLoginModalOpen }) {
                 to="/cart"
               >
                 Cart
+                <CartBadge />
               </Button>
               <Button variant="solid" onClick={onLoginModalOpen}>
                 Log In/Sign Up

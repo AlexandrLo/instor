@@ -1,6 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
+import Badge from "theme/components/Badge";
 import Button from "theme/components/Button";
 import Checkbox from "theme/components/Checkbox";
 import Container from "theme/components/Container";
@@ -16,6 +17,7 @@ import colors from "theme/colors";
 const theme = extendTheme({
   colors,
   components: {
+    Badge,
     Button,
     Checkbox,
     Container,
