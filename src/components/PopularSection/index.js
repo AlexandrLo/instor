@@ -8,6 +8,7 @@ import productsData from "assets/json/products.json";
 
 function PopularSection() {
   const [popularProductsData, setPopularProductsData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const productCount = useBreakpointValue({
     base: 4,
@@ -24,6 +25,7 @@ function PopularSection() {
         .sort((a, b) => b.popularity - a.popularity)
         .slice(0, productCount),
     );
+    setIsLoading(false);
   }, [productCount]);
 
   return (
@@ -36,7 +38,7 @@ function PopularSection() {
         px={{ base: "1rem", md: "1.5rem" }}
         pb={{ base: "1rem", md: "1.5rem" }}
       >
-        <ProductsGrid data={popularProductsData} />
+        <ProductsGrid products={popularProductsData} isLoading={isLoading} />
       </Box>
     </SectionWrapper>
   );

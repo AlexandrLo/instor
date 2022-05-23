@@ -4,12 +4,15 @@ import PropTypes from "prop-types";
 import { Link as RouterLink } from "react-router-dom";
 import { Box, Button, Heading, Text, VStack } from "@chakra-ui/react";
 
+import Suggestions from "./Suggestions";
+
 function Placeholder({
   size = "md",
   icon,
   heading,
   description,
   showButton = true,
+  showSuggestions = false,
   maxW,
   children,
 }) {
@@ -55,6 +58,8 @@ function Placeholder({
         </Button>
       )}
 
+      {showSuggestions && <Suggestions />}
+
       {children}
     </VStack>
   );
@@ -66,6 +71,7 @@ Placeholder.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   showButton: PropTypes.bool,
+  showSuggestions: PropTypes.bool,
   maxW: PropTypes.any,
   children: PropTypes.node,
 };

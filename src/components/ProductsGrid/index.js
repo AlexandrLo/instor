@@ -1,51 +1,41 @@
 import React from "react";
 
+import { BorderNoneRegular } from "@fluentui/react-icons";
 import PropTypes from "prop-types";
-import { SimpleGrid } from "@chakra-ui/react";
+import { Spinner, VStack } from "@chakra-ui/react";
 
-import Placeholder from "./Placeholder";
+import Placeholder from "components/Placeholder";
 import ProductCard from "components/ProductCard";
+import ProductsSimpleGrid from "./ProductsSimpleGrid";
 
-function ProductsGrid({ data = [] }) {
-  if (data.length > 0) {
-    return (
-      <SimpleGrid
-        columns={{
-          base: 1,
-          xs: 2,
-          sm: 2,
-          md: 3,
-          lg: 3,
-          xl: 4,
-        }}
-        spacing="1rem"
-        w="100%"
-      >
-        {data.map((product) => (
-          <ProductCard key={product.id} productData={product} />
-        ))}
-      </SimpleGrid>
-    );
-  } else {
-    return <Placeholder />;
-  }
+function ProductsGrid({ products = [], isLoading = false }) {
+  return (
+    <>
+      {isLoading && (
+        <VStack p="3rem" w="100%">
+          <Spinner size="xl" />
+        </VStack>
+      )}
+      {!isLoading && products.length > 0 && (
+        <ProductsSimpleGrid products={products} />
+      )}
+      {!isLoading && products.length <= 0 && (
+        <Placeholder
+          maxW="19rem"
+          icon={<BorderNoneRegular />}
+          heading="No Products Found"
+          description="Please check spelling or try one of these searches:"
+          showButton={false}
+          showSuggestions
+        />
+      )}
+    </>
+  );
 }
 
 ProductsGrid.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-      category: PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        name: PropTypes.string.isRequired,
-      }),
-      info: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
-      price: PropTypes.number.isRequired,
-      discount: PropTypes.number,
-      images: PropTypes.arrayOf(PropTypes.string).isRequired,
-    }),
-  ),
+  products: PropTypes.arrayOf(ProductCard.propTypes.product),
+  isLoading: PropTypes.bool,
 };
 
 export default ProductsGrid;

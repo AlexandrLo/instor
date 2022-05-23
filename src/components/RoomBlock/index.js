@@ -13,6 +13,7 @@ function RoomBlock() {
   let navigate = useNavigate();
   const [roomData, setRoomData] = useState({});
   const [roomProductsData, setRoomProductsData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const room = roomsData.find((room) => room.id == urlParams.id);
@@ -26,17 +27,18 @@ function RoomBlock() {
             product.rooms.filter((room) => room.id == urlParams.id).length > 0,
         ),
       );
+      setIsLoading(false);
     }
   }, [urlParams]);
 
   return (
-    <Container p={{ base: "1rem", md: "1.5rem" }}>
+    <Container p={{ base: "1rem", md: "1.5rem" }} flex="1 0 100%">
       <VStack spacing={{ base: "2rem", md: "3rem" }}>
         <PageHeader
           heading={roomData.name}
           description={roomData.description}
         />
-        <ProductsGrid data={roomProductsData} />
+        <ProductsGrid products={roomProductsData} isLoading={isLoading} />
       </VStack>
     </Container>
   );

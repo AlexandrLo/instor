@@ -23,7 +23,7 @@ import AddToCartButton from "components/AddToCartButton";
 import ImageFallback from "components/ImageFallback";
 import Price from "components/Price";
 
-function ProductCard({ productData }) {
+function ProductCard({ product }) {
   const cardBg = useColorModeValue("gray.50", "gray.700");
 
   let location = useLocation();
@@ -33,7 +33,7 @@ function ProductCard({ productData }) {
   return (
     <Link
       as={RouterLink}
-      to={`/product/${productData.id}?from=${from}`}
+      to={`/product/${product.id}?from=${from}`}
       w="100%"
       borderRadius="1rem"
       bg={cardBg}
@@ -46,8 +46,8 @@ function ProductCard({ productData }) {
       <Box position="relative">
         <AspectRatio maxW="100%" maxH="17rem" ratio={1}>
           <Image
-            src={productData.images[0]}
-            alt={`Photo of ${productData.name}`}
+            src={product.images[0]}
+            alt={`Photo of ${product.name}`}
             fit="cover"
             borderRadius="1rem"
             fallback={<ImageFallback />}
@@ -63,11 +63,7 @@ function ProductCard({ productData }) {
             margin="0.5rem"
             borderRadius="0.5rem"
           >
-            <AddToCartButton
-              size="sm"
-              id={productData.id}
-              name={productData.name}
-            />
+            <AddToCartButton size="sm" id={product.id} name={product.name} />
           </Box>
         </Hide>
       </Box>
@@ -84,7 +80,7 @@ function ProductCard({ productData }) {
             fontWeight="600"
             textTransform="uppercase"
           >
-            {productData.category.name}
+            {product.category.name}
           </Text>
           <Text
             textTransform="capitalize"
@@ -92,23 +88,19 @@ function ProductCard({ productData }) {
             overflow="hidden"
             style={{ wordWrap: "normal" }}
           >
-            {productData.name}
+            {product.name}
           </Text>
 
           <Show above="xs">
-            <Price price={productData.price} discount={productData.discount} />
+            <Price price={product.price} discount={product.discount} />
           </Show>
         </VStack>
         <Box flexGrow="0">
           <Show above="sm">
-            <AddToCartButton
-              size="sm"
-              id={productData.id}
-              name={productData.name}
-            />
+            <AddToCartButton size="sm" id={product.id} name={product.name} />
           </Show>
           <Hide above="xs">
-            <Price price={productData.price} discount={productData.discount} />
+            <Price price={product.price} discount={product.discount} />
           </Hide>
         </Box>
       </HStack>
@@ -117,7 +109,7 @@ function ProductCard({ productData }) {
 }
 
 ProductCard.propTypes = {
-  productData: PropTypes.shape({
+  product: PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     category: PropTypes.shape({
