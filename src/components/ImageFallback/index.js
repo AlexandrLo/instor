@@ -1,20 +1,17 @@
 import React from "react";
 
-import { Flex, Spinner, useColorModeValue } from "@chakra-ui/react";
+import { Skeleton, useColorModeValue } from "@chakra-ui/react";
 
 function ImageFallback() {
-  const bg = useColorModeValue("gray.50", "gray.700");
+  const start = useColorModeValue("gray.100", "gray.600");
+  const end = useColorModeValue("gray.200", "gray.500");
   return (
-    <Flex
-      position="relative"
+    <Skeleton
       boxSize="100%"
-      bg={bg}
-      justify="center"
-      align="center"
       borderRadius="1rem"
-    >
-      <Spinner size="xl" />
-    </Flex>
+      startColor={start}
+      endColor={end}
+    />
   );
 }
 
