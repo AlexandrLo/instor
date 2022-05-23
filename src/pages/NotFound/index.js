@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ErrorCircleRegular } from "@fluentui/react-icons";
+import { DocumentErrorRegular } from "@fluentui/react-icons";
 import { VStack } from "@chakra-ui/react";
 
 import Placeholder from "components/Placeholder";
@@ -14,7 +14,7 @@ function NotFound() {
       <VStack flex="1 0 100%" justify="center">
         <Placeholder
           size="lg"
-          icon={<ErrorCircleRegular />}
+          icon={<DocumentErrorRegular />}
           heading="Page not Found"
           description="This page doesn't exist or was removed"
         />
