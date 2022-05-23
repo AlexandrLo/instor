@@ -12,7 +12,7 @@ function LoginModal({ isOpen, onClose }) {
       <ModalOverlay />
       <ModalContent>
         <ModalHeader heading="Log In" onBack={onClose} />
-        <ModalBody p="1rem">
+        <ModalBody>
           <LoginForm />
         </ModalBody>
       </ModalContent>
