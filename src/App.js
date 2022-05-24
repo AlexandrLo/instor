@@ -3,7 +3,6 @@ import React, { Suspense } from "react";
 import { Flex } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 
-import Footer from "components/Footer";
 import Navigation from "components/Navigation";
 import RouteFallback from "components/RouteFallback";
 import ScrollToTop from "components/ScrollToTop";
@@ -23,8 +22,6 @@ export default function App() {
           ))}
         </Routes>
       </Suspense>
-
-      <Footer />
     </Flex>
   );
 }

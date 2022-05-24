@@ -3,6 +3,7 @@ import React from "react";
 import { DocumentErrorRegular } from "@fluentui/react-icons";
 import { VStack } from "@chakra-ui/react";
 
+import Footer from "components/Footer";
 import Placeholder from "components/Placeholder";
 import Title from "components/Title";
 
@@ -19,6 +20,8 @@ function NotFound() {
           description="This page doesn't exist or was removed"
         />
       </VStack>
+
+      <Footer />
     </>
   );
 }
