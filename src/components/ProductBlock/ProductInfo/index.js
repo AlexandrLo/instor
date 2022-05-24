@@ -70,16 +70,16 @@ function ProductInfo({ product }) {
 
 ProductInfo.propTypes = {
   product: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
+    id: PropTypes.number,
+    name: PropTypes.string,
     category: PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number,
+      name: PropTypes.string,
     }),
     info: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
-    price: PropTypes.number.isRequired,
+    price: PropTypes.number,
     discount: PropTypes.number,
-    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    images: PropTypes.arrayOf(PropTypes.string),
   }),
 };
 
