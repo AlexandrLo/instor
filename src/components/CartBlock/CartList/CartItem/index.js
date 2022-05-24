@@ -23,7 +23,7 @@ function CartItem({ item }) {
     <HStack spacing={{ base: "0.5rem", md: "1rem" }} align="center">
       <AspectRatio ratio={1} flex="0 0 auto" w="30%" minW="7rem">
         <Image
-          src={item.product.images}
+          src={item.product.images[0]}
           alt={`Photo of ${item.product.name}`}
         />
       </AspectRatio>
