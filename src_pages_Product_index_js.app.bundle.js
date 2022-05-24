@@ -348,16 +348,16 @@ function ProductInfo(_ref) {
 
 ProductInfo.propTypes = {
   product: prop_types__WEBPACK_IMPORTED_MODULE_7___default().shape({
-    id: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number.isRequired),
-    name: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().string.isRequired),
+    id: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number),
+    name: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().string),
     category: prop_types__WEBPACK_IMPORTED_MODULE_7___default().shape({
-      id: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number.isRequired),
-      name: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().string.isRequired)
+      id: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number),
+      name: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().string)
     }),
     info: prop_types__WEBPACK_IMPORTED_MODULE_7___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_7___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_7___default().string))),
-    price: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number.isRequired),
+    price: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number),
     discount: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number),
-    images: prop_types__WEBPACK_IMPORTED_MODULE_7___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_7___default().string)).isRequired
+    images: prop_types__WEBPACK_IMPORTED_MODULE_7___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_7___default().string))
   })
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProductInfo);
