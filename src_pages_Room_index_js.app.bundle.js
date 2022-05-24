@@ -14,9 +14,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @chakra-ui/react */ "./node_modules/@chakra-ui/layout/dist/chakra-ui-layout.esm.js");
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @chakra-ui/react */ "./node_modules/@chakra-ui/image/dist/chakra-ui-image.esm.js");
 /* harmony import */ var components_BannerOverlay__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/BannerOverlay */ "./src/components/BannerOverlay/index.js");
-/* harmony import */ var components_ImageFallback__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/ImageFallback */ "./src/components/ImageFallback/index.js");
+/* harmony import */ var components_Image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/Image */ "./src/components/Image/index.js");
 /* harmony import */ var assets_json_banners_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! assets/json/banners.json */ "./src/assets/json/banners.json");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -62,13 +61,9 @@ function Banner() {
     w: "100%",
     borderRadius: "1rem",
     variant: "box-inset"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_6__.Image, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(components_Image__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: bannerData === null || bannerData === void 0 ? void 0 : bannerData.image,
-    alt: "Banner photo",
-    boxSize: "100%",
-    fit: "cover",
-    borderRadius: "1rem",
-    fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(components_ImageFallback__WEBPACK_IMPORTED_MODULE_2__["default"], null)
+    alt: "Banner photo"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(components_BannerOverlay__WEBPACK_IMPORTED_MODULE_1__["default"], {
     heading: bannerData === null || bannerData === void 0 ? void 0 : bannerData.heading,
     text: bannerData === null || bannerData === void 0 ? void 0 : bannerData.text

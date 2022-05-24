@@ -173,14 +173,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @chakra-ui/react */ "./node_modules/@chakra-ui/media-query/dist/chakra-ui-media-query.esm.js");
 /* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @chakra-ui/react */ "./node_modules/@chakra-ui/layout/dist/chakra-ui-layout.esm.js");
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @chakra-ui/react */ "./node_modules/@chakra-ui/image/dist/chakra-ui-image.esm.js");
 /* harmony import */ var _AmountInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AmountInput */ "./src/components/CartBlock/CartList/CartItem/AmountInput/index.js");
 /* harmony import */ var _DeleteButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DeleteButton */ "./src/components/CartBlock/CartList/CartItem/DeleteButton/index.js");
-/* harmony import */ var components_ImageFallback__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/ImageFallback */ "./src/components/ImageFallback/index.js");
+/* harmony import */ var components_Image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/Image */ "./src/components/Image/index.js");
 /* harmony import */ var components_Price__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! components/Price */ "./src/components/Price/index.js");
 
 
@@ -207,12 +206,9 @@ function CartItem(_ref) {
     flex: "0 0 auto",
     w: "30%",
     minW: "7rem"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_7__.Image, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(components_Image__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: item.product.images,
-    alt: "Photo of ".concat(item.product.name),
-    borderRadius: "1rem",
-    fit: "cover",
-    fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(components_ImageFallback__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+    alt: "Photo of ".concat(item.product.name)
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_6__.VStack, {
     w: "100%",
     alignSelf: "stretch",
@@ -247,18 +243,18 @@ function CartItem(_ref) {
 }
 
 CartItem.propTypes = {
-  item: prop_types__WEBPACK_IMPORTED_MODULE_8___default().shape({
-    id: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().number.isRequired),
-    amount: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().number.isRequired),
-    product: prop_types__WEBPACK_IMPORTED_MODULE_8___default().shape({
-      id: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().number.isRequired),
-      name: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string.isRequired),
-      category: prop_types__WEBPACK_IMPORTED_MODULE_8___default().shape({
-        name: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string.isRequired)
+  item: prop_types__WEBPACK_IMPORTED_MODULE_7___default().shape({
+    id: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number.isRequired),
+    amount: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number.isRequired),
+    product: prop_types__WEBPACK_IMPORTED_MODULE_7___default().shape({
+      id: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number.isRequired),
+      name: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().string.isRequired),
+      category: prop_types__WEBPACK_IMPORTED_MODULE_7___default().shape({
+        name: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().string.isRequired)
       }),
-      price: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().number.isRequired),
-      discount: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().number),
-      images: prop_types__WEBPACK_IMPORTED_MODULE_8___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_8___default().string)).isRequired
+      price: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number.isRequired),
+      discount: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number),
+      images: prop_types__WEBPACK_IMPORTED_MODULE_7___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_7___default().string)).isRequired
     })
   })
 };

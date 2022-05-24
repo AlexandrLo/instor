@@ -66,12 +66,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @chakra-ui/react */ "./node_modules/@chakra-ui/layout/dist/chakra-ui-layout.esm.js");
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @chakra-ui/react */ "./node_modules/@chakra-ui/image/dist/chakra-ui-image.esm.js");
 /* harmony import */ var components_BackButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/BackButton */ "./src/components/BackButton/index.js");
-/* harmony import */ var components_ImageFallback__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/ImageFallback */ "./src/components/ImageFallback/index.js");
+/* harmony import */ var components_Image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/Image */ "./src/components/Image/index.js");
 /* harmony import */ var _ShareButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ShareButton */ "./src/components/ProductBlock/ProductImage/ShareButton/index.js");
 
 
@@ -106,12 +105,9 @@ function ProductImage(_ref) {
       md: "none"
     },
     ratio: 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_5__.Image, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(components_Image__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: images === null || images === void 0 ? void 0 : images[0],
-    alt: "Photo of ".concat(name),
-    fit: "cover",
-    borderRadius: "1rem",
-    fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(components_ImageFallback__WEBPACK_IMPORTED_MODULE_2__["default"], null)
+    alt: "Photo of ".concat(name)
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_4__.HStack, {
     pos: "absolute",
     top: "0",
@@ -124,8 +120,8 @@ function ProductImage(_ref) {
 }
 
 ProductImage.propTypes = {
-  images: prop_types__WEBPACK_IMPORTED_MODULE_6___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_6___default().string)),
-  name: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().string)
+  images: prop_types__WEBPACK_IMPORTED_MODULE_5___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_5___default().string)),
+  name: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string)
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProductImage);
 
