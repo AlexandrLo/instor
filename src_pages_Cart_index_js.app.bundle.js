@@ -207,7 +207,7 @@ function CartItem(_ref) {
     w: "30%",
     minW: "7rem"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(components_Image__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    src: item.product.images,
+    src: item.product.images[0],
     alt: "Photo of ".concat(item.product.name)
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_6__.VStack, {
     w: "100%",
