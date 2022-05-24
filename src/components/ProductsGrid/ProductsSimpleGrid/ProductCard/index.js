@@ -6,7 +6,6 @@ import {
   Box,
   HStack,
   Hide,
-  Image,
   Link,
   Show,
   Text,
@@ -20,7 +19,7 @@ import {
 } from "react-router-dom";
 
 import AddToCartButton from "components/AddToCartButton";
-import ImageFallback from "components/ImageFallback";
+import Image from "components/Image";
 import Price from "components/Price";
 
 function ProductCard({ product }) {
@@ -45,13 +44,7 @@ function ProductCard({ product }) {
     >
       <Box position="relative">
         <AspectRatio maxW="100%" maxH="17rem" ratio={1}>
-          <Image
-            src={product.images[0]}
-            alt={`Photo of ${product.name}`}
-            fit="cover"
-            borderRadius="1rem"
-            fallback={<ImageFallback />}
-          />
+          <Image src={product.images[0]} alt={`Photo of ${product.name}`} />
         </AspectRatio>
 
         <Hide above="sm">

@@ -5,7 +5,6 @@ import {
   AspectRatio,
   Box,
   HStack,
-  Image,
   Stack,
   Text,
   VStack,
@@ -14,7 +13,7 @@ import {
 
 import AmountInput from "./AmountInput";
 import DeleteButton from "./DeleteButton";
-import ImageFallback from "components/ImageFallback";
+import Image from "components/Image";
 import Price from "components/Price";
 
 function CartItem({ item }) {
@@ -26,9 +25,6 @@ function CartItem({ item }) {
         <Image
           src={item.product.images}
           alt={`Photo of ${item.product.name}`}
-          borderRadius="1rem"
-          fit="cover"
-          fallback={<ImageFallback />}
         />
       </AspectRatio>
 

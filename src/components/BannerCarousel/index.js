@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { Link as RouterLink } from "react-router-dom";
-import { Box, Container, HStack, Image, Link, Show } from "@chakra-ui/react";
+import { Box, Container, HStack, Link, Show } from "@chakra-ui/react";
 import { animate, motion, useMotionValue } from "framer-motion";
 
 import ArrowButton from "./ArrowButton";
 import BannerOverlay from "components/BannerOverlay";
-import ImageFallback from "components/ImageFallback";
+import Image from "components/Image";
 import Indicators from "./Indicators";
 import bannersData from "assets/json/banners.json";
 
@@ -100,15 +100,7 @@ function BannerCarousel() {
                   e.preventDefault();
                 }}
               >
-                <Image
-                  src={slide.image}
-                  alt="Banner photo"
-                  fit="cover"
-                  position="relative"
-                  boxSize="100%"
-                  borderRadius="1rem"
-                  fallback={<ImageFallback />}
-                />
+                <Image src={slide.image} alt="Banner photo" />
                 <BannerOverlay heading={slide.heading} text={slide.text} />
               </Link>
             ))}

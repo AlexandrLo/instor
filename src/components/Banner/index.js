@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 import { Link as RouterLink } from "react-router-dom";
-import { Container, Image, Link } from "@chakra-ui/react";
+import { Container, Link } from "@chakra-ui/react";
 
 import BannerOverlay from "components/BannerOverlay";
-import ImageFallback from "components/ImageFallback";
+import Image from "components/Image";
 import bannersData from "assets/json/banners.json";
 
 function Banner() {
@@ -26,14 +26,7 @@ function Banner() {
         borderRadius="1rem"
         variant="box-inset"
       >
-        <Image
-          src={bannerData?.image}
-          alt="Banner photo"
-          boxSize="100%"
-          fit="cover"
-          borderRadius="1rem"
-          fallback={<ImageFallback />}
-        />
+        <Image src={bannerData?.image} alt="Banner photo" />
         <BannerOverlay heading={bannerData?.heading} text={bannerData?.text} />
       </Link>
     </Container>

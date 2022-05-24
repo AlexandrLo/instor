@@ -1,10 +1,10 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-import { AspectRatio, Box, HStack, Image } from "@chakra-ui/react";
+import { AspectRatio, Box, HStack } from "@chakra-ui/react";
 
 import BackButton from "components/BackButton";
-import ImageFallback from "components/ImageFallback";
+import Image from "components/Image";
 import ShareButton from "./ShareButton";
 
 function ProductImage({ images, name }) {
@@ -19,13 +19,7 @@ function ProductImage({ images, name }) {
         maxH={{ base: "none", sm: "28rem", md: "none" }}
         ratio={1}
       >
-        <Image
-          src={images?.[0]}
-          alt={`Photo of ${name}`}
-          fit="cover"
-          borderRadius="1rem"
-          fallback={<ImageFallback />}
-        />
+        <Image src={images?.[0]} alt={`Photo of ${name}`} />
       </AspectRatio>
       <HStack
         pos="absolute"

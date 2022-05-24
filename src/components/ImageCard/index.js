@@ -2,9 +2,9 @@ import React from "react";
 
 import PropTypes from "prop-types";
 import { Link as RouterLink } from "react-router-dom";
-import { AspectRatio, Heading, Image, Link } from "@chakra-ui/react";
+import { AspectRatio, Heading, Link } from "@chakra-ui/react";
 
-import ImageFallback from "components/ImageFallback";
+import Image from "components/Image";
 
 function ImageCard({ name, image, to, ratio, minW, alt, textProps }) {
   return (
@@ -22,13 +22,7 @@ function ImageCard({ name, image, to, ratio, minW, alt, textProps }) {
       }}
     >
       <AspectRatio w="100%" ratio={ratio} minW={minW}>
-        <Image
-          src={image}
-          alt={alt}
-          fit="cover"
-          borderRadius="1rem"
-          fallback={<ImageFallback />}
-        />
+        <Image src={image} alt={alt} />
       </AspectRatio>
       <Heading
         as="h3"
