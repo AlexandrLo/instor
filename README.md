@@ -15,6 +15,8 @@
     <br />
     <a href="https://alexandrlo.github.io/instor/">View Demo</a>
     ·
+    <a href="https://www.figma.com/community/file/1112827510922949664">Figma File</a>
+    ·
     <a href="https://github.com/AlexandrLo/instor/issues">Report Bug</a>
     ·
     <a href="https://github.com/AlexandrLo/instor/issues">Request Feature</a>
