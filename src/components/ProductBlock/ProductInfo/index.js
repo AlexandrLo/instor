@@ -25,7 +25,7 @@ function ProductInfo({ product }) {
   return (
     <VStack align="stretch" spacing={padding} pt={padding}>
       {/* Row 1 */}
-      <HStack justify="space-between" align="end" px={padding}>
+      <HStack justify="space-between" align="flex-end" px={padding}>
         <Box>
           <Text variant="bold" color="gray.400" textTransform="uppercase">
             {product.category?.name}

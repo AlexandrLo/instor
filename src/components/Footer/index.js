@@ -27,7 +27,7 @@ function Footer() {
           <Text variant="muted" textAlign="center" whiteSpace="nowrap">
             © Instor 2022
           </Text>
-          <HStack w="100%" justify="end">
+          <HStack w="100%" justify="flex-end">
             <ColorModeSwitch />
           </HStack>
         </HStack>

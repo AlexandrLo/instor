@@ -61,7 +61,7 @@ function ProductCard({ product }) {
         </Hide>
       </Box>
       <HStack
-        align={["end", "center"]}
+        align={["flex-end", "center"]}
         justify="space-between"
         spacing="0.5rem"
         p={["1rem", "1rem", "1.5rem"]}

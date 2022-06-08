@@ -49,7 +49,7 @@ function TopBar({ onLoginModalOpen }) {
             </Box>
           </Hide>
           <Show above="sm">
-            <HStack spacing="0.5rem" justify="end">
+            <HStack spacing="0.5rem" justify="flex-end">
               <Button
                 leftIcon={<Cart24Filled />}
                 variant="alpha"
