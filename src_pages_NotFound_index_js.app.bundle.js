@@ -138,7 +138,7 @@ function Footer() {
     whiteSpace: "nowrap"
   }, "\xA9 Instor 2022"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.HStack, {
     w: "100%",
-    justify: "end"
+    justify: "flex-end"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ColorModeSwitch__WEBPACK_IMPORTED_MODULE_1__["default"], null)))));
 }
 

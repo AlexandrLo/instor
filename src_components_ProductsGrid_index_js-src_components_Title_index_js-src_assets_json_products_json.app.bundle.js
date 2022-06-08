@@ -456,7 +456,7 @@ function ProductCard(_ref) {
     id: product.id,
     name: product.name
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_7__.HStack, {
-    align: ["end", "center"],
+    align: ["flex-end", "center"],
     justify: "space-between",
     spacing: "0.5rem",
     p: ["1rem", "1rem", "1.5rem"]
