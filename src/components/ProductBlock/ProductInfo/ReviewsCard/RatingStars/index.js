@@ -1,7 +1,7 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-import { Star24Filled } from "@fluentui/react-icons";
+import { Star } from "@styled-icons/fluentui-system-filled";
 import { Box, HStack } from "@chakra-ui/react";
 
 function RatingStars({ rating }) {
@@ -11,7 +11,7 @@ function RatingStars({ rating }) {
         .fill()
         .map((_, i) => (
           <Box key={i} color={i + 1 < rating ? "yellow.400" : "gray.500"}>
-            <Star24Filled />
+            <Star size={24} />
           </Box>
         ))}
     </HStack>

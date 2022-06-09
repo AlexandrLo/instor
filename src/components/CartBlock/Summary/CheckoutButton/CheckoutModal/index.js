@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CheckmarkCircleRegular } from "@fluentui/react-icons";
+import { CheckmarkCircle } from "@styled-icons/fluentui-system-filled";
 import PropTypes from "prop-types";
 import {
   Box,
@@ -22,8 +22,8 @@ function CheckoutModal({ isOpen, onClose }) {
       <ModalContent>
         <ModalBody>
           <VStack>
-            <Box color="green.400" fontSize="6rem" lineHeight="0" p="1rem">
-              <CheckmarkCircleRegular />
+            <Box color="green.400" p="1rem">
+              <CheckmarkCircle size="6rem" />
             </Box>
             <Heading as="h2" size="h2">
               Order Placed

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ArrowRightFilled } from "@fluentui/react-icons";
+import { ArrowRight } from "@styled-icons/fluentui-system-filled";
 import PropTypes from "prop-types";
 import { HStack, Heading, Text, VStack } from "@chakra-ui/react";
 
@@ -26,7 +26,7 @@ function BannerOverlay({ heading = "", text = "", showCTA = true }) {
       {showCTA && (
         <HStack fontSize={{ base: "14px", md: "16px" }}>
           <Text>Learn more</Text>
-          <ArrowRightFilled />
+          <ArrowRight size={16} />
         </HStack>
       )}
     </VStack>

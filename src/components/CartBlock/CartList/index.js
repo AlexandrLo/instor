@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CartRegular } from "@fluentui/react-icons";
+import { Cart } from "@styled-icons/fluentui-system-filled";
 import PropTypes from "prop-types";
 import { HStack, VStack } from "@chakra-ui/react";
 
@@ -15,7 +15,7 @@ function CartList({ items }) {
       ) : (
         <HStack justify="center">
           <Placeholder
-            icon={<CartRegular />}
+            icon={<Cart />}
             heading="Cart is Empty"
             description="Looks like you haven’t added anything to your cart yet"
             maxW="18rem"

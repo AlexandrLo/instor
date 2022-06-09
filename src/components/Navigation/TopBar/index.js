@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Cart24Filled } from "@fluentui/react-icons";
+import { Cart } from "@styled-icons/fluentui-system-filled";
 import PropTypes from "prop-types";
 import {
   Box,
@@ -51,7 +51,7 @@ function TopBar({ onLoginModalOpen }) {
           <Show above="sm">
             <HStack spacing="0.5rem" justify="flex-end">
               <Button
-                leftIcon={<Cart24Filled />}
+                leftIcon={<Cart size={24} />}
                 variant="alpha"
                 colorScheme="orange"
                 as={RouterLink}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ArrowLeft24Filled } from "@fluentui/react-icons";
+import { ArrowLeft } from "@styled-icons/fluentui-system-filled";
 import { Button } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 import { useNavigate, useSearchParams } from "react-router-dom";
@@ -25,7 +25,7 @@ function BackButton({ variant, colorScheme, size, onBack }) {
       size={size}
       onClick={onBack ? onBack : handleBack}
     >
-      <ArrowLeft24Filled />
+      <ArrowLeft size={24} />
     </Button>
   );
 }

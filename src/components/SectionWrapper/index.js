@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ArrowRightFilled } from "@fluentui/react-icons";
+import { ArrowRight } from "@styled-icons/fluentui-system-filled";
 import PropTypes from "prop-types";
 import { Link as RouterLink } from "react-router-dom";
 import {
@@ -34,7 +34,7 @@ function SectionWrapper({ heading, children }) {
               <Link as={RouterLink} to={heading.to} color="orange.400">
                 <HStack spacing="0.25rem">
                   <Text variant="small">See all</Text>
-                  <ArrowRightFilled />
+                  <ArrowRight />
                 </HStack>
               </Link>
             )}

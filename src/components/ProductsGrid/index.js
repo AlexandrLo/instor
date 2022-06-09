@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BorderNoneRegular } from "@fluentui/react-icons";
+import { Border } from "@styled-icons/fluentui-system-filled";
 import PropTypes from "prop-types";
 import { Spinner, VStack } from "@chakra-ui/react";
 
@@ -21,7 +21,7 @@ function ProductsGrid({ products = [], isLoading = false }) {
       {!isLoading && products.length <= 0 && (
         <Placeholder
           maxW="19rem"
-          icon={<BorderNoneRegular />}
+          icon={<Border />}
           heading="No Products Found"
           description="Please check spelling or try one of these searches:"
           showButton={false}

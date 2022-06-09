@@ -3,11 +3,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Box, Button, HStack, Hide, useColorModeValue } from "@chakra-ui/react";
 import {
-  Cart24Filled,
-  Home24Filled,
-  PersonCircle24Filled,
-  Search24Filled,
-} from "@fluentui/react-icons";
+  Cart,
+  Home,
+  PersonCircle,
+  Search,
+} from "@styled-icons/fluentui-system-filled";
 
 import CartBadge from "components/CartBadge";
 import TabBarLink from "./TabBarLink";
@@ -37,13 +37,13 @@ function TabBar({ onLoginModalOpen }) {
           px="1rem"
         >
           <TabBarLink to="/">
-            <Home24Filled />
+            <Home size={24} />
           </TabBarLink>
           <TabBarLink to="/search">
-            <Search24Filled />
+            <Search size={24} />
           </TabBarLink>
           <TabBarLink to="/cart">
-            <Cart24Filled />
+            <Cart size={24} />
             <CartBadge side="right" />
           </TabBarLink>
           <Button
@@ -52,7 +52,7 @@ function TabBar({ onLoginModalOpen }) {
             colorScheme="orange"
             onClick={onLoginModalOpen}
           >
-            <PersonCircle24Filled />
+            <PersonCircle size={24} />
           </Button>
         </HStack>
       </Box>

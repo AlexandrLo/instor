@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import PropTypes from "prop-types";
-import { Add24Filled, Subtract24Filled } from "@fluentui/react-icons";
+import { Add, Subtract } from "@styled-icons/fluentui-system-filled";
 import { Button, HStack, Input, useNumberInput } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -45,7 +45,7 @@ function AmountInput({ size = "md", id }) {
   return (
     <HStack spacing={{ base: "0.25rem", md: "0.5rem" }}>
       <Button size={size} {...dec}>
-        <Subtract24Filled />
+        <Subtract size={24} />
       </Button>
       <Input
         type="number"
@@ -56,7 +56,7 @@ function AmountInput({ size = "md", id }) {
         {...input}
       />
       <Button size={size} {...inc}>
-        <Add24Filled />
+        <Add size={24} />
       </Button>
     </HStack>
   );

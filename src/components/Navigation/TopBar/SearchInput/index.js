@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import {
-  ArrowRight24Filled,
-  Dismiss16Filled,
-  Search24Filled,
-} from "@fluentui/react-icons";
+  ArrowRight,
+  Dismiss,
+  Search,
+} from "@styled-icons/fluentui-system-filled";
 import {
   Button,
   HStack,
@@ -42,7 +42,7 @@ function SearchInput() {
     <form onSubmit={handleSubmit}>
       <InputGroup>
         <InputLeftElement pointerEvents="none" color={iconColor}>
-          <Search24Filled />
+          <Search size={24} />
         </InputLeftElement>
         <Input
           ref={ref}
@@ -64,10 +64,10 @@ function SearchInput() {
                 colorScheme="orange"
                 onClick={clearInput}
               >
-                <Dismiss16Filled />
+                <Dismiss size={16} />
               </Button>
               <Button type="submit" size="sm">
-                <ArrowRight24Filled />
+                <ArrowRight size={24} />
               </Button>
             </HStack>
           </InputRightElement>

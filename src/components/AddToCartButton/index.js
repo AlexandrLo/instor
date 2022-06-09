@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Add24Filled } from "@fluentui/react-icons";
+import { Add } from "@styled-icons/fluentui-system-filled";
 import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import { Button, Tooltip, useToast } from "@chakra-ui/react";
@@ -33,14 +33,18 @@ function AddToCartButton({ size = "md", id, name }) {
   return (
     <>
       {size === "md" && (
-        <Button leftIcon={<Add24Filled />} colorScheme="orange" onClick={onAdd}>
+        <Button
+          leftIcon={<Add size={24} />}
+          colorScheme="orange"
+          onClick={onAdd}
+        >
           Add to cart
         </Button>
       )}
       {size === "sm" && (
         <Tooltip label="Add to cart" fontSize="md">
           <Button colorScheme="orange" onClick={onAdd}>
-            <Add24Filled />
+            <Add size={24} />
           </Button>
         </Tooltip>
       )}

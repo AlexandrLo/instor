@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ArrowRightFilled } from "@fluentui/react-icons";
+import { ArrowRight } from "@styled-icons/fluentui-system-filled";
 import {
   Box,
   HStack,
@@ -65,15 +65,15 @@ function ReviewsCard() {
       borderRadius="1rem"
       bg={bgColor}
     >
-      <VStack spacing="0" align="start">
-        <HStack>
+      <VStack spacing="0.5rem" align="start">
+        <HStack align="center">
           <RatingStars rating={reviewsData.averageRating} />
-          <Text>{reviewsData.averageRating}</Text>
+          <Text pt="0.25rem">{reviewsData.averageRating}</Text>
         </HStack>
         <Link variant="muted">
           <HStack spacing="0.25rem">
             <Text>{reviewsData.reviews.length} reviews</Text>
-            <ArrowRightFilled />
+            <ArrowRight size={16} />
           </HStack>
         </Link>
       </VStack>

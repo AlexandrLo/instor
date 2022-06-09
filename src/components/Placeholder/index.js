@@ -2,7 +2,13 @@ import React from "react";
 
 import PropTypes from "prop-types";
 import { Link as RouterLink } from "react-router-dom";
-import { Box, Button, Heading, Text, VStack } from "@chakra-ui/react";
+import {
+  Button,
+  Heading,
+  Text,
+  VStack,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 
 import Suggestions from "./Suggestions";
 
@@ -16,6 +22,9 @@ function Placeholder({
   maxW,
   children,
 }) {
+  const iconSizeMd = useBreakpointValue(["3rem", "3rem", "4rem"]);
+  const iconSizeLg = useBreakpointValue(["4rem", "4rem", "5rem"]);
+
   let headingSize = "h2";
   let iconSize = "4rem";
 
@@ -23,21 +32,17 @@ function Placeholder({
     default:
     case "md":
       headingSize = "h2";
-      iconSize = ["3rem", "3rem", "4rem"];
+      iconSize = iconSizeMd;
       break;
     case "lg":
       headingSize = "h1";
-      iconSize = ["4rem", "4rem", "5rem"];
+      iconSize = iconSizeLg;
       break;
   }
 
   return (
     <VStack spacing="1rem" maxW={maxW}>
-      {icon && (
-        <Box fontSize={iconSize} lineHeight="0">
-          {icon}
-        </Box>
-      )}
+      {icon && React.cloneElement(icon, { size: iconSize })}
 
       <VStack spacing="0">
         {heading && (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ShareAndroid24Filled } from "@fluentui/react-icons";
+import { ShareAndroid } from "@styled-icons/fluentui-system-filled";
 import { Button, useClipboard, useToast } from "@chakra-ui/react";
 
 function ShareButton() {
@@ -27,7 +27,7 @@ function ShareButton() {
   };
   return (
     <Button variant="blur" onClick={sharePage}>
-      <ShareAndroid24Filled />
+      <ShareAndroid size={24} />
     </Button>
   );
 }

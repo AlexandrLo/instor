@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Button } from "@chakra-ui/react";
-import { Dismiss24Filled } from "@fluentui/react-icons";
+import { Dismiss } from "@styled-icons/fluentui-system-filled";
 import PropTypes from "prop-types";
 
 import { cartDeleteItem } from "store/slices/cartSlice";
@@ -16,7 +16,7 @@ function DeleteButton({ id }) {
 
   return (
     <Button size="sm" onClick={onDelete}>
-      <Dismiss24Filled />
+      <Dismiss size={24} />
     </Button>
   );
 }
