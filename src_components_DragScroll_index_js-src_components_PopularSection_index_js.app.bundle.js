@@ -150,9 +150,9 @@ function DragScroll(_ref) {
 
   var coord = axis === "x" ? x : y;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_5__.Box, _extends({}, axis === "x" && {
-    overflowX: "clip"
+    overflowX: "hidden"
   }, axis === "y" && {
-    overflowY: "clip"
+    overflowY: "hidden"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_react_spring_web__WEBPACK_IMPORTED_MODULE_1__.animated.div, _extends({
     ref: sliderRef,
     style: (_ref3 = {}, _defineProperty(_ref3, axis, coord), _defineProperty(_ref3, "touchAction", axis === "x" ? "pan-y" : "pan-x"), _ref3)
@@ -277,11 +277,7 @@ function PopularSection() {
       text: "Popular"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_5__.Box, {
-    px: {
-      base: "1rem",
-      md: "1.5rem"
-    },
-    pb: {
+    p: {
       base: "1rem",
       md: "1.5rem"
     }
@@ -324,7 +320,11 @@ function SectionWrapper(_ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Container, null, heading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.VStack, {
     spacing: "0",
     align: "start",
-    p: {
+    px: {
+      base: "1rem",
+      md: "1.5rem"
+    },
+    pt: {
       base: "1rem",
       md: "1.5rem"
     }

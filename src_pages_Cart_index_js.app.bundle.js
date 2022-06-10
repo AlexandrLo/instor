@@ -881,11 +881,7 @@ function PopularSection() {
       text: "Popular"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_5__.Box, {
-    px: {
-      base: "1rem",
-      md: "1.5rem"
-    },
-    pb: {
+    p: {
       base: "1rem",
       md: "1.5rem"
     }
@@ -928,7 +924,11 @@ function SectionWrapper(_ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Container, null, heading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.VStack, {
     spacing: "0",
     align: "start",
-    p: {
+    px: {
+      base: "1rem",
+      md: "1.5rem"
+    },
+    pt: {
       base: "1rem",
       md: "1.5rem"
     }

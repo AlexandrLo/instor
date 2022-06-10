@@ -313,7 +313,7 @@ function BannerCarousel() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_8__.Box, {
     h: ["9rem", "12rem", "15rem", "18rem", "21rem"],
     position: "relative",
-    overflowX: "clip",
+    overflowX: "hidden",
     borderRadius: "1rem",
     ref: ref
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_9__.motion.div, {
@@ -528,7 +528,7 @@ function CategoriesSection() {
       base: "1rem",
       md: "1.5rem"
     },
-    pb: {
+    py: {
       base: "1rem",
       md: "1.5rem"
     }
@@ -913,11 +913,11 @@ function RoomsSection() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(components_DragScroll__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_5__.Flex, {
     w: "100%",
-    px: {
+    pl: {
       base: "1rem",
       md: "1.5rem"
     },
-    pb: {
+    py: {
       base: "1rem",
       md: "1.5rem"
     }
