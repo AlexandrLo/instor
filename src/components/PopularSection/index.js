@@ -34,10 +34,7 @@ function PopularSection() {
         text: "Popular",
       }}
     >
-      <Box
-        px={{ base: "1rem", md: "1.5rem" }}
-        pb={{ base: "1rem", md: "1.5rem" }}
-      >
+      <Box p={{ base: "1rem", md: "1.5rem" }}>
         <ProductsGrid products={popularProductsData} isLoading={isLoading} />
       </Box>
     </SectionWrapper>

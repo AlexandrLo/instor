@@ -18,8 +18,8 @@ function RoomsSection() {
       <DragScroll>
         <Flex
           w="100%"
-          px={{ base: "1rem", md: "1.5rem" }}
-          pb={{ base: "1rem", md: "1.5rem" }}
+          pl={{ base: "1rem", md: "1.5rem" }}
+          py={{ base: "1rem", md: "1.5rem" }}
         >
           {roomsData.map((room) => (
             <RoomCard

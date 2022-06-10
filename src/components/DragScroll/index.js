@@ -96,8 +96,8 @@ function DragScroll({ children, axis = "x" }) {
 
   return (
     <Box
-      {...(axis === "x" && { overflowX: "clip" })}
-      {...(axis === "y" && { overflowY: "clip" })}
+      {...(axis === "x" && { overflowX: "hidden" })}
+      {...(axis === "y" && { overflowY: "hidden" })}
     >
       <animated.div
         ref={sliderRef}

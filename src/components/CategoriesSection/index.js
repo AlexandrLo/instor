@@ -14,7 +14,7 @@ function CategoriesSection() {
         <Flex
           w="100%"
           pl={{ base: "1rem", md: "1.5rem" }}
-          pb={{ base: "1rem", md: "1.5rem" }}
+          py={{ base: "1rem", md: "1.5rem" }}
         >
           {categoriesData.map((category) => (
             <CategoryCard

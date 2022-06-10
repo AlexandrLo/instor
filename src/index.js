@@ -6,12 +6,17 @@ import { HashRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { PersistGate } from "redux-persist/integration/react";
 import { Provider as ReduxProvider } from "react-redux";
+import ResizeObserver from "resize-observer-polyfill/dist/ResizeObserver.global";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 
 import App from "./App";
 import { customLocalStorageManager } from "utils/customLocalStorageManager";
 import theme from "theme";
 import { persistor, store } from "store";
+
+if (!window.ResizeObserver) {
+  window.ResizeObserver = ResizeObserver;
+}
 
 ReactDOM.render(
   <React.StrictMode>

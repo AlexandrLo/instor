@@ -18,7 +18,12 @@ function SectionWrapper({ heading, children }) {
     <Container>
       {/* Heading */}
       {heading && (
-        <VStack spacing="0" align="start" p={{ base: "1rem", md: "1.5rem" }}>
+        <VStack
+          spacing="0"
+          align="start"
+          px={{ base: "1rem", md: "1.5rem" }}
+          pt={{ base: "1rem", md: "1.5rem" }}
+        >
           <HStack
             spacing="2rem"
             justify={{ base: "space-between", md: "start" }}

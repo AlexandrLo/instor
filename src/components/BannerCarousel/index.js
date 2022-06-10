@@ -60,7 +60,7 @@ function BannerCarousel() {
       <Box
         h={["9rem", "12rem", "15rem", "18rem", "21rem"]}
         position="relative"
-        overflowX="clip"
+        overflowX="hidden"
         borderRadius="1rem"
         ref={ref}
       >
